@@ -11,7 +11,7 @@
     <div class="crt-overlay"></div>
 
     <header>
-        <div class="terminal-title">▲ THE LIMINALIS ARCHIVE // v. 0.0.1</div>
+        <div class="terminal-title">▲ THE LIMINALIS ARCHIVE // v. 0.0.2</div>
         <div class="security-status">NETWORK STABLE :3</div>
     </header>
 
@@ -23,16 +23,16 @@
         <section class="controls-panel">
             <div class="search-group">
                 <label for="terminalInput">> SEARCH:</label>
-                <input type="text" id="terminalInput" placeholder="Введите ID, Уровень или имя сущности..." oninput="searchArchive()">
+                <input type="text" id="terminalInput" placeholder="SEARCH FOR DATA VIA ID" oninput="searchArchive()">
             </div>
             
             <div class="filter-group">
                 <label for="typeFilter">CATEGORY:</label>
                 <select id="typeFilter" onchange="searchArchive()">
                     <option value="all">DATA LIST</option>
-                    <option value="level">LIMINALITIES (lim_obj)</option>
-                    СУЩНОСТИ (ENTITIES)</option>
-                    <option value="object">PHENOMENA (phen_obj)</option>
+                    <option value="liminality">LIMINALITIES (lim_obj)</option>
+                    <option value="organisms">ORGANISMS (org_kinNum_specNum)</option>
+                    <option value="phenomena">PHENOMENA (phen_obj)</option>
                 </select>
             </div>
         </section>
