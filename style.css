@@ -1,0 +1,126 @@
+body {
+    background-color: #0a0f0d;
+    color: #39ff14; 
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+.crt-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 4px, 6px 100%;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+header {
+    background-color: #111;
+    border-bottom: 2px solid #39ff14;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.security-status {
+    color: #ff3333; /* Красный статус тревоги */
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.warning-banner {
+    border: 1px dashed #ff3333;
+    color: #ff3333;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 51, 51, 0.05);
+    font-size: 0.9rem;
+}
+
+.controls-panel {
+    display: flex;
+    gap: 20px;
+    background: #111;
+    padding: 20px;
+    border: 1px solid #39ff14;
+    margin-bottom: 30px;
+}
+
+.controls-panel input, .controls-panel select {
+    background: #000;
+    border: 1px solid #39ff14;
+    color: #39ff14;
+    padding: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.controls-panel input {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.archive-card {
+    background: #111;
+    border: 1px solid #39ff14;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.1);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #39ff14;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.item-id {
+    font-weight: bold;
+    color: #fff;
+}
+
+.hazard-badge {
+    padding: 2px 8px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.hazard-badge.safe { background-color: #004411; color: #00ff00; }
+.hazard-badge.deadly { background-color: #440000; color: #ff3333; border: 1px solid #ff3333; }
+.hazard-badge.useful { background-color: #002244; color: #00aaff; }
+
+.item-title {
+    margin: 0 0 15px 0;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.item-tips {
+    margin-top: 15px;
+    border-top: 1px solid rgba(57, 255, 20, 0.3);
+    padding-top: 10px;
+    color: #00ffaa;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 0.8rem;
+    color: #555;
+}
