@@ -46,8 +46,8 @@ function displayDatabase(items) {
                 <span class="hazard-badge ${item.hazardClass}">${item.hazard}</span>
             </div>
             <h3 class="item-title">${item.title}</h3>
-            <p class="item-desc"><strong>BRR:</strong> ${item.description}</p>
-            <div class="item-tips"><strong>BRR:</strong> ${item.tips}</div>
+            <p class="item-desc"><strong>DESCRIPTION:</strong> ${item.description}</p>
+            <div class="item-tips"><strong>TIP:</strong> ${item.tips}</div>
         `;
         container.appendChild(card);
     });
