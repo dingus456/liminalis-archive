@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE LIMINALIS ARCHIVE - THE FORISTURALITY DATABASE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="crt-overlay"></div>
+
+    <header>
+        <div class="terminal-title">▲ THE LIMINALIS ARCHIVE // v. 0.0.1</div>
+        <div class="security-status">NETWORK STABLE :3</div>
+    </header>
+
+    <main>
+        <section class="warning-banner">
+           WARNING: ITS ALL SUPER NULL
+        </section>
+
+        <section class="controls-panel">
+            <div class="search-group">
+                <label for="terminalInput">> SEARCH:</label>
+                <input type="text" id="terminalInput" placeholder="Введите ID, Уровень или имя сущности..." oninput="searchArchive()">
+            </div>
+            
+            <div class="filter-group">
+                <label for="typeFilter">CATEGORY:</label>
+                <select id="typeFilter" onchange="searchArchive()">
+                    <option value="all">DATA LIST</option>
+                    <option value="level">LIMINALITIES (lim_obj)</option>
+                    СУЩНОСТИ (ENTITIES)</option>
+                    <option value="object">PHENOMENA (phen_obj)</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="archive-section">
+            <div id="archiveContainer">
+                <!-- Сюда JS загрузит данные -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>null</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
