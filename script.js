@@ -8,7 +8,8 @@ const uiTranslations = {
         searchPlaceholder: "при поиске вводите ID или наименование",
         categoryLabel: "КАТЕГОРИЯ:",
         catAll: "ВСЕ ДАННЫЕ",
-        catLevels: "ЛИМИНАЛИ (lim_num)",
+        catMainLevels: "ОСНОВНЫЕ ЛИМИНАЛИ (lim_num)",
+        catOtherLevels: "ОСТАЛЬНЫЕ ЛИМИНАЛИ (lim_num)",
         catEntities: "Организмы (org_kin_spec)",
         catObjects: "Явления (phen_num)",
         descTitle: "Описание:",
@@ -24,7 +25,8 @@ const uiTranslations = {
         searchPlaceholder: "while searching please type an ID or the name",
         categoryLabel: "CATEGORY:",
         catAll: "ALL DATA",
-        catLevels: "LIMILALITIES (lim_num)",
+        catMainLevels: "THE MAIN LIMILALITIES (lim_num)",
+        catOtherLevels: "THE OTHER LIMINALITIES (lim_num)",
         catEntities: "ORGANISMS (org_kin_spec)",
         catObjects: "PHENOMENA (phen_num)",
         descTitle: "Description:",
@@ -38,7 +40,7 @@ const uiTranslations = {
 const backroomsDatabase = [
     {
         id: "LIM_0001",
-        type: "liminality",
+        type: "liminalityM",
         hazard: "CLASS 1-EG",
         hazardClass: "hollow",
         image: "images/Level0.jpg", 
@@ -57,7 +59,7 @@ const backroomsDatabase = [
     },
      {
         id: "LIM_0002",
-        type: "liminality",
+        type: "liminalityM",
         hazard: "CLASS 4-G",
         hazardClass: "non-linear geometry",
         image: "images/Agnosophobia.webp", 
@@ -76,7 +78,7 @@ const backroomsDatabase = [
     },
     {
         id: "LIM_0003",
-        type: "liminality",
+        type: "liminalityM",
         hazard: "CLASS 3-E",
         hazardClass: "heat, enviorment",
         image: "images/Vevosis.jpg", 
@@ -95,7 +97,7 @@ const backroomsDatabase = [
     },
       {
         id: "LIM_0004",
-        type: "liminality",
+        type: "liminalityM",
         hazard: "CLASS 5-EG",
         hazardClass: "heat, enviorment, non-linear geomtery",
         image: "images/Dith.jpg", 
@@ -109,6 +111,64 @@ const backroomsDatabase = [
                 title: "DIS",
                 description: "Outwardly, Dis does not differ much from Vejovis, yet it possesses its own distinct characteristics. These differences lie in its geometry, atmospheric composition, decor, and inhabitants. The geometry here is similar to that of Eternitas that is, it is non-Euclidean. The air is dominated by carbon dioxide, making it difficult to breathe. This high concentration of carbon dioxide is a result of the surrounding environment—specifically the presence of machines, furnaces, generators, and similar structures. These installations emit vast quantities of gas while consuming nitrogen, which has already been almost entirely depleted. This suggests that these structures will soon cease to function, which in turn will help normalize the environment and render it habitable for humans. This Liminality is inhabited by *Caecus Contrahens*, *Eremita Infrastructurae*, and *Electrofagus mimicus*. The *Caecus Contrahens* (Blindmen/Dullers) fulfill a role much like the one they play in Vejovis; here, however, they feed on *Electrofagi*—creatures frequently found clinging to the walls. The «Dullers» (as the *Caecus Contrahens* are sometimes called) ruthlessly tear them from the surfaces—ignoring electric shocks and resistance—and devour them, occasionally leaving scraps behind. The *Eremita Infrastructurae* (Hermits of the Infrastructure) hang from the ceiling, killing organisms that pass beneath them by crushing them under their own weight. The Electrofagues are the only entities here that do not consume animal matter; instead, they engage in a process akin to photosynthesis—though, unlike plants that draw energy from the sun, these creatures derive their energy from lamps and machinery.",
                 tips: "Find the emergency exit signs. That's the only advice that can be given to those who enter here."
+            }
+        }
+    },
+     {
+        id: "LIM_0005",
+        type: "liminalityM",
+        hazard: "CLASS 0-EG",
+        hazardClass: "hollow, habitable",
+        image: "images/Therminus.jpg", 
+        translations: {
+            ru: {
+                title: "КОНСУС",
+                description: "В отличии от предыдущих Лиминалей, которые были лабиринтами с декором реальных мест, Консус является попыткой воссоздать офисное здание. Периметр здания равен примерно 160 метров, имеется пять (5) этажей. Пятый этаж, самый вверхний, выглядит самым похожим на офисное здание, и по продвижению вниз интерьер будет сильно искажаться до первого этажа. Первый этаж выглядит как простой набор комнат, разбросанный в хаотичном порядке. Почти все комнаты этажа пустые, однако в одной комнате присутствует фонтан и тёмный, прямоугольный проход, который является выходом отсюда. В почти каждой комнате Консуса присутствуют окна, из которых исходит яркий свет тёплого оттенка. Стены каждого этажа окрашены в белый цвет и состоят из бетона. Ковёр имеет разный цвет, в зависимости от этажа. Например, на пятом этаже присутствует серый ковёр, на четвёртом он становится бежевым, на третьем - зелёный, на втором - синий, а на первом - смесь серого и синего. Потолок везде состоит из плиток, идентичных плиткам Януса. На потолке в хаотичном порядке расположены отключенные люминесцентные лампы, иногда датчики пожара. Иногда можно встретить и кулеры с водой. Вода, найденная в Консусе, имеет вкус обычной воды, перемешанной с миндалём, и признана безопасной для употребления. В одной из комнат четвёртого этажа можно встретить принтер, а также там есть комната неподалёку, которая забита бумагой. На бумаге отсутствуют какие-либо изображения, но их можно сделать, если в принтер налить чернил. На втором этаже присутствует обильное количество табличек STOP, однако они поддались здесь такому-же искажению, как если бы они были бы на Янусе. Кроме них, на втором этаже есть и хаотично расположенные двери, провода, розовый бумбокс из ранних двухтысячных годов, а также в одной из комнат можно найти зеркала. Ходят слухи, что под ковром первого этажа находится «Подвал»: место, состоящее из кирпичей, у которого в дефиците есть керосиновые лампы, подобные тем, что можно найти в Этернитасе, но только там они горят вечно. Говорят также о том, что там можно встретить единственный экземпляр подвида Caecus Contrahens, который гораздо опаснее родительского вида."
+                tips: "Вы впринципе можете остаться здесь жить, но если вам хочется отсюда выйти, то попробуйте найти дыру в потолке или войдите в тёмный проём на первом этаже."
+            },
+            en: {
+                title: "CONSUS",
+                description: "Unlike previous Liminalities, which were labyrinths decorated to resemble real-world locations, Consus is an attempt to recreate an office building. The building has a perimeter of approximately 160 meters and consists of five (5) floors. The fifth floor—the topmost level—most closely resembles an actual office building; as one descends, the interior becomes increasingly distorted, reaching a state of significant alteration by the first floor. The first floor appears as a simple collection of rooms arranged in a chaotic, haphazard manner. Most of these rooms are empty, though one contains a fountain and a dark, rectangular passageway that serves as an exit. Nearly every room in Consus features windows, from which a bright, warm-toned light emanates. The walls on every floor are made of concrete and painted white. The carpeting varies in color by floor: gray on the fifth, beige on the fourth, green on the third, blue on the second, and a blend of gray and blue on the first. The ceilings throughout consist of tiles identical to those found in Janus. Inactive fluorescent light fixtures—and occasionally fire sensors—are scattered across the ceilings in a chaotic arrangement. Water coolers can also be found from time to time; the water in Consus tastes like ordinary water mixed with almonds and has been deemed safe for consumption. On the fourth floor, one can find a printer, as well as a nearby room packed with paper. The paper is blank, though it can be printed upon if ink is added to the printer. The second floor contains a large number of «STOP» signs, which have undergone the same type of distortion seen in Janus. Beyond these, the second floor features haphazardly placed doors, wires, and a pink boombox from the early 2000s; mirrors can also be found in one of the rooms. Rumor has it that beneath the carpet on the first floor lies «The Basement»: a space constructed of brick, containing a rare supply of kerosene lamps. These resemble the lamps found in Eternitas, though here, they burn eternally. It is also said that one might encounter a unique specimen of the *Caecus Contrahens* subspecies—a creature far more dangerous than its parent species.",
+                tips: "You can actually stay here to live, but if you really want to leave, then you can try entering a hole in the ceiling or enter a dark doorway on the first floor."
+            }
+        }
+     },
+    {
+        id: "LIM_0006",
+        type: "liminalityM",
+        hazard: "CLASS 3-EGP",
+        hazardClass: "non-linear geometry, psychological effects, enviorment",
+        image: "images/Falacia.jpg", 
+        translations: {
+            ru: {
+                title: "МЕНДАЦИУС",
+                description: "Архитектура Мендациуса изначально покажется любому страннику просто эталоном красоты. Пол состоит из блестящего дерева тёмного оттенка. На полу ковёр, который стелится на миллионы миль. Сверху люстры в виде канделябров с никогда неугасающими свечами. Иногда появляются двери. Они ведут в величественные бальные залы, заполненные людьми. Да только вот… Это чувствуется фальшиво. И вы будете правы, ведь на самом деле эта Лиминаль состоит из очень простых коридоров и комнат, полностью состоящих из одного серого, холодного бетона. На потолке отсутствуют люстры. Вместо них, в Медациусе присутствует освещение без видимого источника. Двери и ковёр полностью отсутствуют. Архитектура состоит из узких коридоров, которые могут очень долго идти вперёд, и иногда иметь проходы либо в другие коридоры, либо-же в огромные пространства промеж коридоров, которые, собственно, и являются «бальными залами». В этих пространствах полно манекенов, которые в иллюзии выполняют роль тех самых «людей», про которых говорилось раннее. Но среди всего этого есть что-то действительно реальное, а именно особый вид Организмов, эксклюзивный для этой Лиминали. Этим видом является Opifex Imitator. Они являются точной копией обычного человека, но с ключевым отличием: полным отсутствием лица и заменой его на слой гладкой кожи. Они ориентируются по эхолокации и не нуждаются в пище. При контакте с человеком они предложат ему выпить или пойти в «Офис Босса», где происходит «Квалификация» (см. Phen_0004). На фото изображена фотография, которая является самой похожей на интерьер иллюзии.",
+                tips: "Идите дальше, если можете. Уже нет пути назад."
+            },
+            en: {
+                title: "MENDACIUS",
+                description: "To any wanderer, the architecture of Mendacius might initially appear to be the very epitome of beauty. The floor is made of polished, dark-toned wood and covered by a carpet that stretches on for millions of miles. Overhead hang chandeliers—candelabra-style fixtures with candles that never burn out. Occasionally, doors appear, leading into grand ballrooms filled with people. And yet… it all feels artificial. You would be right to think so; in reality, this Liminality consists of nothing more than simple corridors and rooms, constructed entirely from cold, gray concrete. There are no chandeliers on the ceiling—instead, Mendacius is illuminated by a light source that remains unseen. The doors and the carpet are entirely absent. The architecture is defined by narrow corridors that can stretch on for great distances, occasionally branching off into other hallways or opening into vast, intermediate spaces—the very areas that appear as «ballrooms». These spaces are filled with mannequins, which, within the illusion, serve as the «people» mentioned earlier. Amidst all this, however, there is something truly real: a specific type of entity unique to this Liminal space, known as *Opifex Imitator*. These beings are exact replicas of ordinary humans, with one crucial distinction: they lack a face entirely, the area being replaced by a smooth, unbroken layer of skin. They navigate via echolocation and have no need for sustenance. Upon encountering a human, they may offer a drink or invite the individual to the «Boss’s Office» to undergo «Qualification» (see Phen_0004). The image provided is the one that most closely resembles the interior of the illusion.",
+                tips: "Go on, if you can. There is no way back."
+            }
+        }
+    },
+
+        {
+        id: "LIM_0007",
+        type: "liminalityM",
+        hazard: "CLASS 0",
+        hazardClass: "hollow",
+        image: "images/Scotos.jpg", 
+        translations: {
+            ru: {
+                title: "СКОТОС",
+                description: "Скотос почти-что идентичен Мендациусу, но имеет лишь три отличия. Во-первых, здесь отсутствует психологическое воздействие, и Лиминаль выглядит именно так, как она и выглядит на самом деле. Во-вторых, здесь полностью отсутствует освещение. В-третьих, здесь нет жизни и манекенов. Эта Лиминаль является последней в Основном Списке Лиминалей.",
+                tips: "Уже нечего делать."
+            },
+            en: {
+                title: "SCOTOS",
+                description: "Scotos is almost identical to Mendacius, however, he has some differences. At first, there is no psychological impact. This means that the Liminality looks just like how it actually looks without the illusion. Second of all, there is no light at all. At third, there is nothing alive out here. Not even the mannequins are here. This Liminality is the las on The Main Liminalities list.",
+                tips: "You can't do anything at this point."
             }
         }
     },
