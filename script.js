@@ -218,31 +218,43 @@ function displayDatabase(items) {
     const container = document.getElementById('archiveContainer');
     if (!container) return;
     container.innerHTML = '';
+
     if (items.length === 0) {
-        container.innerHTML = <p class="no-results">${uiTranslations[currentLanguage].noResults}</p>;
+        // ИСПРАВЛЕНО: Косые кавычки на месте!
+        container.innerHTML = `<p class="no-results">${uiTranslations[currentLanguage].noResults}</p>`;
         return;
     }
+
     items.forEach(item => {
-    const card = document.createElement('div');
-    card.className = archive-card ${item.type};
-    const data = item.translations[currentLanguage];
-    const ui = uiTranslations[currentLanguage];
-    const imageHtml = item.image ? <img src="${item.image}" class="item-image" alt="${data.title}"> : '';
-    const geometryLabel = item.type === 'entity' ? '[СТАТУС ПОВЕДЕНИЯ]' : '[ГЕОМЕТРИЯ]';
-    card.innerHTML = `
+        const card = document.createElement('div');
+        card.className = `archive-card ${item.type}`;
+        
+        const data = item.translations[currentLanguage];
+        const ui = uiTranslations[currentLanguage];
+        const imageHtml = item.image ? `<img src="${item.image}" class="item-image" alt="${data.title}">` : '';
 
-    ${item.id}
-    ${item.hazard}
+        const geometryLabel = item.type === 'entity' ? '[СТАТУС ПОВЕДЕНИЯ]' : '[ГЕОМЕТРИЯ]';
 
-    ${data.title}
-    ${imageHtml}
-    ${geometryLabel}: ${item.hazardClass}
-    [АРХИВ НЗФА]: ДОСТУПЕН
-    ${ui.descTitle} ${data.description}
-    ${ui.tipsTitle} ${data.tips}
-`;
-    container.appendChild(card);
-});
+        card.innerHTML = `
+            <div class="card-header">
+                <span class="item-id">${item.id}</span>
+                <span class="hazard-badge ${item.hazardClass.replace(/[^a-zA-Z0-9]+/g, '-').toLowerCase()}">${item.hazard}</span>
+            </div>
+            <h3 class="item-title">${data.title}</h3>
+            ${imageHtml}
+            
+            <div class="inner-stats-box">
+                <div><strong>${geometryLabel}:</strong> ${item.hazardClass}</div>
+                <div><strong>[АРХИВ НЗФА]:</strong> ДОСТУПЕН</div>
+            </div>
+
+            <p class="item-desc"><strong>${ui.descTitle}</strong> ${data.description}</p>
+            <div class="item-tips"><strong>${ui.tipsTitle}</strong> ${data.tips}</div>
+        `;
+        container.appendChild(card);
+    });
+}
+
 }
 function searchArchive() {
     const searchInput = document.getElementById('ui-search-input');
