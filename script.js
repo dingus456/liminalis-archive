@@ -191,75 +191,75 @@ tips: "If you have met a Desperate one and you are in the same room as him, it i
 ];
 let currentLanguage = 'ru';
 function changeLanguage(lang) {
-currentLanguage = lang;
-document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-const targetedBtn = document.getElementById(lang-${lang});
-if (targetedBtn) targetedBtn.classList.add('active');
-const ui = uiTranslations[lang];
-document.getElementById('ui-title').innerText = ui.title;
-document.getElementById('ui-status').innerText = ui.status;
-document.getElementById('ui-warning').innerText = ui.warning;
-document.getElementById('ui-search-label').innerText = ui.searchLabel;
-document.getElementById('ui-search-input').placeholder = ui.searchPlaceholder;
-document.getElementById('ui-category-label').innerText = ui.categoryLabel;
-const filter = document.getElementById('typeFilter');
-if (filter && filter.options && filter.options.length >= 5) {
-filter.options[0].text = ui.catAll;
-filter.options[1].text = ui.catMainLevels;
-filter.options[2].text = ui.catOtherLevels;
-filter.options[3].text = ui.catEntities;
-filter.options[4].text = ui.catObjects;
+    currentLanguage = lang;
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+    const targetedBtn = document.getElementById('lang-${lang}');
+    if (targetedBtn) targetedBtn.classList.add('active');
+        const ui = uiTranslations[lang];
+        document.getElementById('ui-title').innerText = ui.title;
+        document.getElementById('ui-status').innerText = ui.status;
+        document.getElementById('ui-warning').innerText = ui.warning;
+    document.getElementById('ui-search-label').innerText = ui.searchLabel;
+    document.getElementById('ui-search-input').placeholder = ui.searchPlaceholder;
+    document.getElementById('ui-category-label').innerText = ui.categoryLabel;
+    const filter = document.getElementById('typeFilter');
+    if (filter && filter.options && filter.options.length >= 5) {
+        filter.options[0].text = ui.catAll;
+        filter.options[1].text = ui.catMainLevels;
+        filter.options[2].text = ui.catOtherLevels;
+        filter.options[3].text = ui.catEntities;
+        filter.options[4].text = ui.catObjects;
 }
 const footerText = document.getElementById('ui-footer');
 if (footerText) footerText.innerText = ui.footer;
-searchArchive();
+    searchArchive();
 }
 function displayDatabase(items) {
-const container = document.getElementById('archiveContainer');
-if (!container) return;
-container.innerHTML = '';
-if (items.length === 0) {
-container.innerHTML = <p class="no-results">${uiTranslations[currentLanguage].noResults}</p>;
-return;
-}
-items.forEach(item => {
-const card = document.createElement('div');
-card.className = archive-card ${item.type};
-const data = item.translations[currentLanguage];
-const ui = uiTranslations[currentLanguage];
-const imageHtml = item.image ? <img src="${item.image}" class="item-image" alt="${data.title}"> : '';
-const geometryLabel = item.type === 'entity' ? '[СТАТУС ПОВЕДЕНИЯ]' : '[ГЕОМЕТРИЯ]';
-card.innerHTML = `
+    const container = document.getElementById('archiveContainer');
+    if (!container) return;
+    container.innerHTML = '';
+    if (items.length === 0) {
+        container.innerHTML = <p class="no-results">${uiTranslations[currentLanguage].noResults}</p>;
+        return;
+    }
+    items.forEach(item => {
+    const card = document.createElement('div');
+    card.className = archive-card ${item.type};
+    const data = item.translations[currentLanguage];
+    const ui = uiTranslations[currentLanguage];
+    const imageHtml = item.image ? <img src="${item.image}" class="item-image" alt="${data.title}"> : '';
+    const geometryLabel = item.type === 'entity' ? '[СТАТУС ПОВЕДЕНИЯ]' : '[ГЕОМЕТРИЯ]';
+    card.innerHTML = `
 
-${item.id}
-${item.hazard}
+    ${item.id}
+    ${item.hazard}
 
-${data.title}
-${imageHtml}
-${geometryLabel}: ${item.hazardClass}
-[АРХИВ НЗФА]: ДОСТУПЕН
-${ui.descTitle} ${data.description}
-${ui.tipsTitle} ${data.tips}
+    ${data.title}
+    ${imageHtml}
+    ${geometryLabel}: ${item.hazardClass}
+    [АРХИВ НЗФА]: ДОСТУПЕН
+    ${ui.descTitle} ${data.description}
+    ${ui.tipsTitle} ${data.tips}
 `;
-container.appendChild(card);
+    container.appendChild(card);
 });
 }
 function searchArchive() {
-const searchInput = document.getElementById('ui-search-input');
-const filterSelect = document.getElementById('typeFilter');
-if (!searchInput || !filterSelect) return;
-const query = searchInput.value.toLowerCase();
-const typeFilter = filterSelect.value;
-const filtered = backroomsDatabase.filter(item => {
-const data = item.translations[currentLanguage];
-const matchesSearch = data.title.toLowerCase().includes(query) ||
-data.description.toLowerCase().includes(query) ||
-item.id.toLowerCase().includes(query);
-const matchesFilter = typeFilter === 'all' || item.type === typeFilter;
-return matchesSearch && matchesFilter;
+    const searchInput = document.getElementById('ui-search-input');
+    const filterSelect = document.getElementById('typeFilter');
+    if (!searchInput || !filterSelect) return;
+    const query = searchInput.value.toLowerCase();
+    const typeFilter = filterSelect.value;
+    const filtered = backroomsDatabase.filter(item => {
+    const data = item.translations[currentLanguage];
+    const matchesSearch = data.title.toLowerCase().includes(query) ||
+    data.description.toLowerCase().includes(query) ||
+    item.id.toLowerCase().includes(query);
+    const matchesFilter = typeFilter === 'all' || item.type === typeFilter;
+    return matchesSearch && matchesFilter;
 });
 displayDatabase(filtered);
 }
 window.onload = () => {
-changeLanguage('ru');
+    changeLanguage('ru');
 };
