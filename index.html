@@ -30,14 +30,14 @@
         <section class="controls-panel">
             <div class="search-group">
                 <label id="ui-search-label" for="ui-search-input">> СИСТЕМА ПОИСКА:</label>
-                <input type="text" id="ui-search-input" placeholder="Введите ID..." oninput="searchArchive()">
+                <input type="text" id="ui-search-input" placeholder="при поиске вводите ID или наименование" oninput="searchArchive()">
             </div>
             
             <div class="filter-group">
                 <label id="ui-category-label" for="typeFilter">КАТЕГОРИЯ:</label>
                 <select id="typeFilter" onchange="searchArchive()">
                     <option value="all">ВСЕ ДАННЫЕ</option>
-                    <option value="level">ЛИМИНАЛИ (lim_num)</option>
+                    <option value="liminality">ЛИМИНАЛИ (lim_num)</option>
                     <option value="entity">ОРГАНИЗМЫ (org_kin_spec)</option>
                     <option value="phenomenon">ЯВЛЕНИЯ (phen_num)</option>
                 </select>
