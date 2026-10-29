@@ -16,7 +16,7 @@ const uiTranslations = {
         noResults: "[ОШИБКА: ИНФОРМАЦИЯ НЕ НАЙДЕНА (404)]",
         footer: "Собственность НЗФА (Национальное исследование Запредельного и Фористуральная Администрация) © 2001-2026. Проходим сквозь слои реальности.",
         // Новые переводы для внутреннего квадратика:
-        geometry: "[ГЕОМЕТРИЯ]",
+        characteristic: "[ХАРАКТЕРИСТИКА]",
         behavior: "[СТАТУС ПОВЕДЕНИЯ]",
         archiveStatus: "[АРХИВ НЗФА]",
         archiveAvailable: "ДОСТУПЕН"
@@ -249,7 +249,7 @@ function displayDatabase(items) {
         const imageHtml = item.image ? `<img src="${item.image}" class="item-image" alt="${data.title}">` : '';
 
         // ИСПРАВЛЕНО: Выбор переведенной метки геометрии/поведения
-        const geometryLabel = item.type === 'entity' ? ui.behavior : ui.characteristics;
+        const geometryLabel = item.type === 'entity' ? ui.behavior : ui.characteristic;
 
         card.innerHTML = `
             <div class="card-header">
