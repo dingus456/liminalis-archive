@@ -13,7 +13,7 @@ const uiTranslations = {
         catObjects: "Явления (phen_num)",
         descTitle: "Описание:",
         tipsTitle: "Советы:",
-        noResults: "[ДОСТУП ПРЕРВАН: ДАННЫЕ НЕ НАЙДЕНЫ]",
+        noResults: "[ОШИБКА: ИНФОРМАЦИЯ НЕ НАЙДЕНА (404)]",
         footer: "Собственность НЗФА (Национальное исследование Запредельного и Фористуральная Администрация © 2001-2026. Проходим сквозь слои реальности."
     },
     en: {
@@ -29,7 +29,7 @@ const uiTranslations = {
         catObjects: "PHENOMENA (phen_num)",
         descTitle: "Description:",
         tipsTitle: "Tips:",
-        noResults: "[ACCESS DENIED: DATA NOT FOUND]",
+        noResults: "[ERROR: DATA NOT FOUND (404)]",
         footer: "Property of NBFA (National exploring of something Beyond and Foristuality Administration) © 2001-2026. Going through the layers of Reality"
     }
 };
@@ -37,19 +37,19 @@ const uiTranslations = {
 // База данных с поддержкой двух языков
 const backroomsDatabase = [
     {
-        id: "LIM_001",
+        id: "LIM_0001",
         type: "liminality",
         hazard: "CLASS 1",
-        hazardClass: "safe",
+        hazardClass: "hollow",
         image: "images/Level0.jpg", 
         translations: {
             ru: {
-                title: "ЯНУС (lim_0001)",
+                title: "ЯНУС",
                 description: "комплексное пространство, чем-то напоминающее розничный магазин. Интерьер Януса состоит из жёлтых обоев, рисунки которых состоят из разных узоров, коричневого, мокрого ковра, состоящего из ткани, и плиточных потолков, сверху которых проходят трубы и провода. На потолке присутствуют люминесцентные лампы, издающий громкий гул, который никогда не прекращается. Изредка на стенах можно найти розетки, по всей видимости, американского происхождения. Иногда здесь находят разные объекты, которые являются частями интерьера из Земли, но, иногда, дублированные, или искажённые. Кроме физических объектов, можно услышать и звуки, у которых отсутствует видимый источник. Эти звуки варьируются от тихого гула или хаотичной игре на духовом инструменте, до искажённых копий реальных музыкальных произведений.",
                 tips: "Если вы оказались здесь в группе, то советуется не расходиться и всегда держаться вместе, ведь здесь очень просто заблудиться. Если вы встретите копии табличек экстренного выхода - следуйте за ними."
             },
             en: {
-                title: "JANUS (Lim_0001)",
+                title: "JANUS",
                 description: "A complex space, somewhat reminiscent of a retail store. The interior of Janus consists of yellow wallpaper patterned with various designs, damp, fabric-covered carpeting in shades of brown, and a tiled ceiling with pipes and wires running across it. Fluorescent lights are mounted on the ceiling, emitting a loud, incessant hum. Occasionally, electrical outlets—apparently of American design—can be found on the walls. Sometimes, various objects appear here; these are items from Earth, though they may be duplicated or distorted. Beyond physical objects, one can also hear sounds with no discernible source—ranging from a faint hum or the chaotic playing of a wind instrument to warped, distorted versions of actual musical pieces.",
                 tips: "If you have entered Janus in a party, it is recommended to stay together in order to not get lost. If you see copies of the emergency exit signs - follow them."
             }
@@ -59,7 +59,7 @@ const backroomsDatabase = [
         id: "ORG_KIN4_SPECB-15",
         type: "entity",
         hazard: "CLASS VARIABLE",
-        hazardClass: "deadly",
+        hazardClass: "unstable",
         image: "images/hound.png",
         translations: {
             ru: {
