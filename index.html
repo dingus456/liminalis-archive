@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE LIMINALIS ARCHIVE - THE FORISTURALITY DATABASE</title>
+    <title>THE LIMINALIS ARCHIVE</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,41 +11,46 @@
     <div class="crt-overlay"></div>
 
     <header>
-        <div class="terminal-title">▲ THE LIMINALIS ARCHIVE // v. 0.0.2</div>
-        <div class="security-status">NETWORK STABLE :3</div>
+        <div id="ui-title" class="terminal-title">▲ АРХИВ ЛИМИНАЛИС // v3.01.6</div>
+        <div class="header-right">
+            <div id="ui-status" class="security-status">СТАТУС: СОЕДИНЕНИЕ ЗАЩИЩЕНО</div>
+            <!-- Кнопки смены языка -->
+            <div class="lang-switcher">
+                <button id="lang-ru" class="lang-btn" onclick="changeLanguage('ru')">RU</button>
+                <button id="lang-en" class="lang-btn active" onclick="changeLanguage('en')">EN</button>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section class="warning-banner">
-           WARNING: ITS ALL SUPER NULL
+        <section id="ui-warning" class="warning-banner">
+            ВНИМАНИЕ: Данный архив содержит конфиденциальную информацию о пространствах Фористуры. Использовать строго для выживания гражданских лиц.
         </section>
 
         <section class="controls-panel">
             <div class="search-group">
-                <label for="terminalInput">> SEARCH:</label>
-                <input type="text" id="terminalInput" placeholder="SEARCH FOR DATA VIA ID" oninput="searchArchive()">
+                <label id="ui-search-label" for="ui-search-input">> СИСТЕМА ПОИСКА:</label>
+                <input type="text" id="ui-search-input" placeholder="Введите ID..." oninput="searchArchive()">
             </div>
             
             <div class="filter-group">
-                <label for="typeFilter">CATEGORY:</label>
+                <label id="ui-category-label" for="typeFilter">КАТЕГОРИЯ:</label>
                 <select id="typeFilter" onchange="searchArchive()">
-                    <option value="all">DATA LIST</option>
-                    <option value="liminality">LIMINALITIES (lim_obj)</option>
-                    <option value="organisms">ORGANISMS (org_kinNum_specNum)</option>
-                    <option value="phenomena">PHENOMENA (phen_obj)</option>
+                    <option value="all">ВСЕ ДАННЫЕ</option>
+                    <option value="level">ЛИМИНАЛИ (lim_num)</option>
+                    <option value="entity">ОРГАНИЗМЫ (org_kin_spec)</option>
+                    <option value="phenomenon">ЯВЛЕНИЯ (phen_num)</option>
                 </select>
             </div>
         </section>
 
         <section class="archive-section">
-            <div id="archiveContainer">
-                <!-- Сюда JS загрузит данные -->
-            </div>
+            <div id="archiveContainer"></div>
         </section>
     </main>
 
     <footer>
-        <p>null</p>
+        <p id="ui-footer">Собственность НЗФА (Национальное исследование Запредельного и Фористуральная Администрация © 2001-2026. Проходим сквозь слои реальности.</p>
     </footer>
 
     <script src="script.js"></script>
