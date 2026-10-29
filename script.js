@@ -225,9 +225,9 @@ function changeLanguage(lang) {
     // Перерисовываем карточки
     searchArchive();
 }
-
 function displayDatabase(items) {
     const container = document.getElementById('archiveContainer');
+    if (!container) return;
     container.innerHTML = '';
 
     if (items.length === 0) {
@@ -244,13 +244,23 @@ function displayDatabase(items) {
         const ui = uiTranslations[currentLanguage];
         const imageHtml = item.image ? `<img src="${item.image}" class="item-image" alt="${data.title}">` : '';
 
+        // Настраиваем метку для внутреннего квадратика в зависимости от типа объекта
+        const geometryLabel = item.type === 'entity' ? '[СТАТУС ПОВЕДЕНИЯ]' : '[ГЕОМЕТРИЯ]';
+
         card.innerHTML = `
             <div class="card-header">
                 <span class="item-id">${item.id}</span>
-                <span class="hazard-badge ${item.hazardClass}">${item.hazard}</span>
+                <span class="hazard-badge ${item.hazardClass.replace(/[^a-zA-Z0-9]+/g, '-').toLowerCase()}">${item.hazard}</span>
             </div>
             <h3 class="item-title">${data.title}</h3>
             ${imageHtml}
+            
+            <!-- ВНУТРЕННИЙ КВАДРАТИК ИНФОРМАЦИИ -->
+            <div class="inner-stats-box">
+                <div><strong>${geometryLabel}:</strong> ${item.hazardClass}</div>
+                <div><strong>[АРХИВ НЗФА]:</strong> ДОСТУПЕН</div>
+            </div>
+
             <p class="item-desc"><strong>${ui.descTitle}</strong> ${data.description}</p>
             <div class="item-tips"><strong>${ui.tipsTitle}</strong> ${data.tips}</div>
         `;
@@ -259,8 +269,12 @@ function displayDatabase(items) {
 }
 
 function searchArchive() {
-    const query = document.getElementById('ui-search-input').value.toLowerCase();
-    const typeFilter = document.getElementById('typeFilter').value;
+    const searchInput = document.getElementById('ui-search-input');
+    const filterSelect = document.getElementById('typeFilter');
+    if (!searchInput || !filterSelect) return;
+
+    const query = searchInput.value.toLowerCase();
+    const typeFilter = filterSelect.value;
 
     const filtered = backroomsDatabase.filter(item => {
         const data = item.translations[currentLanguage];
@@ -276,12 +290,7 @@ function searchArchive() {
     displayDatabase(filtered);
 }
 
-// Запуск при старте
+// Запуск при старте (оставлен один правильный вызов с установкой языка)
 window.onload = () => {
     changeLanguage('ru'); 
-};
-
-
-window.onload = () => {
-    displayDatabase(backroomsDatabase);
 };
