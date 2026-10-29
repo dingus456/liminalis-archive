@@ -14,7 +14,12 @@ const uiTranslations = {
         descTitle: "Описание:",
         tipsTitle: "Советы:",
         noResults: "[ОШИБКА: ИНФОРМАЦИЯ НЕ НАЙДЕНА (404)]",
-        footer: "Собственность НЗФА (Национальное исследование Запредельного и Фористуральная Администрация) © 2001-2026. Проходим сквозь слои реальности."
+        footer: "Собственность НЗФА (Национальное исследование Запредельного и Фористуральная Администрация) © 2001-2026. Проходим сквозь слои реальности.",
+        // Новые переводы для внутреннего квадратика:
+        geometry: "[ГЕОМЕТРИЯ]",
+        behavior: "[СТАТУС ПОВЕДЕНИЯ]",
+        archiveStatus: "[АРХИВ НЗФА]",
+        archiveAvailable: "ДОСТУПЕН"
     },
     en: {
         title: "▲ THE LIMINALIS ARCHIVE // v3.01.6",
@@ -24,16 +29,21 @@ const uiTranslations = {
         searchPlaceholder: "while searching please type an ID or the name",
         categoryLabel: "CATEGORY:",
         catAll: "ALL DATA",
-        catMainLevels: "THE MAIN LIMILALITIES (lim_num)",
+        catMainLevels: "THE MAIN LIMINALITIES (lim_num)",
         catOtherLevels: "THE OTHER LIMINALITIES (lim_num)",
         catEntities: "ORGANISMS (org_kin_spec)",
         catObjects: "PHENOMENA (phen_num)",
         descTitle: "Description:",
         tipsTitle: "Tips:",
         noResults: "[ERROR: DATA NOT FOUND (404)]",
-        footer: "Property of NBFA (National exploring of something Beyond and Foristuality Administration) © 2001-2026. Going through the layers of Reality"
+        footer: "Property of NBFA (National exploring of something Beyond and Foristuality Administration) © 2001-2026. Going through the layers of Reality",
+        characteristic: "[CHARACTERISTICS]",
+        behavior: "[BEHAVIOR STATUS]",
+        archiveStatus: "[NBFA ARCHIVE]",
+        archiveAvailable: "AVAILABLE"
     }
 };
+
 
 const backroomsDatabase = [
     {
@@ -192,16 +202,19 @@ tips: "If you have met a Desperate one and you are in the same room as him, it i
 let currentLanguage = 'ru';
 function changeLanguage(lang) {
     currentLanguage = lang;
+    
     document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-    const targetedBtn = document.getElementById('lang-${lang}');
+    const targetedBtn = document.getElementById(`lang-${lang}`);
     if (targetedBtn) targetedBtn.classList.add('active');
-        const ui = uiTranslations[lang];
-        document.getElementById('ui-title').innerText = ui.title;
-        document.getElementById('ui-status').innerText = ui.status;
-        document.getElementById('ui-warning').innerText = ui.warning;
+
+    const ui = uiTranslations[lang];
+    document.getElementById('ui-title').innerText = ui.title;
+    document.getElementById('ui-status').innerText = ui.status;
+    document.getElementById('ui-warning').innerText = ui.warning;
     document.getElementById('ui-search-label').innerText = ui.searchLabel;
     document.getElementById('ui-search-input').placeholder = ui.searchPlaceholder;
     document.getElementById('ui-category-label').innerText = ui.categoryLabel;
+
     const filter = document.getElementById('typeFilter');
     if (filter && filter.options && filter.options.length >= 5) {
         filter.options[0].text = ui.catAll;
@@ -209,18 +222,20 @@ function changeLanguage(lang) {
         filter.options[2].text = ui.catOtherLevels;
         filter.options[3].text = ui.catEntities;
         filter.options[4].text = ui.catObjects;
-}
-const footerText = document.getElementById('ui-footer');
-if (footerText) footerText.innerText = ui.footer;
+    }
+
+    const footerText = document.getElementById('ui-footer');
+    if (footerText) footerText.innerText = ui.footer;
+
     searchArchive();
 }
+
 function displayDatabase(items) {
     const container = document.getElementById('archiveContainer');
     if (!container) return;
     container.innerHTML = '';
 
     if (items.length === 0) {
-        // ИСПРАВЛЕНО: Косые кавычки на месте!
         container.innerHTML = `<p class="no-results">${uiTranslations[currentLanguage].noResults}</p>`;
         return;
     }
@@ -233,7 +248,8 @@ function displayDatabase(items) {
         const ui = uiTranslations[currentLanguage];
         const imageHtml = item.image ? `<img src="${item.image}" class="item-image" alt="${data.title}">` : '';
 
-        const geometryLabel = item.type === 'entity' ? '[СТАТУС ПОВЕДЕНИЯ]' : '[ГЕОМЕТРИЯ]';
+        // ИСПРАВЛЕНО: Выбор переведенной метки геометрии/поведения
+        const geometryLabel = item.type === 'entity' ? ui.behavior : ui.characteristics;
 
         card.innerHTML = `
             <div class="card-header">
@@ -245,7 +261,7 @@ function displayDatabase(items) {
             
             <div class="inner-stats-box">
                 <div><strong>${geometryLabel}:</strong> ${item.hazardClass}</div>
-                <div><strong>[АРХИВ НЗФА]:</strong> ДОСТУПЕН</div>
+                <div><strong>${ui.archiveStatus}:</strong> ${ui.archiveAvailable}</div>
             </div>
 
             <p class="item-desc"><strong>${ui.descTitle}</strong> ${data.description}</p>
@@ -254,6 +270,7 @@ function displayDatabase(items) {
         container.appendChild(card);
     });
 }
+
 
 function searchArchive() {
     const searchInput = document.getElementById('ui-search-input');
