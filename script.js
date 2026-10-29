@@ -267,7 +267,7 @@ function displayDatabase(items) {
             ${imageHtml}
             
             <div class="inner-stats-box">
-                <div><strong>${geometryLabel}:</strong> ${item.hazardClass}</div>
+                <div><strong>${geometryLabel}:</strong> ${data.hazardClass}</div>
                 <div><strong>${ui.archiveStatus}:</strong> ${ui.archiveAvailable}</div>
             </div>
 
