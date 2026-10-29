@@ -255,7 +255,6 @@ function displayDatabase(items) {
     });
 }
 
-}
 function searchArchive() {
     const searchInput = document.getElementById('ui-search-input');
     const filterSelect = document.getElementById('typeFilter');
