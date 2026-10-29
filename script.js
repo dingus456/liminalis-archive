@@ -261,7 +261,7 @@ function displayDatabase(items) {
         card.innerHTML = `
             <div class="card-header">
                 <span class="item-id">${item.id}</span>
-                <span class="hazard-badge ${data.hazardClass.replace(/[^a-zA-Z0-9]+/g, '-').toLowerCase()}">${item.hazard}</span>
+                <span class="hazard-badge ${data.hazardClass?.replace(/[^a-zA-Z0-9]+/g, '-').toLowerCase()}">${item.hazard}</span>
             </div>
             <h3 class="item-title">${data.title}</h3>
             ${imageHtml}
