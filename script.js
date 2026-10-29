@@ -69,7 +69,7 @@ const backroomsDatabase = [
             },
             en: {
                 title: "HOMO DESPERANS (The Desperate)",
-                description: "Humanoid beings that may lack patches of skin, hair, or even fingernails. They can be described as the living dead—creatures that remain animate within the confines of Foristure. Their behavior is unstable, ranging from aimless wandering to the actions of a low-intelligence predator.",
+                description: "Humanoid beings that may lack patches of skin, hair, or even fingernails. They can be described as the living dead—creatures that remain animate within the confines of Foristurality. Their behavior is unstable, ranging from aimless wandering to the actions of a low-intelligence predator.",
                 tips: "If you have met a Desperate one and you are in the same room as him, it is recommended to quickly leave that room and to not make a lot of noise. If he's chasing you, then it's recommended to hide, however, you can also try fighting him."
             }
         }
@@ -77,7 +77,7 @@ const backroomsDatabase = [
 ];
 
 // Текущий язык по умолчанию
-let currentLanguage = 'en';
+let currentLanguage = 'ru';
 
 // Функция смены языка страницы
 function changeLanguage(lang) {
