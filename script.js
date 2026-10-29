@@ -161,7 +161,7 @@ function searchArchive() {
 
 // Запуск при старте
 window.onload = () => {
-    changeLanguage('en'); 
+    changeLanguage('ru'); 
 };
 
 
