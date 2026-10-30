@@ -20,7 +20,8 @@ const uiTranslations = {
         behavior: "[СТАТУС ПОВЕДЕНИЯ]",
         archiveStatus: "[АРХИВ НЗФА]",
         archiveAvailable: "ДОСТУПЕН",
-        catForum: "ПРОТОКОЛЫ СВЯЗИ"
+        catForum: "ПРОТОКОЛЫ СВЯЗИ",
+        catSatillites = "СПУТНИКИ (lim_num-let)"
     },
     en: {
         title: "▲ THE LIMINALIS ARCHIVE // v3.01.6",
@@ -42,7 +43,8 @@ const uiTranslations = {
         behavior: "[BEHAVIOR STATUS]",
         archiveStatus: "[NBFA ARCHIVE]",
         archiveAvailable: "AVAILABLE",
-        catForum: "COMMUNICATION LOGS"
+        catForum: "COMMUNICATION LOGS",
+        catSatellite = "SATELLITES (lim_num-let)"
     }
 };
 
@@ -249,6 +251,46 @@ en: {
     }
 },
     {
+    id: "LIM_0011",
+    type: "liminalityO",
+    hazard: "CLASS 2P",
+    image: "images/FEn-C2PHSP.jpg",
+    translations: {
+    ru: {
+        title: "FEn-C2PHSP: «Аллея»",
+        description: "FEn-C2PHSP состоит из длинного коридора, который извивается по мере продвижения. По бокам коридора находится декор, сильно напоминающий советские здания времён Никиты Хрущёва. Этот декор имеет множество окон и имеет одну дверь на каждые 25 метров. Входить в двери строго запрещено из-за внутренней аномалии, которая заставляет людей испытывать сильное желание войти ещё глубже в эту местность. За окнами находится розовый свет, который как раз составляет большую часть интерьера того, что находится за дверьми. В коридоре также присутствует искусственный снег, который не тает. Иногда в нём появляются ямки, и в них видно пол с шахматным узором. Этот пол считается очень скользким, поэтому наступать на него не рекомендуется. Потолок обклеен обоями, напоминающими светлое, дневное небо с облаками. Каждые 10 метров здесь стоят фонари и скамейки, у которых с двух сторон имеются такие-же искуственные кусты зелёного цвета, посаженные в горшки. Фонари постоянно горят и не издают никаких звуков. Здесь также играет спокойная музыка, источник которой не был найден. Предполагается, что источником этого звука может быть то, что находится за дверью в каждом из декоративных входов в места с розовым светом, однако доказать это нельзя, поскольку из этих мест ещё никто не возвращался.",
+        tips: "Игнорируйте двери по бокам коридора. Не пытайтесь сделать ноуклип в попытке выхода из FEn-C2PHSP; это приведёт сильным травмам и имеет высокий риск смерти. Вместо этого, если вам не хочется тут оставаться, то просто идите вперёд. Рано или поздно, вы дойдёте до конца и увидете металлическую дверь. Войдя в неё, вы попадёте в Вевоис",
+        hazardClass: "Психологические эффекты. Символ двери: «❄»"
+    },
+    en: {
+        title: "FEn-C2PHSP: «The Alleyway»",
+        description: "FEn-C2PHSP consists of a long corridor that winds as it progresses. The sides of the corridor feature decor strongly reminiscent of Soviet-era buildings from the time of Nikita Khrushchev. This decor includes numerous windows, with one door appearing every 25 meters. Entering these doors is strictly prohibited due to an internal anomaly that compels individuals to venture even deeper into the area. Beyond the windows lies a pink light, which also fills much of the interior space behind the doors. The corridor is covered in artificial snow that does not melt. Occasionally, gaps appear in the snow, revealing a checkered floor underneath; this surface is extremely slippery, and stepping on it is not advised. The ceiling is covered in wallpaper depicting a bright, daytime sky with clouds. Every 10 meters, there are lampposts and benches, flanked by potted artificial green bushes. The lampposts remain constantly lit and emit no sound. A calm, ambient music also plays, though its source has never been identified. It is hypothesized that the sound may originate from the spaces behind the doors—the areas bathed in pink light—but this cannot be proven, as no one who has entered these spaces has ever returned.",
+        tips: "Ignore the doors along the sides of the corridor. Do not attempt to noclip your way out of FEn-C2PHSP; doing so will result in severe injuries and carries a high risk of death. Instead, if you do not wish to remain here, simply keep moving forward. Sooner or later, you will reach the end and see a metal door. Passing through it will take you to Vejovis.",
+        hazardClass: "Psychological effects. Door symbol: «❄»"
+        }
+    }
+},
+        {
+    id: "LIM_0001-A",
+    type: "satellite",
+    hazard: "CLASS 3E",
+    image: "images/JANUS-A.webp",
+    translations: {
+    ru: {
+        title: "ЯНУС-А",
+        description: "Янус-А почти-что ничем не отличается от основной Лиминали архитектурно. Этот Спутник, однако, имеет лишь одно отличие: он выглядит потрёпанным и большая часть света там практически не работает. Там есть совсем небольшой гул, который всё равно можно не всегда услышать. Обои порой бывают ободраны, обнажая деревянные, как будто картонные стены. Музыка здесь искажена ещё сильнее: порой её нельзя отличить от простого шума, который исходит от телевизора. Здесь отсутствуют искажённые объекты, которые присутствуют на Янусе (основной Лиминали). Также тут есть несколько видов живых организмов. В список местных обитателей входят представители рода Aspergillus, Отчаявшиеся, а также Homo Desperans и Electrofagus mimicus. Электрофаги здесь имеют очень низкую популяцию из-за критически-низкого количества освещения. Из-за этого, оставшиеся Электрофаги отчаянно пытаются выжить и воюют за самое близкое место к лампе. Если человек или какой-либо другой живой организм попытается вытащить Электрофага, то он ударит током это существо через волосинки. Один такой удар составляет примерно 120 вольт. Отчаявшиеся, обычно, бродят здесь по-одиночке и, из-за голода, при встрече с другим живым организмом, пытаются его съесть, однако это не всегда удаётся им.",
+        tips: "Игнорируйте двери по бокам коридора. Не пытайтесь сделать ноуклип в попытке выхода из FEn-C2PHSP; это приведёт сильным травмам и имеет высокий риск смерти. Вместо этого, если вам не хочется тут оставаться, то просто идите вперёд. Рано или поздно, вы дойдёте до конца и увидете металлическую дверь. Войдя в неё, вы попадёте в Вевоис",
+        hazardClass: "Агрессивная окружающая среда"
+    },
+    en: {
+        title: "JANUS-A",
+        description: "Janus-A is almost identical to the main Liminality in architecture. This satellite, however, has one key difference: it appears worn-down, and most of the lighting is effectively non-functional. There is a faint, persistent hum—though it is not always audible. In places, the wallpaper is torn away, revealing walls made of wood that resembles cardboard. The music here is even more distorted; at times, it is indistinguishable from the static noise emitted by a television. Unlike the primary Janus (the main Liminality), this version lacks distorted objects. It is also home to several types of living organisms. Local inhabitants include members of the genus *Aspergillus*, the Desperate, as well as *Homo desperans* and *Electrofagus mimicus*. The *Electrofagus* population here is very small due to the critically low levels of light; consequently, the remaining individuals struggle desperately to survive, competing for the spots closest to the lamps. If a human or any other living organism attempts to remove an *Electrofagus*, it will deliver an electric shock through its hair-like filaments—a jolt of approximately 120 volts. The Desperate typically wander alone; driven by hunger, they will attempt to consume any other living organism they encounter, though they do not always succeed.",
+        tips: "Ignore the doors along the sides of the corridor. Do not attempt to noclip your way out of FEn-C2PHSP; doing so will result in severe injuries and carries a high risk of death. Instead, if you do not wish to remain here, simply keep moving forward. Sooner or later, you will reach the end and see a metal door. Passing through it will take you to Vejovis.",
+        hazardClass: "Hostile enviorment"
+        }
+    }
+},
+    {
     id: "ORG_KIN4_SPECB-6",
     type: "entity",
     hazard: "CLASS 5",
@@ -361,6 +403,7 @@ function changeLanguage(lang) {
             if (opt.value === 'entity') opt.text = ui.catEntities;
             if (opt.value === 'object') opt.text = ui.catObjects;
             if (opt.value === 'forum') opt.text = ui.catForum;
+            if (opt.value === 'satellite') opt.text = ui.catSatellite;
         }
     }
 
