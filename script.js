@@ -272,15 +272,17 @@ function changeLanguage(lang) {
     document.getElementById('ui-search-input').placeholder = ui.searchPlaceholder;
     document.getElementById('ui-category-label').innerText = ui.categoryLabel;
 
-     const filter = document.getElementById('typeFilter');
-    if (filter && filter.options && filter.options.length >= 6) {
-        filter.options[0].text = ui.catAll;
-        filter.options[1].text = ui.catMainLevels;
-        filter.options[2].text = ui.catOtherLevels;
-        filter.options[3].text = ui.catEntities;
-        filter.options[4].text = ui.catObjects;
-        filter.options[5].text = ui.catForum;
-
+   const filter = document.getElementById('typeFilter');
+    if (filter && filter.options) {
+        for (let i = 0; i < filter.options.length; i++) {
+            const opt = filter.options[i];
+            if (opt.value === 'all') opt.text = ui.catAll;
+            if (opt.value === 'liminalityM') opt.text = ui.catMainLevels;
+            if (opt.value === 'liminalityO') opt.text = ui.catOtherLevels;
+            if (opt.value === 'entity') opt.text = ui.catEntities;
+            if (opt.value === 'object') opt.text = ui.catObjects;
+            if (opt.value === 'forum') opt.text = ui.catForum;
+        }
     }
 
     const footerText = document.getElementById('ui-footer');
