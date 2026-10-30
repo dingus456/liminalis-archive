@@ -225,7 +225,7 @@ function changeLanguage(lang) {
     document.getElementById('ui-category-label').innerText = ui.categoryLabel;
 
      const filter = document.getElementById('typeFilter');
-    if (filter && filter.options && filter.options.length >= 5) {
+    if (filter && filter.options && filter.options.length >= 6) {
         filter.options[0].text = ui.catAll;
         filter.options[1].text = ui.catMainLevels;
         filter.options[2].text = ui.catOtherLevels;
