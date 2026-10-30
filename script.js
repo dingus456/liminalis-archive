@@ -258,20 +258,23 @@ function displayDatabase(items) {
         const data = item.translations[currentLanguage];
         const ui = uiTranslations[currentLanguage];
         const imageHtml = item.image ? `<img src="${item.image}" class="item-image" alt="${data.title}">` : '';
+        const defaultLabel = currentLanguage === 'ru' ? '[ХАРАКТЕРИСТИКА]' : '[CHARACTERISTIC]';
+        const geometryLabel = item.type === 'entity' ? ui.behavior : (data.characteristic ? data.characteristic : defaultLabel);
 
-        // ИСПРАВЛЕНО: Выбор переведенной метки геометрии/поведения
-        const geometryLabel = item.type === 'entity' ? ui.behavior : data.characteristic;
+        const rawHazardClass = data.hazardClass ? data.hazardClass : (currentLanguage === 'ru' ? '[НЕТ ДАННЫХ]' : '[NO DATA]');
+        
+        const safeCssClass = item.hazard ? item.hazard.replace(/[^a-zA-Z0-9]+/g, '-').toLowerCase() : 'unstable';
 
         card.innerHTML = `
             <div class="card-header">
                 <span class="item-id">${item.id}</span>
-                <span class="hazard-badge ${data.hazardClass?.replace(/[^a-zA-Z0-9]+/g, '-').toLowerCase()}">${item.hazard}</span>
+                <span class="hazard-badge ${safeCssClass}">${item.hazard}</span>
             </div>
             <h3 class="item-title">${data.title}</h3>
             ${imageHtml}
             
             <div class="inner-stats-box">
-                <div><strong>${geometryLabel}:</strong> ${data.hazardClass}</div>
+                <div><strong>${geometryLabel}:</strong> ${rawHazardClass}</div>
                 <div><strong>${ui.archiveStatus}:</strong> ${ui.archiveAvailable}</div>
             </div>
 
@@ -281,6 +284,7 @@ function displayDatabase(items) {
         container.appendChild(card);
     });
 }
+
 
 
 function searchArchive() {
