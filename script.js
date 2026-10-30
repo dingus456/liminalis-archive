@@ -23,6 +23,22 @@ const uiTranslations = {
         archiveAvailable: "ДОСТУПЕН",
         catForum: "ПРОТОКОЛЫ СВЯЗИ",
         catSatellite: "СПУТНИКИ (lim_num-let)",
+        glossaryBtn: "[СПРАВКА / ГЛОССАРИЙ]",
+        glossaryTitle: "▲ ТЕХНИЧЕСКИЙ ГЛОССАРИЙ НЗФА // СПРАВОЧНЫЙ МАТЕРИАЛ",
+        glossaryData: `
+            <div class="archive-card mechanical">
+                <h3 class="item-title" style="color: #39ff14; border-bottom: 1px dashed #39ff14; padding-bottom: 5px;">1. ПРОСТРАНСТВЕННЫЙ ШОВ (Spatial Seam)</h3>
+                <p class="item-desc" style="margin-top: 10px;">Физический феномен наложения двух и более бесконечных неэвклидовых Лиминалей. Поскольку пространства Фористуры не имеют чётких внешних границ, их пересечение происходит изнутри — путём 'истончения' локальной структуры (например, когда бетонные коридоры плавно замещаются обоями Януса). Зоны швов крайне нестабильны.</p>
+            </div>
+            <div class="archive-card mechanical" style="margin-top: 20px;">
+                <h3 class="item-title" style="color: #39ff14; border-bottom: 1px dashed #39ff14; padding-bottom: 5px;">2. ЛИМИНАЛЬ-СПУТНИК (Satellite Liminality)</h3>
+                <p class="item-desc" style="margin-top: 10px;">Ограниченное или полуразрушенное подпространство, запертое внутри 'гравитационного ядра' крупного Основного уровня. Спутники движутся по аномальным замкнутым орбитам, из-за чего точки перехода (сближения орбит) открываются и исчезают строго циклически, подчиняясь внутреннему 'дню' родительской Лиминали.</p>
+            </div>
+            <div class="archive-card mechanical" style="margin-top: 20px;">
+                <h3 class="item-title" style="color: #39ff14; border-bottom: 1px dashed #39ff14; padding-bottom: 5px;">3. НЕЭВКЛИДОВА ГЕОМЕТРИЯ (Non-Euclidean Topology)</h3>
+                <p class="item-desc" style="margin-top: 10px;">Критическое искажение трёхмерного пространства, при котором прямые линии могут замыкаться в кольца, углы комнат не равны 90 градусам, а движение вперёд по прямому коридору способно вернуть субъекта в точку старта. Навигация без специализированных приборов НЗФА категорически не рекомендуется.</p>
+            </div>
+        `
     },
     en: {
         title: "▲ THE LIMINALIS ARCHIVE // v3.01.6",
@@ -46,6 +62,22 @@ const uiTranslations = {
         archiveAvailable: "AVAILABLE",
         catForum: "COMMUNICATION LOGS",
         catSatellite: "SATELLITES (lim_num-let)",
+          glossaryBtn: "[NBFA GLOSSARY]",
+        glossaryTitle: "▲ NBFA TECHNICAL GLOSSARY // REFERENCE MATERIAL",
+        glossaryData: `
+            <div class="archive-card mechanical">
+                <h3 class="item-title" style="color: #39ff14; border-bottom: 1px dashed #39ff14; padding-bottom: 5px;">1. SPATIAL SEAM</h3>
+                <p class="item-desc" style="margin-top: 10px;">A physical phenomenon where two or more infinite non-Euclidean Liminalities overlap. Since the spaces of Foristurality lack definitive outer boundaries, their collision occurs from within—via the 'thinning' of the local environment (e.g., when concrete walls gradually warp into Janus wallpaper). Seam zones are highly volatile.</p>
+            </div>
+            <div class="archive-card mechanical" style="margin-top: 20px;">
+                <h3 class="item-title" style="color: #39ff14; border-bottom: 1px dashed #39ff14; padding-bottom: 5px;">2. SATELLITE LIMINALITY</h3>
+                <p class="item-desc" style="margin-top: 10px;">A bounded or dilapidated subspace locked within the 'gravitational core' of a massive Main Level. Satellites move along anomalous closed orbits, causing transition vectors (orbital approaches) to open and collapse cyclically, guided by the internal 'day' of the parent Liminality.</p>
+            </div>
+            <div class="archive-card mechanical" style="margin-top: 20px;">
+                <h3 class="item-title" style="color: #39ff14; border-bottom: 1px dashed #39ff14; padding-bottom: 5px;">3. NON-EUCLIDEAN TOPOLOGY</h3>
+                <p class="item-desc" style="margin-top: 10px;">A critical distortion of three-dimensional space where straight lines can loop into rings, room corners do not equal 90 degrees, and moving straight down a hallway can return a subject to their starting position. Navigation without specialized NBFA instruments is strictly prohibited.</p>
+            </div>
+    `
     }
 };
 
@@ -412,6 +444,13 @@ function changeLanguage(lang) {
     if (footerText) footerText.innerText = ui.footer;
 
     searchArchive();
+    const glossaryBtnEl = document.getElementById('ui-glossary-btn');
+if (glossaryBtnEl) glossaryBtnEl.innerText = ui.glossaryBtn;
+
+const glossaryBox = document.getElementById('glossaryContainer');
+if (glossaryBox && glossaryBox.style.display === 'block') {
+    glossaryBox.innerHTML = `<h2 class="terminal-title" style="margin-bottom: 20px;">${ui.glossaryTitle}</h2>` + ui.glossaryData;
+}
 }
 
 function displayDatabase(items) {
@@ -517,3 +556,39 @@ function searchArchive() {
 window.onload = () => {
     changeLanguage('ru');
 };
+
+let glossaryActive = false;
+
+function toggleGlossary() {
+    const container = document.getElementById('archiveContainer');
+    const glossaryBox = document.getElementById('glossaryContainer');
+    const filterSelect = document.getElementById('typeFilter');
+    const searchInput = document.getElementById('ui-search-input');
+    const btn = document.getElementById('ui-glossary-btn');
+    if (!container || !glossaryBox || !btn) return;
+
+    glossaryActive = !glossaryActive;
+    const ui = uiTranslations[currentLanguage];
+
+    if (glossaryActive) {
+        // Активируем режим справки
+        container.style.display = 'none';
+        glossaryBox.style.display = 'block';
+        glossaryBox.innerHTML = `<h2 class="terminal-title" style="margin-bottom: 20px;">${ui.glossaryTitle}</h2>` + ui.glossaryData;
+        btn.classList.add('active');
+        
+        // Отключаем на время фильтры и поиск, чтобы не мешали
+        if (filterSelect) filterSelect.disabled = true;
+        if (searchInput) searchInput.disabled = true;
+    } else {
+        // Возвращаемся к карточкам уровней
+        glossaryBox.style.display = 'none';
+        container.style.display = 'grid'; // или 'block', в зависимости от твоей верстки
+        btn.classList.remove('active');
+        
+        if (filterSelect) filterSelect.disabled = false;
+        if (searchInput) searchInput.disabled = false;
+        
+        searchArchive(); // Перерисовываем уровни
+    }
+}
