@@ -78,13 +78,13 @@ const backroomsDatabase = [
                 title: "ЭТЕРНИТАС",
                 description: "Комплекс состоящий из бетонных коридоров, в которых есть малое количество света. Свет исходит от тусклых ламп на потолке и работающие от керосина, который сгорает и тем самым выключает лампу. В отличии от Януса, здесь присутствует неэвклидова геометрия, а сама структура является гораздо более примитивной, состоя лишь из коридоров и лестниц. Иногда можно найти кожаные двери, за которыми находятся либо мелкие коморки, либо стена. Иногда можно найти и окна, за которыми находятся всё те-же стены.",
                 tips: "Если вы сюда попали, то рекомендуется немедленно найти выход и использовать его. Это будет непростой задачей из-за постоянно сгорающих ламп и неэвклидовой геометрии, и поэтому вам нужно знать несколько отдельных черт, показывающих, что рядом выход. Если вы заметили, что в коридорах Этернитаса начали появляться дыры и трубы, то вы идёте к выходу. Он уже будет неподалёку.",
-                hazardClass: "нелинейная геометрия"
+                hazardClass: "Нелинейная геометрия"
             },
             en: {
                 title: "ETERNITAS",
                 description: "A complex consisting of concrete corridors with very little light. The illumination comes from dim, ceiling-mounted lamps fueled by kerosene; as the fuel burns away, the lamps eventually go out. Unlike Janus, this liminality features non-Euclidean geometry, and its overall structure is far more primitive, composed solely of corridors and staircases. Occasionally, one may encounter leather doors, which lead either to small, cramped chambers or simply to a wall. At times, windows can also be found—revealing nothing but more walls.",
                 tips: "If you have ended up here, it is recommended that you find an exit immediately and use it. This will be no easy task, given the constantly burning-out lights and the non-Euclidean geometry; therefore, you should be aware of a few specific signs indicating that an exit is nearby. If you notice holes and pipes beginning to appear in the corridors of Eternitas, you are heading toward an exit—it should be close by.",
-                hazardClass: "non-linear geometry"
+                hazardClass: "Non-linear geometry"
             }
         }
     },
@@ -96,13 +96,13 @@ const backroomsDatabase = [
         translations: {
             ru: {
                 title: "ВЕВОИС",
-                description: "Вевоис очень похож на Этернитас, но у этих двух есть одно ключевое отличие. В отличии от Эетернитаса, Вевоис имеет эвклидову геометрию, из-за чего ориентироваться по нему гораздо проще, чем по Этернитасу. Кроме того, тут также присутствует люминесцентные лампы длиной в 3 метра, которые издают тихий гул. Сверху полно труб, по которым идут разные газообразные вещества: от кислорода до амиака. Двери здесь состоят из металла и ведут в другие коридоры, которые, иногда, могут иметь трубы на стенах, перед которыми всегда будут решётки и балки из металла. Из-за них эти коридоры становятся меньше чем обычные коридоры. Также, в отличии от Януса и Этернитаса, здесь присутствуют коренные жители, коими являются виды Caecus Contrahens и Mus Aeger. Слепцов можно заметить в узких местах, иногда скользящих по пространству Вевоиса. Крысы держатся в стайках и живут в щелях, которых можно найти в стенах. Они здесь являются падальщиками и едят остатки, найденные в пределах Лиминали. Слепцы охотятся на крыс и проходящих мимо людей, нападая в узких коридорах, вентиляциях. По-мимо всего сказанного ранее, здесь присутствует мелкое количество воды, образованной ввиде луж в результате возможных химических реакций.",
+                description: "Вевоис очень похож на Этернитас, но у этих двух есть одно ключевое отличие. В отличии от Эетернитаса, Вевоис имеет эвклидову геометрию, из-за чего ориентироваться по нему гораздо проще, чем по Этернитасу. Кроме того, тут также присутствует люминесцентные лампы длиной в 3 метра у стен, которые издают тихий гул. Сверху полно труб, по которым идут разные газообразные вещества: от кислорода до амиака. Двери здесь состоят из металла и ведут в другие коридоры, которые, иногда, могут иметь трубы на стенах, перед которыми всегда будут решётки и балки из металла. Из-за них эти коридоры становятся меньше чем обычные коридоры. Также, в отличии от Януса и Этернитаса, здесь присутствуют коренные жители, коими являются виды Caecus Contrahens и Mus Aeger. Слепцов можно заметить в узких местах, иногда скользящих по пространству Вевоиса. Крысы держатся в стайках и живут в щелях, которых можно найти в стенах. Они здесь являются падальщиками и едят остатки, найденные в пределах Лиминали. Слепцы охотятся на крыс и проходящих мимо людей, нападая в узких коридорах, вентиляциях. По-мимо всего сказанного ранее, здесь присутствует мелкое количество воды, образованной ввиде луж в результате возможных химических реакций.",
                 tips: "Если вы оказались в Вевоисе, то рекомендуется избегать узких и тёмных мест, в которых могут обитать «Серости». Следуйте за светом и редкими табличками. Если вы пойдёте за ними, то рано или поздно вы дойдёте до лифта с шестью кнопками этажей.",
                 hazardClass: "Высокая температура, агрессивная окружающая среда"
             },
             en: {
                 title: "VEJOVIS",
-                description: "Vejovis bears a strong resemblance to Ethernitas, yet there is one key difference between the two. Unlike Ethernitas, Vejovis follows Euclidean geometry, making it significantly easier to navigate. The space is illuminated by 3-meter-long fluorescent lights that emit a faint, constant hum. Overhead, a network of pipes carries various gaseous substances—ranging from oxygen to ammonia. Metal doors lead into other corridors, some of which feature pipes along the walls, shielded by metal grilles and support beams; these obstructions make such corridors narrower than the standard ones. Furthermore, unlike Janus or Ethernitas, Vejovis is home to indigenous species: Caecus Contrahens and Mus Aeger. The «Dullers» can be spotted in narrow passages, occasionally gliding through the space. The rats gather in small packs and inhabit crevices within the walls; they act as scavengers, feeding on remnants found throughout Liminality. The «Dullers» hunt both the rats and any humans passing through, launching attacks in cramped corridors and ventilation shafts. Additionally, small amounts of water can be found here, appearing as puddles—the byproduct of various chemical reactions.",
+                description: "Vejovis bears a strong resemblance to Ethernitas, yet there is one key difference between the two. Unlike Ethernitas, Vejovis follows Euclidean geometry, making it significantly easier to navigate. The space is illuminated by 3-meter-long fluorescent lights on the walls that emit a faint, constant hum. Overhead, a network of pipes carries various gaseous substances—ranging from oxygen to ammonia. Metal doors lead into other corridors, some of which feature pipes along the walls, shielded by metal grilles and support beams; these obstructions make such corridors narrower than the standard ones. Furthermore, unlike Janus or Ethernitas, Vejovis is home to indigenous species: Caecus Contrahens and Mus Aeger. The «Dullers» can be spotted in narrow passages, occasionally gliding through the space. The rats gather in small packs and inhabit crevices within the walls; they act as scavengers, feeding on remnants found throughout Liminality. The «Dullers» hunt both the rats and any humans passing through, launching attacks in cramped corridors and ventilation shafts. Additionally, small amounts of water can be found here, appearing as puddles—the byproduct of various chemical reactions.",
                 tips: "If you find yourself in Vejovis, it is recommended that you avoid narrow, dark places where the «Dullers» might dwell. Follow the light and the occasional sign. If you follow them, you will eventually reach an elevator with six floor buttons.",
                 hazardClass: "High temperature, hostile enviorment"
             }
@@ -158,13 +158,13 @@ ru: {
     title: "МЕНДАЦИУС",
     description: "Архитектура Мендациуса изначально покажется любому страннику просто эталоном красоты. Пол состоит из блестящего дерева тёмного оттенка. На полу ковёр, который стелится на миллионы миль. Сверху люстры в виде канделябров с никогда неугасающими свечами. Иногда появляются двери. Они ведут в величественные бальные залы, заполненные людьми. Да только вот… Это чувствуется фальшиво. И вы будете правы, ведь на самом деле эта Лиминаль состоит из очень простых коридоров и комнат, полностью состоящих из одного серого, холодного бетона. На потолке отсутствуют люстры. Вместо них, в Медациусе присутствует освещение без видимого источника. Двери и ковёр полностью отсутствуют. Архитектура состоит из узких коридоров, которые могут очень долго идти вперёд, и иногда иметь проходы либо в другие коридоры, либо-же в огромные пространства промеж коридоров, которые, собственно, и являются «бальными залами». В этих пространствах полно манекенов, которые в иллюзии выполняют роль тех самых «людей», про которых говорилось раннее. Но среди всего этого есть что-то действительно реальное, а именно особый вид Организмов, эксклюзивный для этой Лиминали. Этим видом является Opifex Imitator. Они являются точной копией обычного человека, но с ключевым отличием: полным отсутствием лица и заменой его на слой гладкой кожи. Они ориентируются по эхолокации и не нуждаются в книге. При контакте с человеком они предложат ему выпить или пойти в «Офис Босса», где происходит «Квалификация» (см. Phen_0004). На фото изображена фотография, которая является самой похожей на интерьер иллюзии.",
     tips: "Идите дальше, если можете. Уже нет пути назад.",
-    hazardClass: "нелинейная геометрия, психологическое влияние и опасные Организмы"
+    hazardClass: "Нелинейная геометрия, психологическое влияние и опасные Организмы"
 },
 en: {
     title: "MENDACIUS",
     description: "To any wanderer, the architecture of Mendacius might initially appear to be the very epitome of beauty. The floor is made of polished, dark-toned wood and covered by a carpet that stretches on for millions of miles. Overhead hang chandeliers—candelabra-style fixtures with candles that never burn out. Occasionally, doors appear, leading into grand ballrooms filled with people. And yet… it all feels artificial. You would be right to think so; in reality, this Liminality consists of nothing more than simple corridors and rooms, constructed entirely from cold, gray concrete. There are no chandeliers on the ceiling—instead, Mendacius is illuminated by a light source that remains unseen. The doors and the carpet are entirely absent. The architecture is defined by narrow corridors that can stretch on for great distances, occasionally branching off into other hallways or opening into vast, intermediate spaces—the very areas that appear as «ballrooms». These spaces are filled with mannequins, which, within the illusion, serve as the «people» mentioned earlier. Amidst all this, however, there is something truly real: a specific type of entity unique to this Liminal space, known as Opifex Imitator. These beings are exact replicas of ordinary humans, with one crucial distinction: they lack a face entirely, the area being replaced by a smooth, unbroken layer of skin. They navigate via echolocation and have no need for sustenance. Upon encountering a human, they may offer a drink or invite the individual to the «Boss’s Office» to undergo «Qualification» (see Phen_0004). The image provided is the one that most closely resembles the interior of the illusion.",
     tips: "Go on, if you can. There is no way back.",
-    hazardClass: "non-linear geometry, psychological impact and hostile Organisms"
+    hazardClass: "Non-linear geometry, psychological impact and hostile Organisms"
 }
 }
 },
@@ -178,35 +178,81 @@ ru: {
     title: "СКОТОС",
     description: "Скотос почти-что идентичен Мендациусу, но имеет лишь четыре отличия. Во-первых, здесь отсутствует психологическое воздействие, и Лиминаль выглядит именно так, как она и выглядит на самом деле. Во-вторых, здесь полностью отсутствует освещение. В-третьих, здесь нет жизни и манекенов. И в-четвёртых, здесь есть эвклидова геометрия. Эта Лиминаль является последней в Основном Списке Лиминалей.",
     tips: "Уже нечего делать.",
-    hazardClass: "Безжизненный"
+    hazardClass: "Безжизненный."
 },
 en: {
     title: "SCOTOS",
     description: "Scotos is almost identical to Mendacius, however, he has some differences. At first, there is no psychological impact. This means that the Liminality looks just like how it actually looks without the illusion. Second of all, there is no light at all. At third, there is nothing alive out here. Not even the mannequins are here. And at fourth, there is also linear geometry. This Liminality is the last on The Main Liminalities list.",
     tips: "You can't do anything at this point.",
     hazardClass: "Lifeless."
-}
-}
+    }
+  }
 },
+    {
+    id: "ORG_KIN4_SPECB-6",
+    type: "entity",
+    hazard: "CLASS 5",
+    image: "images/Duller.jpg",
+    translations: {
+    ru: {
+    title: "CAECUS CONTRAHENS (Слепцы)",
+    description: "Также именуемые странниками как «Серости», Слепцы являются агрессивным видом, строение тела которых сильно схоже с человеческим. У них отсутствуют пальцы ног и рук, как и сами ладони с пятками, а также глаза. Вместо глаз, у Слепцов присутствует слой кожи. У них ещё есть рот, заполненный примерно пятидесятью зубами (25 на верх и низ). Кожа у них имеет серый оттенок, отчего Слепцы и получили кличку «Серости». Их основным способом перемещения является скольжение по стенам. Скользят они довольно быстро, из-за чего убежать от них очень трудно. Ещё они ориентируются по эхолокации и запаху, поскольку у них ещё есть и нос, через который они дышат. Они вдыхают кислород или углекислый газ. Внутри, они уничтожают углекислый газ, выдыхая кислород. Неизвестно точно, как это происходит. Слепцы являются и плотоядными хищниками, которые охотятся в одиночку. В основном, они охотятся на Крыс, Электрофагов, а также на заблудших странников. Гораздо более редкой пищей для них яявляются Натюрморты и эволюционировавшие виды домашних животных в пределах Фористуры. Пьют они воду, хотя и довольно редко. Они также почти-что не выделяют пота.",
+    tips: "Если вы встретили Отчаявшегося и вы находитесь в одной комнате, то советуется немедленно покинуть комнату, при этом не издавать много шума. При погони рекомендуется скрыться, но вы можете также попробовать вступить в бой.",
+    hazardClass: "Агрессивный; гуманоид"
+
+    },
+    en: {
+    title: "CAECUS CONTRAHENS (The Blindmen)",
+    description: "Also referred to by wanderers as «The Dullers», Blinds are an aggressive species with a body structure very similar to that of a human. They lack fingers and toes, as well as the palms and heels themselves, as well as eyes. Instead of eyes, Blinds have a layer of skin. They also have a mouth filled with about fifty teeth (25 top and bottom). Their skin has a gray tint, which is why the Blind People received the nickname “Grayness”. Their main method of movement is sliding along walls. They glide quite quickly, making it very difficult to escape from them. They also navigate by echolocation and smell, since they also have a nose through which they breathe. They inhale oxygen or carbon dioxide. Inside, they destroy carbon dioxide by exhaling oxygen. It is not known exactly how this happens. Blinds are also carnivorous predators that hunt alone. They mainly hunt Rats, Electrophages, and lost wanderers. Much rarer food for them are Still Lifes and evolved species of domestic animals within the Foristura. They drink water, although quite rarely. They also hardly produce any sweat.",
+    tips: "If you have met a Desperate one and you are in the same room as him, it is recommended to quickly leave that room and to not make a lot of noise. If he's chasing you, then it's recommended to hide, however, you can also try fighting him.",
+    hazardClass: "Aggressive; humanoid"
+
+    }
+  },
 {
-id: "ORG_KIN4_SPECB-15",
-type: "entity",
-hazard: "CLASS VARIABLE",
-hazardClass: "unstable",
-image: "images/wretch.webp",
-translations: {
-ru: {
-title: "HOMO DESPERANS (Отчаявшиеся)",
-description: "Гуманоидные существа, у которых может быть отсутствие кусков кожи, волос или даже ногти. Их можно описать как живых мертвецов, которые живы в пределах Фористуры. Их поведение нестабильно и варьируется от простого бродяжничества до поведения низкоинтеллектуального хищника.",
-tips: "Если вы встретили Отчаявшегося и вы находитесь в одной комнате, то советуется немедленно покинуть комнату, при этом не издавать много шума. При погони рекомендуется скрыться, но вы можете также попробовать вступить в бой."
-},
-en: {
-title: "HOMO DESPERANS (The Desperate)",
-description: "Humanoid beings that may lack patches of skin, hair, or even fingernails. They can be described as the living dead—creatures that remain animate within the confines of Foristurality. Their behavior is unstable, ranging from aimless wandering to the actions of a low-intelligence predator.",
-tips: "If you have met a Desperate one and you are in the same room as him, it is recommended to quickly leave that room and to not make a lot of noise. If he's chasing you, then it's recommended to hide, however, you can also try fighting him."
+    id: "ORG_KIN4_SPECB-15",
+    type: "entity",
+    hazard: "CLASS VARIABLE",
+    image: "images/wretch.webp",
+    translations: {
+    ru: {
+    title: "HOMO DESPERANS (Отчаявшиеся)",
+    description: "Гуманоидные существа, у которых может быть отсутствие кусков кожи, волос или даже ногти. Их можно описать как живых мертвецов, которые живы в пределах Фористуры. Их поведение нестабильно и варьируется от простого бродяжничества до поведения низкоинтеллектуального хищника.",
+    tips: "Если вы встретили Отчаявшегося и вы находитесь в одной комнате, то советуется немедленно покинуть комнату, при этом не издавать много шума. При погони рекомендуется скрыться, но вы можете также попробовать вступить в бой.",
+    hazardClass: "Нестабилен; гуманоид"
+
+    },
+    en: {
+    title: "HOMO DESPERANS (The Desperate)",
+    description: "Humanoid beings that may lack patches of skin, hair, or even fingernails. They can be described as the living dead—creatures that remain animate within the confines of Foristurality. Their behavior is unstable, ranging from aimless wandering to the actions of a low-intelligence predator.",
+    tips: "If you have met a Desperate one and you are in the same room as him, it is recommended to quickly leave that room and to not make a lot of noise. If he's chasing you, then it's recommended to hide, however, you can also try fighting him.",
+    hazardClass: "unstable; humanoid"
+
+    }
+  },
+    {
+    id: "ORG_KIN4_SPECB-24",
+    type: "entity",
+    hazard: "CLASS 2",
+    image: "images/DeathRat.webp",
+    translations: {
+    ru: {
+    title: "MUS AEGER (Крысы)",
+    description: "Эти крысы ничем не отличаются от обычных крыс, которых можно найти на Земле. Однако, здесь они питаются ИСКЛЮЧИТЕЛЬНО падалью и страдают от очень высокой смертности из-за их мест обитания (Которыми являются Вевойс и Дит). Они своими зубами грызут норы в стенах.",
+    tips: "Если вы заметили одну такую стайку крыс, то можете на них посмотреть; Они не агрессивны в сторону странников (за исключением тех случаев, если они больны). Не ешьте их.",
+    hazardClass: "Нестабилен; грызун"
+
+    },
+    en: {
+    title: "MUS AEGER (Rats)",
+    description: "These rats are no different from ordinary rats that can be found on Earth. However, here they feed EXCLUSIVELY on carrion and suffer a very high mortality rate due to their habitats (Which are Vejovis and Dis). They chew holes in the walls with their teeth.",
+    tips: "If you notice one such flock of rats, you can look at them; They are not aggressive towards wanderers (unless they are sick). Don't eat them.",
+    hazardClass: "unstable; rodent"
+
+    }
+  },
 }
-}
-}
+    
 ];
 let currentLanguage = 'ru';
 function changeLanguage(lang) {
