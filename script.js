@@ -208,7 +208,8 @@ en: {
     hazardClass: "Aggressive; humanoid"
 
     }
-  },
+  }
+{,
 {
     id: "ORG_KIN4_SPECB-15",
     type: "entity",
@@ -229,7 +230,8 @@ en: {
     hazardClass: "unstable; humanoid"
 
     }
-  },
+  }
+},
     {
     id: "ORG_KIN4_SPECB-24",
     type: "entity",
@@ -250,7 +252,8 @@ en: {
     hazardClass: "unstable; rodent"
 
     }
-  },
+  }
+},
 }
     
 ];
