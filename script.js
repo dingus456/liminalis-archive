@@ -1,3 +1,4 @@
+// plz start work
 const uiTranslations = {
     ru: {
         title: "▲ АРХИВ ЛИМИНАЛИС // v3.01.6",
