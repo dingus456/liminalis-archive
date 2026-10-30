@@ -272,8 +272,7 @@ en: {
     tips: "Always look at the signs and don't walk straight into the door. Even in the most emergency cases.",
     hazardClass: "Spacial anomaly, unpredictable."
     }
-  }
-},    
+  },    
     
 }];
 let currentLanguage = 'ru';
