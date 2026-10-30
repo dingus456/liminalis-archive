@@ -10,8 +10,8 @@ const uiTranslations = {
         catAll: "ВСЕ ДАННЫЕ",
         catMainLevels: "ОСНОВНЫЕ ЛИМИНАЛИ (lim_num)",
         catOtherLevels: "ОСТАЛЬНЫЕ ЛИМИНАЛИ (lim_num)",
-        catEntities: "Организмы (org_kin_spec)",
-        catObjects: "Явления (phen_num)",
+        catEntities: "ОРГАНИЗМЫ (org_kin_spec)",
+        catObjects: "ЯВЛЕНИЯ (phen_num)",
         descTitle: "Описание:",
         tipsTitle: "Советы:",
         noResults: "[ОШИБКА: ИНФОРМАЦИЯ НЕ НАЙДЕНА (404)]",
@@ -22,7 +22,7 @@ const uiTranslations = {
         archiveStatus: "[АРХИВ НЗФА]",
         archiveAvailable: "ДОСТУПЕН",
         catForum: "ПРОТОКОЛЫ СВЯЗИ",
-        catSatillites: "СПУТНИКИ (lim_num-let)"
+        catSatellite: "СПУТНИКИ (lim_num-let)",
     },
     en: {
         title: "▲ THE LIMINALIS ARCHIVE // v3.01.6",
@@ -45,7 +45,7 @@ const uiTranslations = {
         archiveStatus: "[NBFA ARCHIVE]",
         archiveAvailable: "AVAILABLE",
         catForum: "COMMUNICATION LOGS",
-        catSatellite: "SATELLITES (lim_num-let)"
+        catSatellite: "SATELLITES (lim_num-let)",
     }
 };
 
@@ -402,7 +402,7 @@ function changeLanguage(lang) {
             if (opt.value === 'liminalityM') opt.text = ui.catMainLevels;
             if (opt.value === 'liminalityO') opt.text = ui.catOtherLevels;
             if (opt.value === 'entity') opt.text = ui.catEntities;
-            if (opt.value === 'object') opt.text = ui.catObjects;
+            if (opt.value === 'phenomena') opt.text = ui.catObjects;
             if (opt.value === 'forum') opt.text = ui.catForum;
             if (opt.value === 'satellite') opt.text = ui.catSatellite;
         }
