@@ -20,7 +20,7 @@ const uiTranslations = {
         behavior: "[СТАТУС ПОВЕДЕНИЯ]",
         archiveStatus: "[АРХИВ НЗФА]",
         archiveAvailable: "ДОСТУПЕН",
-        catForum = "ПРОТОКОЛЫ СВЯЗИ"
+        catForum: "ПРОТОКОЛЫ СВЯЗИ"
     },
     en: {
         title: "▲ THE LIMINALIS ARCHIVE // v3.01.6",
@@ -42,7 +42,7 @@ const uiTranslations = {
         behavior: "[BEHAVIOR STATUS]",
         archiveStatus: "[NBFA ARCHIVE]",
         archiveAvailable: "AVAILABLE",
-        catForum = "COMMUNICATION LOGS"
+        catForum: "COMMUNICATION LOGS"
     }
 };
 
