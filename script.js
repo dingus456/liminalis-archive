@@ -222,7 +222,7 @@ function changeLanguage(lang) {
     document.getElementById('ui-search-input').placeholder = ui.searchPlaceholder;
     document.getElementById('ui-category-label').innerText = ui.categoryLabel;
 
-    const filter = document.getElementById('typeFilter');
+     const filter = document.getElementById('typeFilter');
     if (filter && filter.options && filter.options.length >= 5) {
         filter.options[0].text = ui.catAll;
         filter.options[1].text = ui.catMainLevels;
