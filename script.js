@@ -189,6 +189,66 @@ en: {
   }
 },
     {
+id: "LIM_0008",
+type: "liminalityO",
+hazard: "CLASS 3EG",
+image: "images/AHEn-C2EHE.webp",
+translations: {
+ru: {
+    title: "AHEn-C2EHE: «Покинутая больница»",
+    description: "AHEn-C2EHE является первой Лиминалью, которая была открыта с помощью дверей (см. Phen_0001). Эта Лиминаль выглядит как заброшенное здание медицинского предназначения, которое практически пустое, отчего и приметивное. Здесь, подобно Этернитасу, присутствует неэвклидова геометрия, поэтому навигация здесь крайне затруднена. Здесь, как и в уже ранее-упомянутом Этернитасе, присутствуют окна и лестницы, однако тут отсутствуют двери. Вместо них, здесь находятся дверные проёмы, которые ведут в комнаты площадью 50 метров. В таких комнатах есть койки и тумбочки, в которых ничего нет. Здесь также полно дыр, ведущих на нижние этажи. Эти дыры порой бывают очень большими по неизвестным причинам. Также в этой Лиминали отсутствует освещение ввиде ламп. Вместо них, здесь предполагается наличие Солнца, лучи которого проходят через щели и дыры. Некоторые странники находили здесь шприцы. Они здесь содержат кровь, мочу и иногда опасные химические вещества в жидкой форме.",
+    tips: "Если вы сюда попали через дверь, то советуется попытаться найти другую дверь (дверь с любым другим знаком кроме Плюса). НЕ подпирайте и не вкалывайте себе ничего с пола. Смотрите под ноги.",
+    hazardClass: "Хрупкие стены, полно ям, безжизненно. Символ двери: «+»"
+},
+en: {
+    title: "AHEn-C2EHE: «Forsaken hospital»",
+    description: "AHEn-C2EHE is the first Liminality to be opened using doors (see Phen_0001). This Liminal looks like an abandoned medical building, which is practically empty, which is why it is remarkable. Here, like Eternitas, there is non-Euclidean geometry, making navigation extremely difficult. Here, as in the previously mentioned Eternitas, there are windows and stairs, but there are no doors. Instead, there are doorways that lead to rooms with an area of ​​50 meters. In such rooms there are beds and bedside tables with nothing in them. There are also a lot of holes leading to the lower floors. These holes are sometimes very large for unknown reasons. Also in this Liminal there is no lighting in the form of lamps. Instead, the presence of the Sun is assumed here, the rays of which pass through the cracks and holes. Some travelers have found syringes here. They contain blood, urine and sometimes dangerous chemicals in liquid form.",
+    tips: "If you got here through a door, it is advised to try to find another door (a door with any other sign other than Plus). DO NOT prop or inject yourself with anything from the floor. Watch your step.",
+    hazardClass: "Fragile walls, a lot of pits, lifeless. Door symbol: «+»"
+    }
+  }
+},
+       {
+id: "LIM_0009",
+type: "liminalityO",
+hazard: "CLASS 5PG",
+image: "images/TheEnd.jpg",
+translations: {
+ru: {
+    title: "LEN-C5PGHGP: «Финальная Точка»",
+    description: "Архитектура LEN-C5PGHGP, также известного как «Конец» или «Финальная точка» состоит из разукрашенных в разные цвета стен, серых ковров и плиточных потолков. Изредка можно найти подобие табличек на потолке, в которых написно «The End» или «The End is Near». Комнаты LEN-C5PGHGP также имеют достаточно большое количество деревянных полок, на которых расположены, как покажется вам сначала, книги разных писателей. Но как только вы попытаетесь прочитать одну такую книгу, вы ничего не увидите, поскольку в страницах отсутствует текст. Изредка на территории «Конца» можно найти столики с компьютерными терминалами времён девяностых. Большая часть из таких компьютеров отключены от розеток, но некоторые были включены. На обоях включенных компьютеров был красный фон, а также полно шаров и текст «Присойденяйтесь к нам!». Через эти терминалы НЗФА и получила информацию о данной Лиминали. Кроме терминалов, полок и табличек, здесь также присутствуют две аномалии, а именно Неэвклидова геометрия, которая здесь очень активна, а также один другой феномен, именуемый «Генерацией Матрицы». Когда странник находится в LEN-C5PGHGP слишком долго, он начнёт видеть «Реальный мир», в который он якобы попал. Всё здесь будет выглядить так реально, что странник забудет о том что ещё пять минут назад был в пределах Фористуры, и начнёт думать, что он уже дома, на Земле. На деле-же, это не так, и на самом деле странник видит лишь иллюзию. Иллюзию, которую опровергнуть можно только через смартфоны, фотоаппараты. В конечном итоге, рано или поздно, странник, который «вернулся домой», начнёт сходить с ума, но только в том случае, если он узнает, что это всё - фальшь.",
+    tips: "Как-то пытаться выбраться отсюда будет бессмысленно. Это невозможно.",
+    hazardClass: "Нелинейная геометрия, психологическое влияние, безжизненно. Символ двери: «EXIT»"
+},
+en: {
+    title: "LEN-C5PGHGP: «The Final Point»",
+    description: "The architecture of LEN-C5PGHGP, also known as «The End» or «The Final Point» consists of multicolored walls, gray carpeting, and tiled ceilings. Occasionally, one may come across signs on the ceiling bearing phrases such as «The End» or «The End is Near». LEN-C5PGHGP also features numerous wooden shelves stocked with what appear to be books by various authors; however, upon closer inspection, the pages are entirely devoid of text. Scattered throughout «The End» are small tables equipped with computer terminals dating back to the 1990s. While most are unplugged, some remain powered on—their screens displaying a red background filled with floating spheres and the message: «Join us!» It was through these terminals that the NBFA obtained information regarding this specific Liminality. In addition to the terminals, shelves, and signs, the space exhibits two distinct anomalies: highly active non-Euclidean geometry and a phenomenon referred to as «Matrix Generation.» When a wanderer remains in LEN-C5PGHGP for too long, they begin to perceive the «real world»: the place they believe they have returned to. Everything appears so authentic that the wanderer forgets they were within the Foristure just moments prior, becoming convinced they are back home on Earth. In reality, however, this is merely an illusion—one that can only be debunked through the use of smartphones or cameras. Ultimately—sooner or later—a wanderer who has «returned home» will begin to lose his mind, but only if he discovers that it is all a sham.",
+    tips: "You can't exit this Liminality. It's impossible.",
+    hazardClass: "Non-linear, psychological impact, lifeless. Door symbol: «EXIT»"
+    }
+  }
+},
+{
+    id: "LIM_0010",
+    type: "liminalityO",
+    hazard: "CLASS 0",
+    image: "images/PEn-C0EGHn.jpg",
+    translations: {
+    ru: {
+        title: "PEN-C0EGHn: «Транквиллитас»",
+        description: "PEn-C0EGHn представляет собой пустой, бесконечный комплекс, состоящий из чисто-белых, блестящих бассейных плиток. Плитки эти находятся на всех поверхностях, будто пол или стена. Архитектура здесь своеобразная и довольно хаотичная: Например, одна комната может иметь лестницу на потолке, другая заполнена колоннами. На стенах нередко можно увидеть окна, из которых видно чистое, синее небо, на котором не видно солнца или луны. Из этих окон исходит свет, единственный свет во всей Лиминали. На полу также можно часто найти воду. Эта вода имеет бирюзовый цвет и является кристально чистой. Некоторые исследования показали, что в воде есть соль, которая признана безопасной в употреблении. Иногда можно найти и ямы в полу, заполненные водой. Эти ямы могут иметь разные габориты, формы и глубину. Но везде одна черта: никаких заборчиков, а также такая-же кристально-чистая вода.",
+        tips: "Если вы не хотите здесь оставаться, то вы можете попробовать сделать ноуклип. Это единственный известный выход отсюда на данный момент. Он ведёт на Янус.",
+        hazardClass: "Безжизненно. Символ двери: «〰»"
+    },
+    en: {
+        title: "PEN-C0EGHn: «Tranquillitas»",
+        description: "PEn-C0EGHn is an empty, endless complex of pure white, shiny pool tiles. These tiles are found on all surfaces, like the floor or wall. The architecture here is peculiar and quite chaotic: For example, one room may have a staircase on the ceiling, another is filled with columns. You can often see windows on the walls, from which you can see a clear, blue sky, in which the sun or moon is not visible. From these windows comes light, the only light in all of this Liminality. Water can also often be found on the floor. This water has a turquoise color and is crystal clear. Some studies have shown that there is salt in the water, which is considered safe to consume. Sometimes you can find holes in the floor filled with water. These pits can have different sizes, shapes and depths. But there is one feature everywhere: no fences, and the same crystal clear water.",
+        tips: "If you don’t want to stay here, you could try to noclip. It’s the only known way out of here at the moment. It leads to Janus.",
+        hazardClass: "Lifeless. Door symbol: «〰»"
+        }
+    }
+},
+    {
     id: "ORG_KIN4_SPECB-6",
     type: "entity",
     hazard: "CLASS 5",
@@ -198,14 +258,14 @@ en: {
     title: "CAECUS CONTRAHENS (Слепцы)",
     description: "Также именуемые странниками как «Серости», Слепцы являются агрессивным видом, строение тела которых сильно схоже с человеческим. У них отсутствуют пальцы ног и рук, как и сами ладони с пятками, а также глаза. Вместо глаз, у Слепцов присутствует слой кожи. У них ещё есть рот, заполненный примерно пятидесятью зубами (25 на верх и низ). Кожа у них имеет серый оттенок, отчего Слепцы и получили кличку «Серости». Их основным способом перемещения является скольжение по стенам. Скользят они довольно быстро, из-за чего убежать от них очень трудно. Ещё они ориентируются по эхолокации и запаху, поскольку у них ещё есть и нос, через который они дышат. Они вдыхают кислород или углекислый газ. Внутри, они уничтожают углекислый газ, выдыхая кислород. Неизвестно точно, как это происходит. Слепцы являются и плотоядными хищниками, которые охотятся в одиночку. В основном, они охотятся на Крыс, Электрофагов, а также на заблудших странников. Гораздо более редкой пищей для них яявляются Натюрморты и эволюционировавшие виды домашних животных в пределах Фористуры. Пьют они воду, хотя и довольно редко. Они также почти-что не выделяют пота.",
     tips: "Если вы встретили Отчаявшегося и вы находитесь в одной комнате, то советуется немедленно покинуть комнату, при этом не издавать много шума. При погони рекомендуется скрыться, но вы можете также попробовать вступить в бой.",
-    hazardClass: "Агрессивный; гуманоид"
+    hazardClass: "Агрессивный"
 
     },
     en: {
     title: "CAECUS CONTRAHENS (The Blindmen)",
     description: "Also referred to by wanderers as «The Dullers», Blinds are an aggressive species with a body structure very similar to that of a human. They lack fingers and toes, as well as the palms and heels themselves, as well as eyes. Instead of eyes, Blinds have a layer of skin. They also have a mouth filled with about fifty teeth (25 top and bottom). Their skin has a gray tint, which is why the Blind People received the nickname “Grayness”. Their main method of movement is sliding along walls. They glide quite quickly, making it very difficult to escape from them. They also navigate by echolocation and smell, since they also have a nose through which they breathe. They inhale oxygen or carbon dioxide. Inside, they destroy carbon dioxide by exhaling oxygen. It is not known exactly how this happens. Blinds are also carnivorous predators that hunt alone. They mainly hunt Rats, Electrophages, and lost wanderers. Much rarer food for them are Still Lifes and evolved species of domestic animals within the Foristura. They drink water, although quite rarely. They also hardly produce any sweat.",
     tips: "If you have met a Desperate one and you are in the same room as him, it is recommended to quickly leave that room and to not make a lot of noise. If he's chasing you, then it's recommended to hide, however, you can also try fighting him.",
-    hazardClass: "Aggressive; humanoid"
+    hazardClass: "Aggressive"
 
     }
   }
@@ -220,14 +280,14 @@ en: {
     title: "HOMO DESPERANS (Отчаявшиеся)",
     description: "Гуманоидные существа, у которых может быть отсутствие кусков кожи, волос или даже ногти. Их можно описать как живых мертвецов, которые живы в пределах Фористуры. Их поведение нестабильно и варьируется от простого бродяжничества до поведения низкоинтеллектуального хищника.",
     tips: "Если вы встретили Отчаявшегося и вы находитесь в одной комнате, то советуется немедленно покинуть комнату, при этом не издавать много шума. При погони рекомендуется скрыться, но вы можете также попробовать вступить в бой.",
-    hazardClass: "Нестабилен; гуманоид"
+    hazardClass: "Нестабилен"
 
     },
     en: {
     title: "HOMO DESPERANS (The Desperate)",
     description: "Humanoid beings that may lack patches of skin, hair, or even fingernails. They can be described as the living dead—creatures that remain animate within the confines of Foristurality. Their behavior is unstable, ranging from aimless wandering to the actions of a low-intelligence predator.",
     tips: "If you have met a Desperate one and you are in the same room as him, it is recommended to quickly leave that room and to not make a lot of noise. If he's chasing you, then it's recommended to hide, however, you can also try fighting him.",
-    hazardClass: "unstable; humanoid"
+    hazardClass: "Unstable"
 
     }
   }
@@ -242,14 +302,14 @@ en: {
     title: "MUS AEGER (Крысы)",
     description: "Эти крысы ничем не отличаются от обычных крыс, которых можно найти на Земле. Однако, здесь они питаются ИСКЛЮЧИТЕЛЬНО падалью и страдают от очень высокой смертности из-за их мест обитания (Которыми являются Вевойс и Дит). Они своими зубами грызут норы в стенах.",
     tips: "Если вы заметили одну такую стайку крыс, то можете на них посмотреть; Они не агрессивны в сторону странников (за исключением тех случаев, если они больны). Не ешьте их.",
-    hazardClass: "Нестабилен; грызун"
+    hazardClass: "Безопасны"
 
     },
     en: {
     title: "MUS AEGER (Rats)",
     description: "These rats are no different from ordinary rats that can be found on Earth. However, here they feed EXCLUSIVELY on carrion and suffer a very high mortality rate due to their habitats (Which are Vejovis and Dis). They chew holes in the walls with their teeth.",
     tips: "If you notice one such flock of rats, you can look at them; They are not aggressive towards wanderers (unless they are sick). Don't eat them.",
-    hazardClass: "unstable; rodent"
+    hazardClass: "Safe"
 
     }
   }
