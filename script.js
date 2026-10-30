@@ -275,7 +275,7 @@ en: {
     id: "LIM_0001-A",
     type: "satellite",
     hazard: "CLASS 3E",
-    image: "images/JANUS-A.webp",
+    image: "images/Janus-A.webp",
     translations: {
     ru: {
         title: "ЯНУС-А",
