@@ -60,6 +60,16 @@ main {
     margin-bottom: 30px;
 }
 
+#ui-glossary-btn {
+    height: 35px;          /* Точная высота, как у поля ввода поиска */
+    padding: 0 15px;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 0.85rem;
+    box-sizing: border-box;
+    border: 1px solid #39ff14;
+}
+
 .controls-panel input, .controls-panel select {
     background: #000;
     border: 1px solid #39ff14;
@@ -172,4 +182,5 @@ footer {
     background: #39ff14;
     color: #000;
 }
+
 
