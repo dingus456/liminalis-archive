@@ -209,7 +209,7 @@ en: {
 
     }
   }
-{,
+},
 {
     id: "ORG_KIN4_SPECB-15",
     type: "entity",
