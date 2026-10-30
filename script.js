@@ -22,7 +22,7 @@ const uiTranslations = {
         archiveStatus: "[АРХИВ НЗФА]",
         archiveAvailable: "ДОСТУПЕН",
         catForum: "ПРОТОКОЛЫ СВЯЗИ",
-        catSatillites = "СПУТНИКИ (lim_num-let)"
+        catSatillites: "СПУТНИКИ (lim_num-let)"
     },
     en: {
         title: "▲ THE LIMINALIS ARCHIVE // v3.01.6",
@@ -45,7 +45,7 @@ const uiTranslations = {
         archiveStatus: "[NBFA ARCHIVE]",
         archiveAvailable: "AVAILABLE",
         catForum: "COMMUNICATION LOGS",
-        catSatellite = "SATELLITES (lim_num-let)"
+        catSatellite: "SATELLITES (lim_num-let)"
     }
 };
 
