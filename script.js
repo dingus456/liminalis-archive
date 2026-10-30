@@ -19,7 +19,8 @@ const uiTranslations = {
         characteristic: "[ХАРАКТЕРИСТИКА]",
         behavior: "[СТАТУС ПОВЕДЕНИЯ]",
         archiveStatus: "[АРХИВ НЗФА]",
-        archiveAvailable: "ДОСТУПЕН"
+        archiveAvailable: "ДОСТУПЕН",
+        catForum = "ПРОТОКОЛЫ СВЯЗИ"
     },
     en: {
         title: "▲ THE LIMINALIS ARCHIVE // v3.01.6",
@@ -40,7 +41,8 @@ const uiTranslations = {
         characteristic: "[CHARACTERISTICS]",
         behavior: "[BEHAVIOR STATUS]",
         archiveStatus: "[NBFA ARCHIVE]",
-        archiveAvailable: "AVAILABLE"
+        archiveAvailable: "AVAILABLE",
+        catForum = "COMMUNICATION LOGS"
     }
 };
 
@@ -191,7 +193,7 @@ id: "ORG_KIN4_SPECB-15",
 type: "entity",
 hazard: "CLASS VARIABLE",
 hazardClass: "unstable",
-image: "images/hound.png",
+image: "images/wretch.webp",
 translations: {
 ru: {
 title: "HOMO DESPERANS (Отчаявшиеся)",
@@ -229,6 +231,8 @@ function changeLanguage(lang) {
         filter.options[2].text = ui.catOtherLevels;
         filter.options[3].text = ui.catEntities;
         filter.options[4].text = ui.catObjects;
+        filter.options[5].text = ui.catForum;
+
     }
 
     const footerText = document.getElementById('ui-footer');
@@ -282,19 +286,57 @@ function displayDatabase(items) {
 function searchArchive() {
     const searchInput = document.getElementById('ui-search-input');
     const filterSelect = document.getElementById('typeFilter');
-    if (!searchInput || !filterSelect) return;
+    const giscusBox = document.getElementById('giscusContainer');
+    if (!searchInput || !filterSelect || !giscusBox) return;
+
     const query = searchInput.value.toLowerCase();
     const typeFilter = filterSelect.value;
+
+    // ЕСЛИ ВЫБРАН ФОРУМ:
+    if (typeFilter === 'forum') {
+        displayDatabase([]); // Прячем карточки уровней
+        giscusBox.style.display = 'block'; // Показываем блок форума
+        
+        // Если Giscus еще не загружен — загружаем его внутрь giscusContainer
+        if (giscusBox.innerHTML === '') {
+            giscusBox.innerHTML = `
+             <script src="https://giscus.app/client.js"
+            data-repo="dingus456/liminalis-archive"
+            data-repo-id="R_kgDOVa8v0Q"
+            data-category="General"
+            data-category-id="DIC_kwDOVa8v0c4DJ_Wf"
+            data-mapping="url"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="dingus456/liminalis-archive/style.css"
+            data-lang="ru"
+            crossorigin="anonymous"
+            async>
+        </script>
+            `;
+        }
+        return;
+    }
+
+    // ЕСЛИ ВЫБРАНО ЧТО-ТО ДРУГОЕ: прячем форум и ищем уровни
+    giscusBox.style.display = 'none';
+
     const filtered = backroomsDatabase.filter(item => {
-    const data = item.translations[currentLanguage];
-    const matchesSearch = data.title.toLowerCase().includes(query) ||
-    data.description.toLowerCase().includes(query) ||
-    item.id.toLowerCase().includes(query);
-    const matchesFilter = typeFilter === 'all' || item.type === typeFilter;
-    return matchesSearch && matchesFilter;
-});
-displayDatabase(filtered);
+        const data = item.translations[currentLanguage];
+        const matchesSearch = data.title.toLowerCase().includes(query) || 
+                              data.description.toLowerCase().includes(query) || 
+                              item.id.toLowerCase().includes(query);
+        
+        const matchesFilter = typeFilter === 'all' || item.type === typeFilter;
+
+        return matchesSearch && matchesFilter;
+    });
+
+    displayDatabase(filtered);
 }
+
 window.onload = () => {
     changeLanguage('ru');
 };
