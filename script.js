@@ -58,13 +58,13 @@ const backroomsDatabase = [
                 title: "ЯНУС",
                 description: "комплексное пространство, чем-то напоминающее розничный магазин. Интерьер Януса состоит из жёлтых обоев, рисунки которых состоят из разных узоров, коричневого, мокрого ковра, состоящего из ткани, и плиточных потолков, сверху которых проходят трубы и провода. На потолке присутствуют люминесцентные лампы, издающий громкий гул, который никогда не прекращается. Изредка на стенах можно найти розетки, по всей видимости, американского происхождения. Иногда здесь находят разные объекты, которые являются частями интерьера из Земли, но, иногда, дублированные, или искажённые. Кроме физических объектов, можно услышать и звуки, у которых отсутствует видимый источник. Эти звуки варьируются от тихого гула или хаотичной игре на духовом инструменте, до искажённых копий реальных музыкальных произведений.",
                 tips: "Если вы оказались здесь в группе, то советуется не расходиться и всегда держаться вместе, ведь здесь очень просто заблудиться. Если вы встретите копии табличек экстренного выхода - следуйте за ними.",
-                hazardClass: "Одинокий"
+                hazardClass: "Пустой"
             },
             en: {
                 title: "JANUS",
                 description: "A complex space, somewhat reminiscent of a retail store. The interior of Janus consists of yellow wallpaper patterned with various designs, damp, fabric-covered carpeting in shades of brown, and a tiled ceiling with pipes and wires running across it. Fluorescent lights are mounted on the ceiling, emitting a loud, incessant hum. Occasionally, electrical outlets—apparently of American design—can be found on the walls. Sometimes, various objects appear here; these are items from Earth, though they may be duplicated or distorted. Beyond physical objects, one can also hear sounds with no discernible source—ranging from a faint hum or the chaotic playing of a wind instrument to warped, distorted versions of actual musical pieces.",
                 tips: "If you have entered Janus in a party, it is recommended to stay together in order to not get lost. If you see copies of the emergency exit signs - follow them.",
-                hazardClass: "hollow"
+                hazardClass: "Hollow"
             }
         }
     },
@@ -253,9 +253,29 @@ en: {
 
     }
   }
-}
+},
+{
+id: "Phen_0001",
+type: "phenomena",
+hazard: "CLASS VARIABLE",
+image: "images/DoorRandomBKR.jpg",
+translations: {
+ru: {
+    title: "СЛУЧАЙНЫЕ СТВОРКИ",
+    description: "Спонтанная пространственная аномалия, которая выражается в случайном появлении дверей разного вида, материала и предназначения. Это явление, в основном, происходит когда в неэвклидовых Лиминалях (подобных Этернитасу или Диту) перестраивается ландшафт, но в более редких случаях это можно встретить и в эвклидовых Лиминалях в гораздо более мелком объёме. Двери в это время могут появиться где угодно: они могут быть запечатаны в стене, парить посреди комнаты или коридора, или быть наполовину запечатанной в полу. На каждой такой двери есть табличка с символами. Обычно, символика на табличках является сильно искажённой, но некоторые двери имеют более менее понятные символы, вроде ∆ (дельта), Ⅰ (римская однёрка) и т.п. Эти двери ведут в «Остальные» Лиминали: части Фористуры, которые не являются изученными до конца, или вовсе неизвестны (список открытых «Остальных» Лиминалей см. категорию «Остальные Лиминали (lim_num))».",
+    tips: "Всегда смотрите на таблички, не входите сразу в дверь. Даже в самых экстренных случаях.",
+    hazardClass: "Пространственная аномалия, непредсказуемая."
+},
+en: {
+    title: "RANDOM GATEWAYS",
+    description: "A spontaneous spatial anomaly, which is expressed in the random appearance of doors of different types, materials and purposes. This phenomenon mainly occurs when non-Euclidean Liminals (like Eternitas or Dis) undergo landscape restructuring, but in more rare cases it can also be found in Euclidean Liminals in a much smaller volume. Doors at this time can appear anywhere: they can be sealed in a wall, floating in the middle of a room or corridor, or half-sealed in the floor. Each door has a sign with symbols. Usually, the symbolism on the tablets is very distorted, but some doors have more or less understandable symbols, like ∆ (delta), Ⅰ (Roman one-liner), etc. These doors lead to the «Other» Liminalities: parts of Foristura that are not fully explored, or are completely unknown (for a list of acknowledged «Other» Liminalities, see the «Other Liminalities (lim_num)» category)",
+    tips: "Always look at the signs and don't walk straight into the door. Even in the most emergency cases.",
+    hazardClass: "Spacial anomaly, unpredictable."
+    }
+  }
+},    
     
-];
+}];
 let currentLanguage = 'ru';
 function changeLanguage(lang) {
     currentLanguage = lang;
