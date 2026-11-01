@@ -86,19 +86,19 @@ const backroomsDatabase = [
     {
         id: "LIM_0001",
         type: "liminalityM",
-        hazard: "CLASS 1-EG",
+        hazard: "CLASS 0",
         image: "images/Level0.jpg", 
         translations: {
             ru: {
                 title: "ЯНУС",
-                description: "комплексное пространство, чем-то напоминающее розничный магазин. Интерьер Януса состоит из жёлтых обоев, рисунки которых состоят из разных узоров, коричневого, мокрого ковра, состоящего из ткани, и плиточных потолков, сверху которых проходят трубы и провода. На потолке присутствуют люминесцентные лампы, издающий громкий гул, который никогда не прекращается. Изредка на стенах можно найти розетки, по всей видимости, американского происхождения. Иногда здесь находят разные объекты, которые являются частями интерьера из Земли, но, иногда, дублированные, или искажённые. Кроме физических объектов, можно услышать и звуки, у которых отсутствует видимый источник. Эти звуки варьируются от тихого гула или хаотичной игре на духовом инструменте, до искажённых копий реальных музыкальных произведений.",
-                tips: "Если вы оказались здесь в группе, то советуется не расходиться и всегда держаться вместе, ведь здесь очень просто заблудиться. Если вы встретите копии табличек экстренного выхода - следуйте за ними.",
+                description: "Янус представляет из себя лабиринт из комнат, строение которых можно было бы встретить в торговых центрах или розничных магазинах. В каждой комнате этой Лиминали присутствует одна черта: жёлтые обои с хаотичными узорами, которые порой меняются вне поля зрения, мокрый, коричневый ковёр, который сильно пахнет, а также плиточные потолки, за которыми находятся трубы. Это самая первая Лиминаль, которая была открыта, и из-за неё появились НЗФА, которые изучают Фористуру (см. Глоссарь). Кроме стен, ковров и потолков, здесь можно найти и всякие элементы декора, вроде мебели или розеток. Розетки здесьочень похожи на розетки американского производства, а также считаются нерабочими. Мебель, которая может быть здесь найдена, выглядит так, как будто её совсем недавно взяли из мебельного магазина, однако в ней есть что-то, что чувствуется неестественным, вроде частого дублирования определённых частей, или-же габариты, которые не соответствуют реальной мебели. Кроме них, здесь иногда можно найти столбы, арки, таблички. Арки и столбы здесь появляются довольно редко, и встретить их можно, в основном, в больших пространствах. Таблички появляются в тёмных уголках, и являются следствием феномена 0002 (см. Phen_0002). Иногда здесь можно найти и двери, которые имеют дополнительные ручки. Такие двери открываются только через ту ручку, что находится по середине двери. В пределах Януса ещё можно увидеть ямы. Ямы эти находятся в полу и имеют квадратную форму, с размерами в 3 на 3 метра в длину и ширину. На самом деле, нам неизвестно, куда ведут эти ямы, но все, кто туда падали, не возвращались, а любая связь с ними прерывалась. Точный размер Януса неизвестен, однако предполагается, что он в 3 раза больше земли (в районе 590-600 миллионов кв. миль). Здесь присутствует эвклидова геометрия, но из-за большого размера и однотипности комнат всё равно здесь просто заблудиться. Кроме того, здесь есть очень много щума: обычно, он исходит от флюресцентных ламп, которые хаотично разбросаны по потолку Лиминали. Эти лампы издают достаточно громкий гул, который может свести с ума новичков. Изредка можно услышать и искажённую музыку, которая играет из колонок на Янусе. Эти музыка может быть абсолютно любой: от бесмысленной какафонии до тихой, оркестровой симфонии, искажённой в пределах Фористуры.",
+                tips: "Если вы оказались здесь в группе, то советуется не расходиться и всегда держаться вместе, ведь здесь очень просто заблудиться. Если вы встретите копии табличек экстренного выхода - следуйте за ними. Они часто находятся около Пространственных Швов (см. Глоссарий), связывающих Янус и Этернитас. Но кроме них, здесь ещё есть два способа выхода. Если вы зайдёте слишком глубоко во тьму, то будет вероятность, что проходя через тёмные коридоры Януса, вы окажитесь в его Спутнике Янус-А (см. Янус-А к. Спутники). Как альтернативу, вы можете попытаться сделать ноуклип в стену. Это приведёт к тому, что вы окажитесь на спутнике Янус-Б (см. Янус-Б в к. Спутники).",
                 hazardClass: "Пустой"
             },
             en: {
                 title: "JANUS",
-                description: "A complex space, somewhat reminiscent of a retail store. The interior of Janus consists of yellow wallpaper patterned with various designs, damp, fabric-covered carpeting in shades of brown, and a tiled ceiling with pipes and wires running across it. Fluorescent lights are mounted on the ceiling, emitting a loud, incessant hum. Occasionally, electrical outlets—apparently of American design—can be found on the walls. Sometimes, various objects appear here; these are items from Earth, though they may be duplicated or distorted. Beyond physical objects, one can also hear sounds with no discernible source—ranging from a faint hum or the chaotic playing of a wind instrument to warped, distorted versions of actual musical pieces.",
-                tips: "If you have entered Janus in a party, it is recommended to stay together in order to not get lost. If you see copies of the emergency exit signs - follow them.",
+                description: "Janus is a maze of rooms, the structure of which could be found in shopping centers or retail stores. Each room of this Liminal has one feature: yellow wallpaper with chaotic patterns that sometimes change out of sight, wet, brown carpet that smells strongly, and tiled ceilings with pipes behind them. This is the very first Liminality to be discovered, and because of it, the NBFA appeared who study the Foristure (see Glossary). In addition to walls, carpets and ceilings, here you can also find all sorts of decorative elements, such as furniture or sockets. The outlets here are very similar to American made outlets and are also considered non-functional. The furniture that can be found here looks like it was recently taken from a furniture store, but there is something about it that feels unnatural, such as the frequent duplication of certain parts, or dimensions that do not correspond to the real furniture. In addition to them, you can sometimes find pillars, arches, and signs here. Arches and pillars appear quite rarely here, and they can be found mainly in large spaces. The signs appear in dark corners, and are a consequence of the 0002 phenomenon (see Phen_0002). Sometimes you can find doors here that have additional handles. Such doors can only be opened through the handle located in the middle of the door. Within Janus you can still see pits. These pits are located in the floor and have a square shape, with dimensions of 3 by 3 meters in length and width. In fact, we do not know where these pits lead, but everyone who fell there did not return, and any communication with them was interrupted. The exact size of Janus is unknown, but it is estimated to be 3 times the size of Earth (in the region of 590-600 million square miles). There is Euclidean geometry here, but due to the large size and uniformity of the rooms, it’s still easy to get lost here. In addition, there is a lot of noise here: it usually comes from the fluorescent lamps that are randomly scattered across Liminal's ceiling. These lamps produce quite a loud hum that can drive beginners crazy. Occasionally, distorted music can also be heard playing from the speakers on Janus. This music can be absolutely anything: from a meaningless cacaphony to a quiet, orchestral symphony, distorted within the Foristure.",
+                tips: "If you find yourself in a group here, it is advised not to disperse and always stick together, because it is very easy to get lost here. If you come across copies of emergency exit signs, follow them. They are often found near the Spatial Seams (see Glossary) connecting Janus and Eternitas. But besides them, there are still two ways out. If you go too deep into the darkness, there is a chance that while passing through the dark corridors of Janus, you will find yourself in its Satellite Janus-A (see Janus-A to. Satellites). Alternatively, you can try making a noclip into the wall. This will lead to you ending up on the Janus-B satellite (see Janus-B to. Satellites).",
                 hazardClass: "Hollow"
             }
         }
@@ -111,14 +111,14 @@ const backroomsDatabase = [
         translations: {
             ru: {
                 title: "ЭТЕРНИТАС",
-                description: "Комплекс состоящий из бетонных коридоров, в которых есть малое количество света. Свет исходит от тусклых ламп на потолке и работающие от керосина, который сгорает и тем самым выключает лампу. В отличии от Януса, здесь присутствует неэвклидова геометрия, а сама структура является гораздо более примитивной, состоя лишь из коридоров и лестниц. Иногда можно найти кожаные двери, за которыми находятся либо мелкие коморки, либо стена. Иногда можно найти и окна, за которыми находятся всё те-же стены.",
-                tips: "Если вы сюда попали, то рекомендуется немедленно найти выход и использовать его. Это будет непростой задачей из-за постоянно сгорающих ламп и неэвклидовой геометрии, и поэтому вам нужно знать несколько отдельных черт, показывающих, что рядом выход. Если вы заметили, что в коридорах Этернитаса начали появляться дыры и трубы, то вы идёте к выходу. Он уже будет неподалёку.",
+                description: "Этернитас несильно отличается от Януса в плане ландшафта, однако тут есть отличия в интерьере, а также в том факте, что здесь присутствует неэвклидова геометрия (см. Глоссарий). В интерьере присутствуют бетонные стены, большая часть у которых покрашена в синий, а верхняя (оставшаяся), покрашена в чистый белый цвет. Пол серый и выглядит грязным. Потолок является таким-же, как и верхняя часть стены. На потолке можно найти керосиновые лампы, которые постоянно сгорают, из-за чего эта Лиминаль погружается во тьму. Но, что важно знать. это не вечно. Во время изменения ландшафта из-за неэвклидовой геометрии, лампы обязательно восстанавиваются и имеют полный запас керосина, который-же в свою очередь начинает сразу сгорать. Также, в отличии от Януса, здесь присутствуют лестницы и нормальные двери, но отсутствует мебель, гудение ламп, а также искажённая музыка. Лестницы ведут либо вверх, либо вниз. Эти-же лестницы могут упираться и в стену из-за нестабильности Лиминали. Двери находятся по бокам коридоров, и то редко. За дверьми всегда будет стена, которая будет либо стеной другого коридора, либо-же стеной, состоящей из красного кирпича, склееного и неразрушимого. Если зайти здесь слишком далеко, то рано или поздно, вы заметите, как Этернитас пересекается с другими Лиминалями, вроде Януса или Вевоиса (см. Вевоис в к. Основные Лиминали). С помощью этих Пространственных швов, кстати, можно попасть в другие лиминали.",
+                tips: "Если вы сюда попали, то вы можете начать искать Пространственные швы, которые могут привести вас в другие Лиминали. В списке таких Лиминалей есть Янус, Янус-А и Янус-Б, Вевоис, Дит, Консус-А, Консус-Б и Консус-В, а также Мендациус (там швы видны только вне иллюзии)(см. всё сказанное рание в категориях «Основные Лиминали» и «Спутники».)",
                 hazardClass: "Нелинейная геометрия"
             },
             en: {
                 title: "ETERNITAS",
-                description: "A complex consisting of concrete corridors with very little light. The illumination comes from dim, ceiling-mounted lamps fueled by kerosene; as the fuel burns away, the lamps eventually go out. Unlike Janus, this liminality features non-Euclidean geometry, and its overall structure is far more primitive, composed solely of corridors and staircases. Occasionally, one may encounter leather doors, which lead either to small, cramped chambers or simply to a wall. At times, windows can also be found—revealing nothing but more walls.",
-                tips: "If you have ended up here, it is recommended that you find an exit immediately and use it. This will be no easy task, given the constantly burning-out lights and the non-Euclidean geometry; therefore, you should be aware of a few specific signs indicating that an exit is nearby. If you notice holes and pipes beginning to appear in the corridors of Eternitas, you are heading toward an exit—it should be close by.",
+                description: "Eternitas is not very different from Janus in terms of landscape, but there are differences in the interior, as well as the fact that there is non-Euclidean geometry (see Glossary). The interior contains concrete walls, most of which are painted blue, and the top (remaining) is painted pure white. The floor is gray and looks dirty. The ceiling is the same as the top of the wall. Kerosene lamps can be found on the ceiling, which constantly burn out, causing this Liminal to plunge into darkness. But what is important to know. it doesn't last forever. When the landscape changes due to non-Euclidean geometry, the lamps are necessarily restored and have a full supply of kerosene, which in turn begins to burn out immediately. Also, unlike Janus, there are stairs and normal doors, but there is no furniture, humming lamps, or distorted music. Stairs lead either up or down. These same stairs can also run into a wall due to the instability of this Liminality. Doors are located on the sides of corridors, and even then rarely. Behind the doors there will always be a wall, which will either be the wall of another corridor, or a wall consisting of red brick, glued and indestructible. If you go too far here, sooner or later you will notice how Eternitas intersects with other Liminalities, like Janus or Vejovis (see Vejovis in The Main Liminalities). With the help of these Spatial seams, by the way, you can get into other liminalities.",
+                tips: "If you have ended up here, you can start searching for the Spacial Seams, that can lead you to the other Liminalities. The list of these Liminalities includes Janus, Janus-A and Janus-B, Vejovis, Dis, Consus-A, Consus-B and Consus-C, and also Mendacius (the seams in there are only visible without the illusion). (see all said before in categories «The Main Liminalities» & «Satellites».",
                 hazardClass: "Non-linear geometry"
             }
         }
@@ -166,7 +166,7 @@ en: {
 {
 id: "LIM_0005",
 type: "liminalityM",
-hazard: "CLASS 0-EG",
+hazard: "CLASS 0",
 image: "images/Therminus.jpg",
 translations: {
 ru: {
@@ -226,7 +226,7 @@ en: {
     {
 id: "LIM_0008",
 type: "liminalityO",
-hazard: "CLASS 3EG",
+hazard: "CLASS 3-EG",
 image: "images/AHEn-C2EHE.webp",
 translations: {
 ru: {
@@ -246,7 +246,7 @@ en: {
        {
 id: "LIM_0009",
 type: "liminalityO",
-hazard: "CLASS 5PG",
+hazard: "CLASS 5-PG",
 image: "images/TheEnd.jpg",
 translations: {
 ru: {
@@ -286,7 +286,7 @@ en: {
     {
     id: "LIM_0011",
     type: "liminalityO",
-    hazard: "CLASS 2P",
+    hazard: "CLASS 2-P",
     image: "images/FEn-C2PHSP.jpg",
     translations: {
     ru: {
@@ -300,6 +300,26 @@ en: {
         description: "FEn-C2PHSP consists of a long corridor that winds as it progresses. The sides of the corridor feature decor strongly reminiscent of Soviet-era buildings from the time of Nikita Khrushchev. This decor includes numerous windows, with one door appearing every 25 meters. Entering these doors is strictly prohibited due to an internal anomaly that compels individuals to venture even deeper into the area. Beyond the windows lies a pink light, which also fills much of the interior space behind the doors. The corridor is covered in artificial snow that does not melt. Occasionally, gaps appear in the snow, revealing a checkered floor underneath; this surface is extremely slippery, and stepping on it is not advised. The ceiling is covered in wallpaper depicting a bright, daytime sky with clouds. Every 10 meters, there are lampposts and benches, flanked by potted artificial green bushes. The lampposts remain constantly lit and emit no sound. A calm, ambient music also plays, though its source has never been identified. It is hypothesized that the sound may originate from the spaces behind the doors—the areas bathed in pink light—but this cannot be proven, as no one who has entered these spaces has ever returned.",
         tips: "Ignore the doors along the sides of the corridor. Do not attempt to noclip your way out of FEn-C2PHSP; doing so will result in severe injuries and carries a high risk of death. Instead, if you do not wish to remain here, simply keep moving forward. Sooner or later, you will reach the end and see a metal door. Passing through it will take you to Vejovis.",
         hazardClass: "Psychological effects. Door symbol: «❄»"
+        }
+    }
+},
+    {
+    id: "",
+    type: "liminalityO",
+    hazard: "無訊號",
+    image: "NoSignalLiminalis.png",
+    translations: {
+    ru: {
+        title: "無訊號",
+        description: "RS_C5PHP это маленькая комнатка с бежевыми стенами, бетонным полом и потолком. На потолке есть одна лампа, освещающая всю комнату. У стен есть плинтусы, а также тут есть дверь. За дверью находится полностью чёрное пространство, в котором ███████████████████████████████████████████████████████████████████████████████████████████████ ",
+        tips: "█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
+        hazardClass: "████████████████████████████████████████████████████████████████████████████"
+    },
+    en: {
+        title: "無訊號",
+        description: "RS_C5PHP is a small room with beige walls, concrete floor and ceiling. There is one lamp on the ceiling that illuminates the entire room. The walls have skirting boards and there is also a door. Behind the door there is a completely black space in which ███████████████████████ ████████████████████████ ████████████████████████ ████████████████████████",
+        tips: "█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████",
+        hazardClass: "████████████████████████████████████████████████████████████████████████████"
         }
     }
 },
@@ -320,6 +340,26 @@ en: {
         description: "Janus-A is almost identical to the main Liminality in architecture. This satellite, however, has one key difference: it appears worn-down, and most of the lighting is effectively non-functional. There is a faint, persistent hum—though it is not always audible. In places, the wallpaper is torn away, revealing walls made of wood that resembles cardboard. The music here is even more distorted; at times, it is indistinguishable from the static noise emitted by a television. Unlike the primary Janus (the main Liminality), this version lacks distorted objects. It is also home to several types of living organisms. Local inhabitants include members of the genus *Aspergillus*, the Desperate, as well as *Homo desperans* and *Electrofagus mimicus*. The *Electrofagus* population here is very small due to the critically low levels of light; consequently, the remaining individuals struggle desperately to survive, competing for the spots closest to the lamps. If a human or any other living organism attempts to remove an *Electrofagus*, it will deliver an electric shock through its hair-like filaments—a jolt of approximately 120 volts. The Desperate typically wander alone; driven by hunger, they will attempt to consume any other living organism they encounter, though they do not always succeed.",
         tips: "Try to avoid contact with Organisms, especially Electrophages. There are two (2) main exits here: a metal door and an area with a great deal of light. The first leads to an 80 km-long bridge, flanked on both sides by glass. The second takes you back to the main section of Janus.",
         hazardClass: "Hostile enviorment"
+        }
+    }
+},
+         {
+    id: "LIM_0001-B",
+    type: "satellite",
+    hazard: "CLASS 0",
+    image: "images/Janus-B.jpg",
+    translations: {
+    ru: {
+        title: "ЯНУС-Б",
+        description: "Янус-Б представляет собой довольно небольшую структуру, которая сильно напоминает подсобные помещения торговых точек. Здесь есть белые стены, обклеенные штукатуркой, коричневый, сухой ковёр, а также такие-же потолки с такими-же гудящими лампами, как и на основной Лиминали. Размер данного спутника определяется в 120000 кв. миль, что делает его очень мелким по-сравнению с Янусом или Янусом-А. Здесь отсутствует какая-либо мебель или двери. На одной части Януса-Б есть открытый проход, который должен был вести к мосту между Янусом-А и Янусом-Б. Однако, сейчас там ничего не видно и есть проход в Этернитас.",
+        tips: "Вы можете вернуться обратно в Янус через металлическую дверь. Также вы можете воспользоваться Выходом в Этернитас.",
+        hazardClass: "Безжизненный."
+    },
+    en: {
+        title: "JANUS-B",
+        description: "Janus-B is a rather small structure that strongly resembles the back rooms of retail outlets. There are white walls covered with plaster, a brown, dry carpet, as well as the same ceilings with the same humming lamps as on the main Liminali. The size of this satellite is determined to be 120,000 square meters. miles, which makes it very small compared to Janus or Janus-A. There is no furniture or doors here. On one part of Janus-B there is an open passage that would lead to a bridge between Janus-A and Janus-B. However, now nothing is visible there and there is a passage to Eternitas.",
+        tips: "You can return to Janus trough a metal door. You can also use the exit to Eternitas",
+        hazardClass: "Lifeless."
         }
     }
 },
