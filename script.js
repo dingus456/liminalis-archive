@@ -447,7 +447,7 @@ en: {
     id: "LIM_0005-A",
     type: "satellite",
     hazard: "CLASS 0",
-    image: "images/Janus-B.jpg",
+    image: "images/Consus-A.jpg",
     translations: {
     ru: {
         title: "КОНСУС-А",
