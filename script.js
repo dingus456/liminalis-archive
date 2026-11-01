@@ -620,15 +620,21 @@ function toggleGlossary() {
         // Отключаем на время фильтры и поиск, чтобы не мешали
         if (filterSelect) filterSelect.disabled = true;
         if (searchInput) searchInput.disabled = true;
-    } else {
-        // Возвращаемся к карточкам уровней
+    }  else {
         glossaryBox.style.display = 'none';
-        container.style.display = 'grid'; // или 'block', в зависимости от твоей верстки
+        container.style.display = 'grid'; 
         btn.classList.remove('active');
         
-        if (filterSelect) filterSelect.disabled = false;
-        if (searchInput) searchInput.disabled = false;
+        if (filterSelect) {
+            filterSelect.disabled = false;
+            filterSelect.value = 'all'; 
+        }
+        if (searchInput) {
+            searchInput.disabled = false;
+            searchInput.value = '';    
+        }
         
-        searchArchive(); // Перерисовываем уровни
+        searchArchive();
     }
+
 }
