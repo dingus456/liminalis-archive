@@ -487,7 +487,7 @@ en: {
     id: "LIM_0015",
     type: "liminalityO",
     hazard: "CLASS 3-EP",
-    image: "images/Party that never Was.jpg",
+    image: "images/Party that never Was =).jpg",
     translations: {
     ru: {
         title: "FUN-C3HEP: «Вечеринка, Которой не Было.»",
@@ -500,6 +500,86 @@ en: {
         description: "FUN-C3HEP, also known as «The Party That Never Was» or simply «The Fun», is a complex consisting of various party rooms. The walls in most of these rooms are brightly colored; some even feature hues visible only through electronic devices—appearing as shades of gray to the naked eye. The floors are covered in either tiles or wood-patterned laminate. The ceilings are lined with lamps that never dim, casting a perpetual glow over the entire FUN-C3HEP space. The area is furnished with tables and chairs—all decorated for a celebration—along with balloons, garlands, and similar festive items. There are also doors, all painted white, which lead either into corridors or into other rooms. Despite the festive setting, the space is completely silent; there is no hum from the lights, nor is there any party music. Even if you were to pop a balloon, you would hear absolutely nothing. However, as you venture deeper into FUN-C3HEP, you may begin to encounter strange mannequins dressed in beige clothing. Each one wears a cardboard bag over its head, featuring a crude, red-marker-drawn smile. These mannequins tend to gather in clusters; they remain harmless as long as you keep your eyes on them. They are also the only source of sound in this Liminality: a faint, distorted laughter. The moment you look away, the mannequins will shift their positions, appearing closer to you than before. It is not entirely clear what happens to those who fail to keep their gaze fixed upon them for too long.",
         tips: "Do not attempt to venture too deep. If you encounter anomalous mannequins, it is recommended that you leave the area without breaking eye contact. There are three exits here. Descending through the floor hatch will take you into UEn-C5HA; however, due to the properties of this Liminal, this exit is not advised. A second exit is the «Emergency Exit» door; passing through it will lead you into the expanse of Vejovis. The third exit is a noclip. Performing one will take you into COm-C0HN.",
         hazardClass: "Hostile enviorment, Psychological impact. Door symbol: «=)»"
+        }
+    }
+},
+    {
+    id: "LIM_0015-A",
+    type: "liminalityO",
+    hazard: "CLASS 0",
+    image: "images/The REAL FUN =))).webp",
+    translations: {
+    ru: {
+        title: "FUN-C3HEP-A: «РЕАЛЬНОЕ веселье»",
+        description: "FUN-C3HEP-A является разрушенной копией своей основной Лиминали. Стены здесь серые, а цвет виден только через камеру или гаджеты, плитки что на потолке, что на полу - монотонны. Большинство ламп, найденных здесь, являются разбитыми и нерабочими. Некоторые лампы работают, но это встретить можно крайне редко. На потолке висят шары, внутри которых грязная вода. Лужы этой воды, кстати, иногда можно увидеть на полу и столах со стульями, немалая часть которых тоже считается сломанной. Размер данного спутника считается неопределённым, но предполагается, что он гораздо меньше основного FUN-C3HEP. Тут даже отсутствуют манекены, найденные в основной Лиминали, как и выход. Информация об этом спутнике дошла до НЗФА только потому что была низкая связь и пару доказательств существования. Сейчас ведутся исследования.",
+        tips: "Ты ничего не сможешь сделать. В конце концов, люк не зря считается ловушкой.",
+        hazardClass: "Безнадёжный."
+    },
+    en: {
+        title: "FUN-C3HEP-A: «REAL fun»",
+        description: "FUN-C3HEP-A is a ruined copy of its primary Liminality. The walls here are gray—with color visible only through a camera or other electronic devices—and the tiles on both the ceiling and the floor are monotonous. Most of the lamps found here are broken and non-functional; it is extremely rare to encounter one that still works. Spheres containing dirty water hang from the ceiling. Puddles of this water can occasionally be found on the floor, as well as on tables and chairs—many of which are also broken. The size of this satellite is indeterminate, though it is presumed to be significantly smaller than the original FUN-C3HEP. Notably, the mannequins present in the primary Liminal space are absent here, and there is no visible exit. The NBFA only learned of this satellite due to a weak, intermittent connection and a few pieces of evidence confirming its existence. Research is currently underway.",
+        tips: "You can't do anything at this point. The trapdoor really is a trap door, after all.",
+        hazardClass: "Hopeless."
+        }
+    }
+},
+    {
+    id: "LIM_0016",
+    type: "liminalityO",
+    hazard: "CLASS 0",
+    image: "images/COm-C0HN.jpg",
+    translations: {
+    ru: {
+        title: "COm-C0HN: «Растяжка»",
+        description: "COm-C0HN представляет из себя комплкс из коридоров, которые постелены красными, бархатными коврами, а также оснащены пластиковыми, белыми стенами, и отражающими потолками. Каждые 10 метров будут мелкие лампы, которые находятся на потолке. Они издают тихий гул, и иногда моргают. Слева и справа находятся двери, ведущие в обширные комнаты с бежевыми стенами и коврами, а также плиточными потолками с люминесцентными лампами, которые издают тихий гулл. На каждом терминале присутствует браузер, а также доступная сеть, у которой есть пароль. Пароль этот, на данный момент, является неизвестным. В браузере нет доступных сайтов, а вместо этого есть странные символы на синем фоне и куча грустных смайликов «=(». В таких комнатах есть много компьютерных терминалов, бумаги, а также ручек, в которых нет чернил. Кроме них, здесь также находят и манекенов, идентичных тем, что есть на Мендациусе. Были ещё и рапорты о том, что были принтеры, в которых была паразитическая краска (см. Org_Kin1_SpecB-1), но никаких доказательств этому нет. Площадь этой Лиминали оценивается в 14 на 60 км², что делает COm-C0HN довольно небольшим. Если зайти в самые глубины данной лиминали, то вы попадёте в недостроенную часть, где модно найти милькающие лампы, деревянные балки, а также стены и потолочные плитки. Здесь отсутствуют манекены и терминалы.",
+        tips: "Чтобы отсюда выйти, вы можете попробовать найти выходы с табличкой выхода, или сделать ноуклип. Двери ведут в FUN-C3HEP, а ноуклип ведёт в Этернитас.",
+        hazardClass: "Безжизненный. Символ двери: «=(»"
+    },
+    en: {
+        title: "COm-C0HN: «Streching»",
+        description: "COm-C0HN consists of a complex of corridors lined with red velvet carpeting, featuring white plastic walls and reflective ceilings. Small ceiling-mounted lamps are spaced every 10 meters; they emit a faint hum and occasionally flicker. Doors on either side lead into expansive rooms with beige walls and carpeting, as well as tiled ceilings equipped with fluorescent lights that also produce a low, humming sound. Each computer terminal provides access to a web browser and a network that requires a password—a password which, at present, remains unknown. The browser displays no accessible websites; instead, it shows strange symbols against a blue background, accompanied by numerous sad emoticons: «=(». These rooms contain many computer terminals, stacks of paper, and pens devoid of ink. Also present are mannequins identical to those found in Mendacius. There have been reports of printers containing a parasitic ink (see Org_Kin1_SpecB-1), though no evidence exists to support this. The area of ​​this Liminal space is estimated at 14 by 60 km², making COm-C0HN relatively small. Venturing into the deepest parts of this space leads to an unfinished section, characterized by flickering lights, exposed wooden beams, and incomplete wall and ceiling tiling. Mannequins and computer terminals are absent in this area.",
+        tips: "To leave this place, you can try to find exits marked with an «EXIT» sign, or use noclip. The doors lead to FUN-C3HEP, while noclip leads to Eternitas.",
+        hazardClass: "Lifeless. Door symbol: «=(»"
+        }
+    }
+},
+     {
+    id: "LIM_0017",
+    type: "liminalityO",
+    hazard: "CLASS 0",
+    image: "images/VBFEn-C1PHP.jpeg",
+    translations: {
+    ru: {
+        title: "VBFEn-C1PHP: «Ночной Бор»",
+        description: "VBFEn-C1PHP, известный как «Ночной Бор» или «Глубинные Леса» представляет из себя плоское пространство, пол которого состоит из искусственной травы. Каждые 3-5 метров здесь стоят сосновые деревья, высотой достигающих потолка. Потолок находится на высоте 460,25 метров и состоит из материала, поглащающего 99,9% света. Из аналогичного материала состоят и стены. Площадь этой Лиминали равна примерно 8000 км². И при этом везде отсутствует свет. Кроме того, по всей Лиминали исходит странное чириканье, от которого исходит сильное эхо. Точный источник не был найден.",
+        tips: "Держитесь у стен. Рано или поздно, вы найдёте щель.",
+        hazardClass: "Безжизненный. Символ двери: «𖠰»"
+    },
+    en: {
+        title: "VBFEn-C1PHP: «Nighttime Pine-Forest»",
+        description: "VBFEn-C1PHP, known as «Night Pine» or «Deep Forests», is a flat expanse with a floor covered in artificial grass. Every 3–5 meters, pine trees stand, reaching all the way to the ceiling. The ceiling is located at a height of 460.25 meters and is composed of a material that absorbs 99.9% of light; the walls are made of the same substance. This Liminality covers an area of ​​approximately 8,000 km², and it is entirely devoid of light. Furthermore, a strange chirping sound, which echoes intensely, can be heard throughout Liminality. Its exact source has not been found.",
+        tips: "Stick to the walls. Sooner or later, you’ll find a gap.",
+        hazardClass: "Lifeless. Door symbol: «𖠰»"
+        }
+    }
+},
+       {
+    id: "LIM_0018",
+    type: "liminalityO",
+    hazard: "CLASS 3-EP",
+    image: "images/NoPhotoNormalLiminalis.png",
+    translations: {
+    ru: {
+        title: "PLACEHOLDER",
+        description: "",
+        tips: "",
+        hazardClass: "Агрессивная окружающая среда. Символ двери: «TH𝔼 MELRꜲH §TATIꚘNN»"
+    },
+    en: {
+        title: "PLACEHOLDER",
+        description: "",
+        tips: "",
+        hazardClass: "Hostile Enviorment. Door symbol: «TH𝔼 MELRꜲH §TATIꚘNN»"
         }
     }
 },
