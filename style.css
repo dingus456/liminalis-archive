@@ -183,4 +183,34 @@ footer {
     color: #000;
 }
 
+@media screen and (max-width: 768px) {
+    .header-controls, 
+    .nav-container,
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px; 
+        width: 100%;
+        box-sizing: border-box; 
+        padding: 10px;
+    }
 
+ 
+    input[type="text"], 
+    #searchInput {
+        width: 100% !important;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 5px;
+    }
+
+
+    button, 
+    .nav-btn {
+        flex: 1 1 auto; 
+        font-size: 13px; 
+        padding: 6px 8px;
+        white-space: nowrap; 
+    }
+}
