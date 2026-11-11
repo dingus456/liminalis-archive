@@ -103,6 +103,46 @@ const backroomsDatabase = [
             }
         }
     },
+          {
+    id: "LIM_0001-A",
+    type: "satellite",
+    hazard: "CLASS 1-E",
+    image: "images/Janus-A.webp",
+    translations: {
+    ru: {
+        title: "ЯНУС-А",
+        description: "Янус-А почти-что ничем не отличается от основной Лиминали архитектурно. Этот Спутник, однако, имеет лишь одно отличие: он выглядит потрёпанным и большая часть света там практически не работает. Там есть совсем небольшой гул, который всё равно можно не всегда услышать. Обои порой бывают ободраны, обнажая деревянные, как будто картонные стены. Музыка здесь искажена ещё сильнее: порой её нельзя отличить от простого шума, который исходит от телевизора. Здесь отсутствуют искажённые объекты, которые присутствуют на Янусе (основной Лиминали). Также тут есть несколько видов живых организмов. В список местных обитателей входят представители рода Aspergillus, Отчаявшиеся, а также Homo Desperans и Electrofagus mimicus. Электрофаги здесь имеют очень низкую популяцию из-за критически-низкого количества освещения. Из-за этого, оставшиеся Электрофаги отчаянно пытаются выжить и воюют за самое близкое место к лампе. Если человек или какой-либо другой живой организм попытается вытащить Электрофага, то он ударит током это существо через волосинки. Один такой удар составляет примерно 120 вольт. Отчаявшиеся, обычно, бродят здесь по-одиночке и, из-за голода, при встрече с другим живым организмом, пытаются его съесть, однако это не всегда удаётся им.",
+        tips: "Постарайтесь избегать контакта с Организмами, особенно с Электрофагами. Тут есть два(2) основных выхода: металлическая дверь и место с большим количеством света. Первое ведёит к мосту длинной в 80 км, по болкам которого будет стекло. Второй-же возвращает вас в основную часть Януса.",
+        hazardClass: "Агрессивная окружающая среда"
+    },
+    en: {
+        title: "JANUS-A",
+        description: "Janus-A is almost identical to the main Liminality in architecture. This satellite, however, has one key difference: it appears worn-down, and most of the lighting is effectively non-functional. There is a faint, persistent hum—though it is not always audible. In places, the wallpaper is torn away, revealing walls made of wood that resembles cardboard. The music here is even more distorted; at times, it is indistinguishable from the static noise emitted by a television. Unlike the primary Janus (the main Liminality), this version lacks distorted objects. It is also home to several types of living organisms. Local inhabitants include members of the genus *Aspergillus*, the Desperate, as well as *Homo desperans* and *Electrofagus mimicus*. The *Electrofagus* population here is very small due to the critically low levels of light; consequently, the remaining individuals struggle desperately to survive, competing for the spots closest to the lamps. If a human or any other living organism attempts to remove an *Electrofagus*, it will deliver an electric shock through its hair-like filaments—a jolt of approximately 120 volts. The Desperate typically wander alone; driven by hunger, they will attempt to consume any other living organism they encounter, though they do not always succeed.",
+        tips: "Try to avoid contact with Organisms, especially Electrophages. There are two (2) main exits here: a metal door and an area with a great deal of light. The first leads to an 80 km-long bridge, flanked on both sides by glass. The second takes you back to the main section of Janus.",
+        hazardClass: "Hostile enviorment"
+        }
+    }
+},
+         {
+    id: "LIM_0001-B",
+    type: "satellite",
+    hazard: "CLASS 0",
+    image: "images/Janus-B.jpg",
+    translations: {
+    ru: {
+        title: "ЯНУС-Б",
+        description: "Янус-Б представляет собой довольно небольшую структуру, которая сильно напоминает подсобные помещения торговых точек. Здесь есть белые стены, обклеенные штукатуркой, коричневый, сухой ковёр, а также такие-же потолки с такими-же гудящими лампами, как и на основной Лиминали. Размер данного спутника определяется в 120000 кв. миль, что делает его очень мелким по-сравнению с Янусом или Янусом-А. Здесь отсутствует какая-либо мебель или двери. На одной части Януса-Б есть открытый проход, который должен был вести к мосту между Янусом-А и Янусом-Б. Однако, сейчас там ничего не видно и есть проход в Этернитас.",
+        tips: "Вы можете вернуться обратно в Янус через металлическую дверь. Также вы можете воспользоваться Выходом в Этернитас.",
+        hazardClass: "Безжизненный."
+    },
+    en: {
+        title: "JANUS-B",
+        description: "Janus-B is a rather small structure that strongly resembles the back rooms of retail outlets. There are white walls covered with plaster, a brown, dry carpet, as well as the same ceilings with the same humming lamps as on the main Liminali. The size of this satellite is determined to be 120,000 square meters. miles, which makes it very small compared to Janus or Janus-A. There is no furniture or doors here. On one part of Janus-B there is an open passage that would lead to a bridge between Janus-A and Janus-B. However, now nothing is visible there and there is a passage to Eternitas.",
+        tips: "You can return to Janus trough a metal door. You can also use the exit to Eternitas",
+        hazardClass: "Lifeless."
+        }
+    }
+},
     {
         id: "LIM_0002",
         type: "liminalityM",
@@ -123,6 +163,26 @@ const backroomsDatabase = [
             }
         }
     },
+              {
+    id: "LIM_0002-A",
+    type: "satellite",
+    hazard: "CLASS 0",
+    image: "images/Eternitas-A.webp",
+    translations: {
+    ru: {
+        title: "ЭТЕРНИТАС-А",
+        description: "Этернитас-А относится к категории Спутников только потому, что он находится на территории его основной Лиминали. Сам же этот «Осколок» выглядит как самый обычный двухэтажный американский дом с бежевыми обоями, деревнным полом, потолком, на котором горят лампы. Тут есть окна и дверь наружу. За ними находятся стены Этернитаса. На первом этаже есть прихожая, гостиная, ванная, кухня и, так-называемая, «Пустая комната». В прихожей присутствует искажённая мебель, к которой тут относится вешалка и полки снизу. Там-же есть и дверь в стену. В гостиной есть стол, тумбы с прямоэкранным телевизором, по обоим сторонам которого расположены колонки. Под столом расположен ковёр. В гостиной также есть лестница на второй этаж, на котором есть только спальня и туалет. Кухня достаточно мелкая, но в ней есть еда, которая, на удивление, способна регенерироваться. По словам дегустаторов, еда ощущается на вкус как бетон. Ванная занимает мало места. Как и туалет. Спальня имеет большую кровать, тумбочку и шкаф. В шкафу весит одежда. Главная особенность этого осколка - полная изоляция. В этом осколке может быть только один человек, и этот-же человек может оставаться здесь на столько, насколько он захочет.",
+        tips: "Отсюда нет известного способа выхода.",
+        hazardClass: "Пустой"
+    },
+    en: {
+        title: "ETERNITAS-A",
+        description: "Eternitas-A is classified as a «Satellite» solely because it is located within the territory of its primary Liminality. This «Fragment» itself resembles an ordinary, two-story American-style house, featuring beige wallpaper, wooden flooring, and ceilings equipped with electric lights. It includes windows and an exterior door; beyond them lie the walls of Eternitas. The ground floor contains an entryway, a living room, a bathroom, a kitchen, and a so-called «Empty Room.» The entryway features distorted furniture, including a coat rack and shelving units at the base; there is also a door set directly into the wall. The living room is furnished with a table and stands holding a flat-screen television, flanked by speakers. A rug lies beneath the table. A staircase leads from the living room to the second floor, which consists only of a bedroom and a toilet. The kitchen is quite small, yet it contains food that—surprisingly—is capable of regenerating. According to those who have sampled it, the food tastes like concrete. Both the bathroom and the toilet occupy very little space. The bedroom contains a large bed, a nightstand, and a wardrobe, inside of which clothes are hanging. The defining characteristic of this Fragment is its complete isolation: it can accommodate only one person at a time, and that individual may remain there for as long as they wish.",
+        tips: "You can't leave.",
+        hazardClass: "Hollow"
+        }
+    }
+},
     {
         id: "LIM_0003",
         type: "liminalityM",
@@ -183,6 +243,66 @@ ru: {
     }
 }
 },
+          {
+    id: "LIM_0005-A",
+    type: "satellite",
+    hazard: "CLASS 0",
+    image: "images/Consus-A.jpg",
+    translations: {
+    ru: {
+        title: "КОНСУС-А",
+        description: "Консус-А это довольно мелкий ресторан, который является столовой для офиса, коим является сам Консус. Площадь Консуса-А равна примерно 50 метрам в длину и 20 метрам в ширину, что делает это место довольно мелким. Здесь полно столов и сидушек, рядом с которыми всегда будут картины. Картины эти меняются каждый час, испаряясь и появляясь снова. Освещение здесь имеет желтоватый оттенок, а также издаёт тихий гул. Здесь также присутствует пища, которой является желеобразная субстанция полупрозрачного, белого цвета. На вкус эта масса напоминает то, что вы больше всего любите из пищи, что является довольно интересным. Желе регенерируется вместе с картинами. Вы также можете заметить дверь с табличкой выхода. Эта дверь ведёт в Пространственный шов Этернитаса. Кроме столиков, сидушек, картин и двери, тут ещё есть касса и кухня, у которой никого нет. Сама кухня полностью пуста, однако на ней отмечены красными линиями места, где должны находиться плиты, фритюрницы, духовки и т.п.",
+        tips: "Вы можете войти в проход без двери, из которого вы вошли сюда. Вы войдёте обратно в основную часть Консуса, на четвёртый этаж. Войдя в дверь с табличкой выхода, вы попадёте в Этернитас. И помните. Если вы собираетесь уходить отсюда, то возьмите как можно больше желе.",
+        hazardClass: "Обитаемый"
+    },
+    en: {
+        title: "CONSUS-A",
+        description: "Consus-A is a rather small restaurant that serves as a canteen for the office—the office of Consus itself. Consus-A measures approximately 50 meters in length and 20 meters in width, making it a fairly compact space. It is filled with tables and chairs, always accompanied by paintings. These paintings change every hour, vanishing and then reappearing. The lighting has a yellowish hue and emits a faint, low hum. Food is also available here: a translucent, white, gelatinous substance. Interestingly, this mass tastes exactly like your favorite food. The jelly regenerates along with the paintings. You may also notice a door marked with an «EXIT» sign; this door leads to the Eternitas Spatial Seam. In addition to the tables, chairs, paintings, and the door, there is a checkout counter and a kitchen—though the latter is completely deserted. The kitchen itself is entirely empty, yet red lines are marked on the surfaces to indicate where stoves, deep fryers, ovens, and similar equipment ought to be.",
+        tips: "You can head back through the doorless passageway you arrived from; this will take you back into the main section of Consus, on the fourth floor. If you go through the door marked with an exit sign, you will reach Eternitas. And remember: if you’re planning on leaving, take as much jelly as you can.",
+        hazardClass: "Habitable"
+        }
+    }
+},
+            {
+    id: "LIM_0005-B",
+    type: "satellite",
+    hazard: "CLASS 0",
+    image: "images/Consus-B.jpg",
+    translations: {
+    ru: {
+        title: "КОНСУС-Б",
+        description: "Консус-Б имеет пространство, забитое полками, на которых лежат папки. В папках тут находятся разные бумаги, в которых нельзя прочитать то, что написано. Здесь отсутствуют стены. Здесь есть плиточный пол и бетонный потолок, на котором изредка появляются синие лампы. Эти лампы появляются в очень мелком объёме и иногда могут моргать.",
+        tips: "Отсюда нельзя выйти. Смысл твоего нахождения здесь отсутствует.",
+        hazardClass: "Безжизненный."
+    },
+    en: {
+        title: "CONSUS-B",
+        description: "Consus-B features a space packed with shelves, upon which folders rest. Inside these folders are various documents, though the text written on them is illegible. There are no walls here. The space has a tiled floor and a concrete ceiling, from which blue lamps occasionally emerge. These lamps are quite small and may, at times, flicker.",
+        tips: "You can't leave this place. There is no point for you to be here.",
+        hazardClass: "Lifeless."
+        }
+    }
+},
+                {
+    id: "LIM_0005-C",
+    type: "satellite",
+    hazard: "CLASS 5-EP",
+    image: "images/Consus-C.jpg",
+    translations: {
+    ru: {
+        title: "КОНСУС-В",
+        description: "Консус-В отдалённо напоминает первый этаж своей основной Лиминали, однако он почти полностью разрушен. Тут отсутствует свет полностью. На полу можно найти мусор в больших количествах, который может включать в себя разные вещи: от протухшей еды до использованных презервативов. Кроме того, это место имеет площадь в 50 миллионов кв. миль, что больше основного Консуса примерно в 81 миллиард раз. Стены состоят из грязного бетона, как и пол с потолком. Стены изрисованы разными граффити, а иногда имеет разные записки от уже умерших странников на разных языках. Постепенно, бродя по этим коридорам и комнатам, вы начнёте сходить с ума, и постепенно мутировать. Мутация эта будет долгой и мучительной, и в конечном итоге приведёт к тому, что вы «Отчаятесь» из-за антисанитарии, отсутствия выхода, еды и воды, а также мерзлоты (температура на Консус-В равна -30℃). (см. Phen_0006 для более подробного описания процесса).",
+        tips: "Вам уже нечего делать.",
+        hazardClass: "Безнадёжный."
+    },
+    en: {
+        title: "CONSUS-C",
+        description: "Consus-C bears a distant resemblance to the first floor of its primary Liminality, yet it lies almost entirely in ruins. There is a complete absence of light. The floor is strewn with vast quantities of refuse, ranging from spoiled food to used condoms. Furthermore, this space spans 50 million square miles—roughly 81 billion times the size of the original Consus. The walls, floor, and ceiling are all constructed of grimy concrete. The walls are covered in graffiti and, occasionally, notes left in various languages ​​by wanderers who have since perished. As you roam these corridors and chambers, you will gradually lose your sanity and begin to mutate. This mutation is a prolonged and agonizing process, ultimately culminating in a state of utter «despair»: brought on by the unsanitary conditions, the lack of any exit, the absence of food and water, and the freezing cold (temperatures on Consus-C hover at -30°C). (See Phen_0006 for a more detailed description of this process.)",
+        tips: "You can't do anything at this point.",
+        hazardClass: "Hopeless."
+        }
+    }
+},
 {
 id: "LIM_0006",
 type: "liminalityM",
@@ -236,7 +356,7 @@ ru: {
     hazardClass: "Хрупкие стены, полно ям, безжизненно. Символ двери: «+»"
 },
 en: {
-    title: "AHEn-C2EHE: «Forsaken hospital»",
+    title: "AHEn-C2EHE: «The Forsaken hospital»",
     description: "AHEn-C2EHE is the first Liminality to be opened using doors (see Phen_0001). This Liminal looks like an abandoned medical building, which is practically empty, which is why it is remarkable. Here, like Eternitas, there is non-Euclidean geometry, making navigation extremely difficult. Here, as in the previously mentioned Eternitas, there are windows and stairs, but there are no doors. Instead, there are doorways that lead to rooms with an area of ​​50 meters. In such rooms there are beds and bedside tables with nothing in them. There are also a lot of holes leading to the lower floors. These holes are sometimes very large for unknown reasons. Also in this Liminal there is no lighting in the form of lamps. Instead, the presence of the Sun is assumed here, the rays of which pass through the cracks and holes. Some travelers have found syringes here. They contain blood, urine and sometimes dangerous chemicals in liquid form.",
     tips: "If you got here through a door, it is advised to try to find another door (a door with any other sign other than Plus). DO NOT prop or inject yourself with anything from the floor. Watch your step.",
     hazardClass: "Fragile walls, a lot of pits, lifeless. Door symbol: «+»"
@@ -364,6 +484,26 @@ en: {
     }
 },
     {
+    id: "LIM_0015",
+    type: "liminalityO",
+    hazard: "CLASS 3-EP",
+    image: "images/Party that never Was.jpg",
+    translations: {
+    ru: {
+        title: "FUN-C3HEP: «Вечеринка, Которой не Было.»",
+        description: "FUN-C3HEP, также известный как «Вечеринка, Которой не Было» или просто «Веселье» - это комплекс, состоящий из комнат для вечеринок. Стены большинства таких комнат имеют разные цвета, а иногда могут иметь цвет, который может быть виден только через гаджеты (такие цвета являются серыми для человеческого глаза). Пол таких комнат состоит из плиток, а иногда имеет ламинат, имеющий древесный узор. На потолке висят лампы, которые никогда не угасают, и вечно сияют, освещая пространство FUN-C3HEP. Здесь можно найти и мебель с декором, как например, столы и стулья, украшенные для какого-то праздника, шары, гирлянды и тп. Здесь можно найти и двери. Они все имеют белый цвет и ведут либо в коридоры, либо в другие комнаты. При этом всём, здесь отсутствует какой-либо шум: тут нет ни шума ламп, ни праздничной музыки. Даже если вы попытаетесь лопнуть шарик, то вы всё равно ничего не услышите. Но, в один момент, уходя в глубины FUN-C3HEP, вы начнёте замечать странных манекенов, одетых в бежевую одежду, и на голове которых есть картонные пакеты, с жёстко-нарисованной красным маркером улыбкой. Эти манекены собираются в кучи, и являются безопасными, пока вы на них смотрите, и они-же издают единственный шум во всей этой Лиминали: тихий, искажённый смех. Как только вы перестанете смотреть на них, манекены сменят позицию и окажутся ближе к вам. Точно неизвестно, что происходит с теми, кто не смотрел на них слишком долго.",
+        tips: "Не пытайтесь заходить слишком глубоко. При встрече с аномальными манекенами рекомендуется покинуть место, не прерывая зрительного контакта. Здесь есть три выхода. Если вы спуститесь через люк в полу, то вы окажитесь в пределах UEn-C5HA, однако из-за свойств данной Лиминали данный выход не советуется. Вторым-же выходом является дверь «Запасного выхода». Войдя в неё, вы войдёте в просторы Вевоиса. Третий выход - ноуклип. Сделав его, вы войдёте в COm-C0HN.",
+        hazardClass: "Агрессивная окружающая среда, Психологическое воздействие. Символ двери: «=)»"
+    },
+    en: {
+        title: "FUN-C3HEP: «The Party That Never Was»",
+        description: "FUN-C3HEP, also known as «The Party That Never Was» or simply «The Fun», is a complex consisting of various party rooms. The walls in most of these rooms are brightly colored; some even feature hues visible only through electronic devices—appearing as shades of gray to the naked eye. The floors are covered in either tiles or wood-patterned laminate. The ceilings are lined with lamps that never dim, casting a perpetual glow over the entire FUN-C3HEP space. The area is furnished with tables and chairs—all decorated for a celebration—along with balloons, garlands, and similar festive items. There are also doors, all painted white, which lead either into corridors or into other rooms. Despite the festive setting, the space is completely silent; there is no hum from the lights, nor is there any party music. Even if you were to pop a balloon, you would hear absolutely nothing. However, as you venture deeper into FUN-C3HEP, you may begin to encounter strange mannequins dressed in beige clothing. Each one wears a cardboard bag over its head, featuring a crude, red-marker-drawn smile. These mannequins tend to gather in clusters; they remain harmless as long as you keep your eyes on them. They are also the only source of sound in this Liminality: a faint, distorted laughter. The moment you look away, the mannequins will shift their positions, appearing closer to you than before. It is not entirely clear what happens to those who fail to keep their gaze fixed upon them for too long.",
+        tips: "Do not attempt to venture too deep. If you encounter anomalous mannequins, it is recommended that you leave the area without breaking eye contact. There are three exits here. Descending through the floor hatch will take you into UEn-C5HA; however, due to the properties of this Liminal, this exit is not advised. A second exit is the «Emergency Exit» door; passing through it will lead you into the expanse of Vejovis. The third exit is a noclip. Performing one will take you into COm-C0HN.",
+        hazardClass: "Hostile enviorment, Psychological impact. Door symbol: «=)»"
+        }
+    }
+},
+    {
     id: "這裡的主要港口有哪些？",
     type: "liminalityO",
     hazard: "無訊號",
@@ -380,126 +520,6 @@ en: {
         description: "RS_C5PHP is a small room with beige walls, concrete floor and ceiling. There is one lamp on the ceiling that illuminates the entire room. The walls have skirting boards and there is also a door. Behind the door there is a completely black space in which ███████████████████████ ████████████████████████",
         tips: "為什麼你認為自己能逃脫？",
         hazardClass: "𓂀"
-        }
-    }
-},
-        {
-    id: "LIM_0001-A",
-    type: "satellite",
-    hazard: "CLASS 1-E",
-    image: "images/Janus-A.webp",
-    translations: {
-    ru: {
-        title: "ЯНУС-А",
-        description: "Янус-А почти-что ничем не отличается от основной Лиминали архитектурно. Этот Спутник, однако, имеет лишь одно отличие: он выглядит потрёпанным и большая часть света там практически не работает. Там есть совсем небольшой гул, который всё равно можно не всегда услышать. Обои порой бывают ободраны, обнажая деревянные, как будто картонные стены. Музыка здесь искажена ещё сильнее: порой её нельзя отличить от простого шума, который исходит от телевизора. Здесь отсутствуют искажённые объекты, которые присутствуют на Янусе (основной Лиминали). Также тут есть несколько видов живых организмов. В список местных обитателей входят представители рода Aspergillus, Отчаявшиеся, а также Homo Desperans и Electrofagus mimicus. Электрофаги здесь имеют очень низкую популяцию из-за критически-низкого количества освещения. Из-за этого, оставшиеся Электрофаги отчаянно пытаются выжить и воюют за самое близкое место к лампе. Если человек или какой-либо другой живой организм попытается вытащить Электрофага, то он ударит током это существо через волосинки. Один такой удар составляет примерно 120 вольт. Отчаявшиеся, обычно, бродят здесь по-одиночке и, из-за голода, при встрече с другим живым организмом, пытаются его съесть, однако это не всегда удаётся им.",
-        tips: "Постарайтесь избегать контакта с Организмами, особенно с Электрофагами. Тут есть два(2) основных выхода: металлическая дверь и место с большим количеством света. Первое ведёит к мосту длинной в 80 км, по болкам которого будет стекло. Второй-же возвращает вас в основную часть Януса.",
-        hazardClass: "Агрессивная окружающая среда"
-    },
-    en: {
-        title: "JANUS-A",
-        description: "Janus-A is almost identical to the main Liminality in architecture. This satellite, however, has one key difference: it appears worn-down, and most of the lighting is effectively non-functional. There is a faint, persistent hum—though it is not always audible. In places, the wallpaper is torn away, revealing walls made of wood that resembles cardboard. The music here is even more distorted; at times, it is indistinguishable from the static noise emitted by a television. Unlike the primary Janus (the main Liminality), this version lacks distorted objects. It is also home to several types of living organisms. Local inhabitants include members of the genus *Aspergillus*, the Desperate, as well as *Homo desperans* and *Electrofagus mimicus*. The *Electrofagus* population here is very small due to the critically low levels of light; consequently, the remaining individuals struggle desperately to survive, competing for the spots closest to the lamps. If a human or any other living organism attempts to remove an *Electrofagus*, it will deliver an electric shock through its hair-like filaments—a jolt of approximately 120 volts. The Desperate typically wander alone; driven by hunger, they will attempt to consume any other living organism they encounter, though they do not always succeed.",
-        tips: "Try to avoid contact with Organisms, especially Electrophages. There are two (2) main exits here: a metal door and an area with a great deal of light. The first leads to an 80 km-long bridge, flanked on both sides by glass. The second takes you back to the main section of Janus.",
-        hazardClass: "Hostile enviorment"
-        }
-    }
-},
-         {
-    id: "LIM_0001-B",
-    type: "satellite",
-    hazard: "CLASS 0",
-    image: "images/Janus-B.jpg",
-    translations: {
-    ru: {
-        title: "ЯНУС-Б",
-        description: "Янус-Б представляет собой довольно небольшую структуру, которая сильно напоминает подсобные помещения торговых точек. Здесь есть белые стены, обклеенные штукатуркой, коричневый, сухой ковёр, а также такие-же потолки с такими-же гудящими лампами, как и на основной Лиминали. Размер данного спутника определяется в 120000 кв. миль, что делает его очень мелким по-сравнению с Янусом или Янусом-А. Здесь отсутствует какая-либо мебель или двери. На одной части Януса-Б есть открытый проход, который должен был вести к мосту между Янусом-А и Янусом-Б. Однако, сейчас там ничего не видно и есть проход в Этернитас.",
-        tips: "Вы можете вернуться обратно в Янус через металлическую дверь. Также вы можете воспользоваться Выходом в Этернитас.",
-        hazardClass: "Безжизненный."
-    },
-    en: {
-        title: "JANUS-B",
-        description: "Janus-B is a rather small structure that strongly resembles the back rooms of retail outlets. There are white walls covered with plaster, a brown, dry carpet, as well as the same ceilings with the same humming lamps as on the main Liminali. The size of this satellite is determined to be 120,000 square meters. miles, which makes it very small compared to Janus or Janus-A. There is no furniture or doors here. On one part of Janus-B there is an open passage that would lead to a bridge between Janus-A and Janus-B. However, now nothing is visible there and there is a passage to Eternitas.",
-        tips: "You can return to Janus trough a metal door. You can also use the exit to Eternitas",
-        hazardClass: "Lifeless."
-        }
-    }
-},
-             {
-    id: "LIM_0002-A",
-    type: "satellite",
-    hazard: "CLASS 0",
-    image: "images/Eternitas-A.webp",
-    translations: {
-    ru: {
-        title: "ЭТЕРНИТАС-А",
-        description: "Этернитас-А относится к категории Спутников только потому, что он находится на территории его основной Лиминали. Сам же этот «Осколок» выглядит как самый обычный двухэтажный американский дом с бежевыми обоями, деревнным полом, потолком, на котором горят лампы. Тут есть окна и дверь наружу. За ними находятся стены Этернитаса. На первом этаже есть прихожая, гостиная, ванная, кухня и, так-называемая, «Пустая комната». В прихожей присутствует искажённая мебель, к которой тут относится вешалка и полки снизу. Там-же есть и дверь в стену. В гостиной есть стол, тумбы с прямоэкранным телевизором, по обоим сторонам которого расположены колонки. Под столом расположен ковёр. В гостиной также есть лестница на второй этаж, на котором есть только спальня и туалет. Кухня достаточно мелкая, но в ней есть еда, которая, на удивление, способна регенерироваться. По словам дегустаторов, еда ощущается на вкус как бетон. Ванная занимает мало места. Как и туалет. Спальня имеет большую кровать, тумбочку и шкаф. В шкафу весит одежда. Главная особенность этого осколка - полная изоляция. В этом осколке может быть только один человек, и этот-же человек может оставаться здесь на столько, насколько он захочет.",
-        tips: "Отсюда нет известного способа выхода.",
-        hazardClass: "Пустой"
-    },
-    en: {
-        title: "ETERNITAS-A",
-        description: "Eternitas-A is classified as a «Satellite» solely because it is located within the territory of its primary Liminality. This «Fragment» itself resembles an ordinary, two-story American-style house, featuring beige wallpaper, wooden flooring, and ceilings equipped with electric lights. It includes windows and an exterior door; beyond them lie the walls of Eternitas. The ground floor contains an entryway, a living room, a bathroom, a kitchen, and a so-called «Empty Room.» The entryway features distorted furniture, including a coat rack and shelving units at the base; there is also a door set directly into the wall. The living room is furnished with a table and stands holding a flat-screen television, flanked by speakers. A rug lies beneath the table. A staircase leads from the living room to the second floor, which consists only of a bedroom and a toilet. The kitchen is quite small, yet it contains food that—surprisingly—is capable of regenerating. According to those who have sampled it, the food tastes like concrete. Both the bathroom and the toilet occupy very little space. The bedroom contains a large bed, a nightstand, and a wardrobe, inside of which clothes are hanging. The defining characteristic of this Fragment is its complete isolation: it can accommodate only one person at a time, and that individual may remain there for as long as they wish.",
-        tips: "You can't leave.",
-        hazardClass: "Hollow"
-        }
-    }
-},
-         {
-    id: "LIM_0005-A",
-    type: "satellite",
-    hazard: "CLASS 0",
-    image: "images/Consus-A.jpg",
-    translations: {
-    ru: {
-        title: "КОНСУС-А",
-        description: "Консус-А это довольно мелкий ресторан, который является столовой для офиса, коим является сам Консус. Площадь Консуса-А равна примерно 50 метрам в длину и 20 метрам в ширину, что делает это место довольно мелким. Здесь полно столов и сидушек, рядом с которыми всегда будут картины. Картины эти меняются каждый час, испаряясь и появляясь снова. Освещение здесь имеет желтоватый оттенок, а также издаёт тихий гул. Здесь также присутствует пища, которой является желеобразная субстанция полупрозрачного, белого цвета. На вкус эта масса напоминает то, что вы больше всего любите из пищи, что является довольно интересным. Желе регенерируется вместе с картинами. Вы также можете заметить дверь с табличкой выхода. Эта дверь ведёт в Пространственный шов Этернитаса. Кроме столиков, сидушек, картин и двери, тут ещё есть касса и кухня, у которой никого нет. Сама кухня полностью пуста, однако на ней отмечены красными линиями места, где должны находиться плиты, фритюрницы, духовки и т.п.",
-        tips: "Вы можете войти в проход без двери, из которого вы вошли сюда. Вы войдёте обратно в основную часть Консуса, на четвёртый этаж. Войдя в дверь с табличкой выхода, вы попадёте в Этернитас. И помните. Если вы собираетесь уходить отсюда, то возьмите как можно больше желе.",
-        hazardClass: "Обитаемый"
-    },
-    en: {
-        title: "CONSUS-A",
-        description: "Consus-A is a rather small restaurant that serves as a canteen for the office—the office of Consus itself. Consus-A measures approximately 50 meters in length and 20 meters in width, making it a fairly compact space. It is filled with tables and chairs, always accompanied by paintings. These paintings change every hour, vanishing and then reappearing. The lighting has a yellowish hue and emits a faint, low hum. Food is also available here: a translucent, white, gelatinous substance. Interestingly, this mass tastes exactly like your favorite food. The jelly regenerates along with the paintings. You may also notice a door marked with an «EXIT» sign; this door leads to the Eternitas Spatial Seam. In addition to the tables, chairs, paintings, and the door, there is a checkout counter and a kitchen—though the latter is completely deserted. The kitchen itself is entirely empty, yet red lines are marked on the surfaces to indicate where stoves, deep fryers, ovens, and similar equipment ought to be.",
-        tips: "You can head back through the doorless passageway you arrived from; this will take you back into the main section of Consus, on the fourth floor. If you go through the door marked with an exit sign, you will reach Eternitas. And remember: if you’re planning on leaving, take as much jelly as you can.",
-        hazardClass: "Habitable"
-        }
-    }
-},
-            {
-    id: "LIM_0005-B",
-    type: "satellite",
-    hazard: "CLASS 0",
-    image: "images/Consus-B.jpg",
-    translations: {
-    ru: {
-        title: "КОНСУС-Б",
-        description: "Консус-Б имеет пространство, забитое полками, на которых лежат папки. В папках тут находятся разные бумаги, в которых нельзя прочитать то, что написано. Здесь отсутствуют стены. Здесь есть плиточный пол и бетонный потолок, на котором изредка появляются синие лампы. Эти лампы появляются в очень мелком объёме и иногда могут моргать.",
-        tips: "Отсюда нельзя выйти. Смысл твоего нахождения здесь отсутствует.",
-        hazardClass: "Безжизненный."
-    },
-    en: {
-        title: "CONSUS-B",
-        description: "Consus-B features a space packed with shelves, upon which folders rest. Inside these folders are various documents, though the text written on them is illegible. There are no walls here. The space has a tiled floor and a concrete ceiling, from which blue lamps occasionally emerge. These lamps are quite small and may, at times, flicker.",
-        tips: "You can't leave this place. There is no point for you to be here.",
-        hazardClass: "Lifeless."
-        }
-    }
-},
-                {
-    id: "LIM_0005-C",
-    type: "satellite",
-    hazard: "CLASS 5-EP",
-    image: "images/Consus-C.jpg",
-    translations: {
-    ru: {
-        title: "КОНСУС-В",
-        description: "Консус-В отдалённо напоминает первый этаж своей основной Лиминали, однако он почти полностью разрушен. Тут отсутствует свет полностью. На полу можно найти мусор в больших количествах, который может включать в себя разные вещи: от протухшей еды до использованных презервативов. Кроме того, это место имеет площадь в 50 миллионов кв. миль, что больше основного Консуса примерно в 81 миллиард раз. Стены состоят из грязного бетона, как и пол с потолком. Стены изрисованы разными граффити, а иногда имеет разные записки от уже умерших странников на разных языках. Постепенно, бродя по этим коридорам и комнатам, вы начнёте сходить с ума, и постепенно мутировать. Мутация эта будет долгой и мучительной, и в конечном итоге приведёт к тому, что вы «Отчаятесь» из-за антисанитарии, отсутствия выхода, еды и воды, а также мерзлоты (температура на Консус-В равна -30℃). (см. Phen_0006 для более подробного описания процесса).",
-        tips: "Вам уже нечего делать.",
-        hazardClass: "Безнадёжный."
-    },
-    en: {
-        title: "CONSUS-C",
-        description: "Consus-C bears a distant resemblance to the first floor of its primary Liminality, yet it lies almost entirely in ruins. There is a complete absence of light. The floor is strewn with vast quantities of refuse, ranging from spoiled food to used condoms. Furthermore, this space spans 50 million square miles—roughly 81 billion times the size of the original Consus. The walls, floor, and ceiling are all constructed of grimy concrete. The walls are covered in graffiti and, occasionally, notes left in various languages ​​by wanderers who have since perished. As you roam these corridors and chambers, you will gradually lose your sanity and begin to mutate. This mutation is a prolonged and agonizing process, ultimately culminating in a state of utter «despair»: brought on by the unsanitary conditions, the lack of any exit, the absence of food and water, and the freezing cold (temperatures on Consus-C hover at -30°C). (See Phen_0006 for a more detailed description of this process.)",
-        tips: "You can't do anything at this point.",
-        hazardClass: "Hopeless."
         }
     }
 },
