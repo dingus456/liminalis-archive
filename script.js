@@ -505,7 +505,7 @@ en: {
 },
     {
     id: "LIM_0015-A",
-    type: "liminalityO",
+    type: "satellite",
     hazard: "CLASS 0",
     image: "images/The REAL FUN =))).webp",
     translations: {
@@ -567,19 +567,79 @@ en: {
     id: "LIM_0018",
     type: "liminalityO",
     hazard: "CLASS 3-EP",
+    image: "images/TSHarlem-C4PHP.webp",
+    translations: {
+    ru: {
+        title: "TSHarlem-C4PHP: «СТАНЦИЯ МЕЛРАГ»",
+        description: "Станция Мелраг представляет из себя вокзал, площадь которого равна 51000 м² (51 км²). По всему вокзалу можно встретить металлические балки, которые держат крышу и не дают ей упасть. За потолком вокзала находится ослепительный, белый свет. Из этого-же света состоят и стены. Рельсы, которые видны на вокзале, не имеют определённого расстояния, поскольку за пределы вокзала выйти невозможно никаким способом, кроме одного единственного. Этим способом является так-называемый «Поезд-А». Этот поезд выглядит так, как будто он был сделан в 30-ых годах, и внутри можно увидеть обои, которые идентичны обоям Януса. Освещение в вагонах Поезда-А имеет тёплый-оранжевый оттенок, а также от него-же (а именно от ламп) исходит тихий гул, параллельно играющий с радио, по которому крутят джазовую музыку 30-ых или 40-ых годов 20-ого века. Поезд приезжает каждый час, а куда уезжает - неизвестно, поскольку никто не смог получить связь, будучи в поезде. Были и рапорты от странников с пошатанной психикой, в которых говорилось, что поезд ведёт в «Весенние Холмы». Это остаётся недоказанным и по сей день. Кроме того, бродя по вокзалу, вы сможете увидеть множество странных, безликих существ, одетых в одежду моды тех-же времён, что и музыка на радио. И среди них можно встретить одно особое существо, известное как «Кондуит», «Джентельмен» или-же просто «Смотритель». Этот подвид Opifex Imitator имеет лицо, у которого присутствует вечный, широкий оскал. Они все одеты в одежду охраников, машинистов, и даже швейцаров. Этот подвид является действительно пассивным и просто наблюдает за странниками, попавшими на вокзал. Бывали и редкие случаи нахождения так-называемых Homo Melancholicus, которые выходили из вагонов, уходя в случайные точки вокзала. Они опасны тем, что могут вызвать экзистенциальный кризис, играя с разумом смотрящего на них странника. А после кризиса наступает моральное выгорание, после которого есть вероятность сделать самоубийство. К слову, именно из-за Синих Людей эта Лиминаль обладает классом 3-EP.",
+        tips: "Не заходите в поезд. Не смотрите на Синих людей. Просто идите к выходу, и вы войдёте в Мендациус.",
+        hazardClass: "Агрессивная окружающая среда, психологическое влияние. Символ двери: «TH𝔼 MELRꜲH §TATIꚘNN»"
+    },
+    en: {
+        title: "TSHarlem-C4PHP: «THE MELRAH STATION»",
+        description: "The Melrah Station is a train station covering an area of 51,000 m² (51 km²). Throughout the station, metal beams can be found, supporting the roof and preventing it from collapsing. A blinding white light radiates from the ceiling of the station. The walls are also composed of this light. The tracks visible within the station are indefinite, as there is no way to leave the station except through the so-called «A-Train». This train looks as if it was built in the 1930s, and the wallpaper inside is identical to that of Janus. The lighting in the cars of Train A has a warm orange hue, and a quiet hum emanates from the lamps, which also plays jazz music from the 1930s or 1940s. The train arrives every hour, but its destination is unknown, as no one was able to establish contact while on the train. There have even been reports from mentally unstable travelers claiming the train leads to «Spring Hills». This remains unproven to this day. Furthermore, as you wander the station, you'll encounter numerous strange, faceless creatures dressed in the same period fashion as the music on the radio. Among them, you might encounter one special creature known as the «Conduit», the «Gentleman», or simply the «Overseer». This subspecies of Opifex Imitator has a face with a wide, perpetual grin. They are all dressed as guards, train drivers, and even doormen. This subspecies is truly passive, simply observing travelers arriving at the station. There have also been rare instances of so-called Homo Melancholicus emerging from the train cars and wandering off to random spots around the station. They are dangerous because they can trigger an existential crisis by playing tricks on the minds of those watching them. After the crisis, moral burnout sets in, leading to the possibility of suicide. Incidentally, it is because of the Blue Men that this Liminality is classified as a 3-EP.",
+        tips: "Don't get on the train. Don't look at the Blue People. Just head to the exit, and you'll enter Mendacius.",
+        hazardClass: "Hostile Enviorment, psychological impact. Door symbol: «TH𝔼 MELRꜲH §TATIꚘNN»"
+        }
+    }
+},
+    {
+    id: "LIM_0019",
+    type: "liminalityO",
+    hazard: "CLASS 5-P",
+    image: "images/OSENEn-C5PHP.jpg",
+    translations: {
+    ru: {
+        title: "OSENEn-C5PHP: «После Смены»",
+        description: "OSENEn-C5PHP очень сильно похож на Консус, но в отличии от него здесь нет определённой площади, а также здесь очень темно. Этажи здесь идут вниз и вверх бесконечно, а окна почти-что отсутствуют, но всё-же иногда есть. Их можно найти в тех местах, где много объёма, и там видно бесконечную пустоту, идущую и вверх, и вниз. Обычно, такие отверстия имеют квадратную форму с площадью 80 м². За окном видно сильный ливень. Окна открыть никак нельзя, из-за чего и воду нельзя достать. Что уж говорить о самом интерьере, то он очень пустой. В некоторых комнатах отсутствуют стены, а в некоторых может быть только один стул на 180-260 метров. И при этом тут везде выключенный свет, который нельзя включить ввиду отсутствия переключателей. Иногда можно увидеть и рычаги пожарной тревоги, которые ничего не делают. Ещё есть и зелёные таблички выхода, которые загоняют странников ещё глубже в пространство OSENEn-C5PHP. Что также отличает эту Лиминаль от Консуса, так это наличие абстрактных картин, в которых отсутствует смысл, а смотря на них ещё покажется, что и душа тоже. Можно найти и винтовые лестницы, в которых можно легко навернуться из-за тьмы. Если ещё говорить про комнаты, то иногда можно встретить и комнаты, которые имеют рабочие места: столы, стулья, компьютерные терминалы, отключенные от розеток, телефоны, мусорные вёдра, забитые бумагой с бесмысленными рисунками и надписями, и настольными лампами, которые также отключены, а некоторые и вовсе побиты и сломаны. Двери здесь выглядят абсолютно естественно, что является довольно странным для Фористуры с её искажениями мебели и других объектов. И если ещё упомянуть отличия от Консуса, то к ним можно отнести один очень опасный феномен, именуемый «Кризисом Бесконечности». Это явление присутствует и в некоторых Лиминалях, связанных с эстетикой 30-ых или 40-ых годов, и там тоже присутствует данный феномен из-за Homo Melancholicus. Тут-же, странник начнёт выгорать от усталости, монотонности комнат, а также паранойи из-за тьмы. Если говорить про стадии этого явления кратко, то можно сказать так: сначала человек получит экзистенциальный кризис из-за особых мыслей, которые настигнут его за время прибывания. Позже, у странника будет паранойя, усталость и сонливость. В конце концов, спустя какое-то время, будет 3 исхода: либо-же странник умрёт от голода, обезвоживания или ещё каких-то других естественных причин, либо-же он сделает самоубийство из-за потери смысла жизни, или-же он «Отчаится» и сойдёт с ума (см. Phen_0006 для более подробного объяснения этого явления. И см. Phen_0008 для более подробной информации о Выгорании).",
+        tips: "Это конец.",
+        hazardClass: "Сильное психологическое влияние, ментальное выгорание, безнадёжность. Символ двери: «EXIIIT»"
+    },
+    en: {
+        title: "OSENEn-C5PHP: «Post-Shift»",
+        description: "OSENEn-C5PHP bears a striking resemblance to Consus; however, unlike the latter, it lacks a defined spatial extent and is shrouded in near-total darkness. The levels extend infinitely both upward and downward. Windows are rare, though they do occasionally appear—typically in areas with significant open volume—revealing an infinite void that stretches endlessly in both directions. These apertures are generally square, measuring 80 square meters in area, and look out onto a torrential downpour. The windows cannot be opened, making it impossible to access the water outside. The interior itself is remarkably barren; some rooms lack walls entirely, while others might contain nothing more than a single chair in a space spanning 180 to 260 meters. Throughout the environment, the lights are switched off, and there are no visible switches to turn them on. One may occasionally encounter fire alarm levers, though they serve no function. There are also green exit signs, which only serve to lure wanderers deeper into the expanse of OSENEn-C5PHP. Another feature distinguishing this "Liminal" space from Consus is the presence of abstract paintings—works devoid of any discernible meaning, which seem to strip away one’s very soul upon observation. Spiral staircases can also be found, though the pervasive darkness makes them treacherous to navigate. Some rooms appear to be workspaces, containing desks, chairs, and computer terminals—all unplugged—along with telephones and wastebaskets overflowing with paper covered in nonsensical drawings and scribbles. There are also desk lamps, likewise disconnected from power, some of which are shattered or broken. The doors here appear entirely natural—a curious detail, given that Foristura is otherwise characterized by the distorted, warped forms of its furniture and objects. To mention further differences from Consus, one must include a highly dangerous phenomenon known as the «Infinity Crisis». This phenomenon also appears in certain Liminal spaces—specifically those evoking the aesthetics of the 1930s or 1940s—where it is likewise linked to the presence of *Homo Melancholicus*. In this context, a wanderer will begin to suffer from burnout, driven by exhaustion, the monotony of the rooms, and paranoia fueled by the surrounding darkness. Briefly, the progression of this phenomenon is as follows: the individual first experiences an existential crisis, triggered by specific, intrusive thoughts that arise during their stay. This is followed by the onset of paranoia, fatigue, and drowsiness. Ultimately, after some time, one of three outcomes occurs: the wanderer may perish from starvation, dehydration, or other natural causes; they may commit suicide, having lost all sense of purpose; or they may succumb to «Despair» and descend into madness (see Phen_0006 for a more detailed explanation of this phenomenon, and Phen_0008 for further information regarding Burnout).",
+        tips: "It's the end.",
+        hazardClass: "Severe psychological impact, mental burnout, hopelessness. Door symbol: «EXIIIT»"
+        }
+    }
+},
+    {
+    id: "LIM_0020",
+    type: "liminalityO",
+    hazard: "CLASS 0",
     image: "images/NoPhotoNormalLiminalis.png",
     translations: {
     ru: {
         title: "PLACEHOLDER",
         description: "",
         tips: "",
-        hazardClass: "Агрессивная окружающая среда. Символ двери: «TH𝔼 MELRꜲH §TATIꚘNN»"
+        hazardClass: "плэйсхолдер. Символ двери: «symbol»"
     },
     en: {
         title: "PLACEHOLDER",
         description: "",
         tips: "",
-        hazardClass: "Hostile Enviorment. Door symbol: «TH𝔼 MELRꜲH §TATIꚘNN»"
+        hazardClass: "placeholder. Door symbol: «symbol»"
+        }
+    }
+},
+    {
+    id: "LIM_0021",
+    type: "liminalityO",
+    hazard: "CLASS 3-P",
+    image: "images/NoPhotoNormalLiminalis.png",
+    translations: {
+    ru: {
+        title: "PLACEHOLDER",
+        description: "",
+        tips: "",
+        hazardClass: "плэйсхолдер. Символ двери: «symbol»"
+    },
+    en: {
+        title: "PLACEHOLDER",
+        description: "",
+        tips: "",
+        hazardClass: "placeholder. Door symbol: «symbol»"
         }
     }
 },
