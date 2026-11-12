@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ДОСТУП ОГРАНИЧЕН // НЗФА</title>
-    <link rel="stylesheet" href="style.css"> <!-- Подключаем твои шрифты и стили -->
+    <title>ACCESS RESTRICTED // NZFA</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        /* Дымчато-серая тема специально для этой страницы */
         body {
             background-color: #0a0a0a;
             color: #9e9e9e;
@@ -21,6 +20,14 @@
             box-sizing: border-box;
         }
 
+        .top-controls {
+            max-width: 700px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 10px;
+        }
+
         .auth-box, .secret-content {
             border: 1px solid #757575;
             background-color: #121212;
@@ -28,6 +35,7 @@
             max-width: 700px;
             width: 100%;
             box-shadow: 0 0 15px rgba(158, 158, 158, 0.15);
+            box-sizing: border-box;
         }
 
         .auth-box {
@@ -50,7 +58,7 @@
             background: #1e1e1e;
             border: 1px solid #9e9e9e;
             color: #d4d4d4;
-            padding: 10px 20px;
+            padding: 8px 16px;
             font-family: inherit;
             cursor: pointer;
         }
@@ -66,10 +74,16 @@
             display: none;
         }
 
-        /* Секретный текст скрыт до ввода правильного пароля */
         .secret-content {
             display: none;
             text-align: left;
+            line-height: 1.5;
+        }
+
+        .layer-block {
+            border-left: 2px solid #555;
+            padding-left: 12px;
+            margin: 15px 0;
         }
 
         .back-link {
@@ -80,60 +94,159 @@
             border: 1px solid #757575;
             padding: 5px 10px;
         }
+
+        .back-link:hover {
+            border-color: #d4d4d4;
+            color: #d4d4d4;
+        }
     </style>
 </head>
 <body>
 
-    <div class="auth-box" id="authBox">
-        <h2>[ТРЕБУЕТСЯ ДОПУСК УРОВНЯ 5-SG]</h2>
-        <p>ВНИМАНИЕ: Обнаружена попытка доступа к дестабилизированному сектору.</p>
-        <input type="password" id="passInput" placeholder="ВВЕДИТЕ КОД ДОСТУПА...">
-        <br>
-        <button onclick="checkPass()">ПОДТВЕРДИТЬ</button>
-        <p class="error-msg" id="errorMsg">[ОШИБКА]: НЕВЕРНЫЙ КЛЮЧ ШИФРОВАНИЯ.</p>
-        <br>
-        <a href="index.html" class="back-link">&lt; ВЕРНУТЬСЯ В АРХИВ</a>
+    <!-- Кнопка переключения языка в углу -->
+    <div class="top-controls">
+        <button id="langToggle" onclick="toggleLanguage()">LANG: RU</button>
     </div>
 
+    <!-- Блок ввода пароля -->
+    <div class="auth-box" id="authBox">
+        <h2 data-i18n="authTitle">[ТРЕБУЕТСЯ ДОПУСК УРОВНЯ 5-SG]</h2>
+        <p data-i18n="authDesc">ВНИМАНИЕ: Обнаружена попытка доступа к дестабилизированному сектору.</p>
+        <input type="password" id="passInput" data-i18n-placeholder="passPlaceholder" placeholder="ВВЕДИТЕ КОД ДОСТУПА...">
+        <br>
+        <button onclick="checkPass()" data-i18n="submitBtn">ПОДТВЕРДИТЬ</button>
+        <p class="error-msg" id="errorMsg" data-i18n="errorMsg">[ОШИБКА]: НЕВЕРНЫЙ КЛЮЧ ШИФРОВАНИЯ.</p>
+        <br>
+        <a href="index.html" class="back-link" data-i18n="backLink">&lt; ВЕРНУТЬСЯ В АРХИВ</a>
+    </div>
+
+    <!-- Секретное досье -->
     <div class="secret-content" id="secretContent">
-        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #757575; padding-bottom: 10px;">
-            <span><strong>TH3 53V3N 5H4D35 0F GR3Y</strong></span>
-            <span>CLASS PENDING</span>
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #757575; padding-bottom: 10px; flex-wrap: wrap; gap: 10px;">
+            <span><strong>SG_0000 // TH3 SH4DY GR3Y</strong></span>
+            <span data-i18n="classBadge">CLASS 5-FG (ФРАКТАЛЬНЫЙ СДВИГ)</span>
         </div>
         
-        <h3>ДЫМЧАТО-СЕРЫЙ СЕКТОР</h3>
-        <p><strong>[ХАРАКТЕРИСТИКА]:</strong> Пограничный мост между Лиминалями и Фракталами, дехромизация, распад геометрии.</p>
-        <p><strong>[АРХИВ НЗФА]:</strong> ЗАСЕКРЕЧЕНО</p>
+        <h3 data-i18n="docTitle">ДЫМЧАТО-СЕРЫЙ СЕКТОР</h3>
+        <p><strong data-i18n="charLabel">[ХАРАКТЕРИСТИКА]:</strong> <span data-i18n="charText">Пограничный мост между Лиминалями и Фракталами, дехромизация, распад геометрии.</span></p>
+        <p><strong data-i18n="statusLabel">[АРХИВ НЗФА]:</strong> <span data-i18n="statusText">ЗАСЕКРЕЧЕНО</span></p>
         
-        <p><strong>Описание:</strong> Сюда ты вставишь наше описание слоёв от 0 (Поле с избой) до 2F4R и выхода в Небытие...</p>
-        
-        <p><strong>Советы:</strong> Потеря цвета — первый признак. Не пытайтесь вернуться назад после Слой 1.</p>
+        <p><strong data-i18n="descLabel">Описание:</strong> <span data-i18n="descIntro">Аномальный переходный кластер, связывающий стабильные лиминальные пространства с фрактальными безднами. По мере продвижения вглубь комплекса реальность утрачивает цвет (Phen_0010) и расслаивается на геометрические узоры:</span></p>
 
-        <a href="index.html" class="back-link">&lt; ЭКСТРЕННЫЙ ВЫХОД В ТЕРМИНАЛ</a>
+        <div class="layer-block">
+            <p><strong data-i18n="l0Title">Слой 0 (Zero):</strong> <span data-i18n="l0Text">Поле с деревянной избой под серым небом. Максимально стабилен, однако трава и мелкие детали уже начинают повторять фрактальные паттерны.</span></p>
+            <p><strong data-i18n="l1Title">Слой 1–2 (One / Two):</strong> <span data-i18n="l1Text">Искажённые особняки и заснеженные аллеи под поглощающим чёрным небом. Начинается активное вымывание пигмента и плавление углов комнат.</span></p>
+            <p><strong data-i18n="l3Title">Слой 3–4 и L0ST H0P3:</strong> <span data-i18n="l3Text">Полный коллапс каркаса. Стены превращаются в текучий серый пепел, материя распадается на крупные полигоны.</span></p>
+            <p><strong data-i18n="l4Title">2F4R (Точка Сдвига):</strong> <span data-i18n="l4Text">Абсолютная фрактальная геометрия без верха, низа и гравитации. Единственный выход ведёт напрямую в «Небытие» (Фрактал 998) или «Реквием» (999).</span></p>
+        </div>
+        
+        <p><strong data-i18n="adviceLabel">Советы:</strong> <span data-i18n="adviceText">Потеря цвета одежды и кожи — первый признак проникновения. Не пытайтесь вернуться назад после пересечения Слоя 1.</span></p>
+
+        <a href="index.html" class="back-link" data-i18n="exitLink">&lt; ЭКСТРЕННЫЙ ВЫХОД В ТЕРМИНАЛ</a>
     </div>
 
     <script>
+        // Словарь переводов RU / EN
+        const translations = {
+            ru: {
+                langBtn: "LANG: RU",
+                authTitle: "[ТРЕБУЕТСЯ ДОПУСК УРОВНЯ 5-SG]",
+                authDesc: "ВНИМАНИЕ: Обнаружена попытка доступа к дестабилизированному сектору.",
+                passPlaceholder: "ВВЕДИТЕ КОД ДОСТУПА...",
+                submitBtn: "ПОДТВЕРДИТЬ",
+                errorMsg: "[ОШИБКА]: НЕВЕРНЫЙ КЛЮЧ ШИФРОВАНИЯ.",
+                backLink: "< ВЕРНУТЬСЯ В АРХИВ",
+                classBadge: "CLASS 5-FG (ФРАКТАЛЬНЫЙ СДВИГ)",
+                docTitle: "ДЫМЧАТО-СЕРЫЙ СЕКТОР",
+                charLabel: "[ХАРАКТЕРИСТИКА]:",
+                charText: "Пограничный мост между Лиминалями и Фракталами, дехромизация, распад геометрии.",
+                statusLabel: "[АРХИВ НЗФА]:",
+                statusText: "ЗАСЕКРЕЧЕНО",
+                descLabel: "Описание:",
+                descIntro: "Аномальный переходный кластер, связывающий стабильные лиминальные пространства с фрактальными безднами. По мере продвижения вглубь комплекса реальность утрачивает цвет (Phen_0010) и расслаивается на геометрические узоры:",
+                l0Title: "Слой 0 (Zero):",
+                l0Text: "Поле с деревянной избой под серым небом. Максимально стабилен, однако трава и мелкие детали уже начинают повторять фрактальные паттерны.",
+                l1Title: "Слой 1–2 (One / Two):",
+                l1Text: "Искажённые особняки и заснеженные аллеи под поглощающим чёрным небом. Начинается активное вымывание пигмента и плавление углов комнат.",
+                l3Title: "Слой 3–4 и L0ST H0P3:",
+                l3Text: "Полный коллапс каркаса. Стены превращаются в текучий серый пепел, материя распадается на крупные полигоны.",
+                l4Title: "2F4R (Точка Сдвига):",
+                l4Text: "Абсолютная фрактальная геометрия без верха, низа и гравитации. Единственный выход ведёт напрямую в «Небытие» (Фрактал 998) или «Реквием» (999).",
+                adviceLabel: "Советы:",
+                adviceText: "Потеря цвета одежды и кожи — первый признак проникновения. Не пытайтесь вернуться назад после пересечения Слоя 1.",
+                exitLink: "< ЭКСТРЕННЫЙ ВЫХОД В ТЕРМИНАЛ"
+            },
+            en: {
+                langBtn: "LANG: EN",
+                authTitle: "[CLEARANCE LEVEL 5-SG REQUIRED]",
+                authDesc: "WARNING: Attempted access to a destabilized sector detected.",
+                passPlaceholder: "ENTER ACCESS CODE...",
+                submitBtn: "VERIFY",
+                errorMsg: "[ERROR]: INVALID ENCRYPTION KEY.",
+                backLink: "< RETURN TO ARCHIVE",
+                classBadge: "CLASS 5-FG (FRACTAL SHIFT)",
+                docTitle: "TH3 SH4DY GR3Y SECTOR",
+                charLabel: "[CHARACTERISTICS]:",
+                charText: "Borderline bridge between Liminals and Fractals, dechromization, geometric collapse.",
+                statusLabel: "[NZFA ARCHIVE]:",
+                statusText: "CLASSIFIED",
+                descLabel: "Description:",
+                descIntro: "An anomalous transitional cluster linking stable liminal spaces with fractal abysses. Moving deeper into the complex causes reality to lose color (Phen_0010) and fracture into geometric patterns:",
+                l0Title: "Layer 0 (Zero):",
+                l0Text: "A field with a wooden cabin under a gray sky. Mostly stable, though grass and minor details already repeat fractal patterns.",
+                l1Title: "Layer 1–2 (One / Two):",
+                l1Text: "Distorted mansions and snow-covered alleys beneath an absorbing black sky. Active pigment bleaching and melting of room corners begin.",
+                l3Title: "Layer 3–4 & L0ST H0P3:",
+                l3Text: "Total structural collapse. Walls turn into flowing gray ash, and matter breaks down into large polygons.",
+                l4Title: "2F4R (Shift Point):",
+                l4Text: "Absolute fractal geometry with no up, down, or gravity. The only exit leads directly into 'Oblivion' (Fractal 998) or 'Requiem' (999).",
+                adviceLabel: "Advisories:",
+                adviceText: "Loss of color in clothing and skin is the first sign of intrusion. Do not attempt to turn back after crossing Layer 1.",
+exitLink: "< EMERGENCY EXIT TO TERMINAL"
+}
+};
+    // Проверяем, не сохранён ли язык с главной страницы, иначе ставим 'ru'
+    let currentLang = localStorage.getItem('lang') || 'ru';
+    function applyLanguage(lang) {
+    const dict = translations[lang] || translations.ru;
+    document.getElementById("langToggle").textContent = dict.langBtn;
+    // Переводим все текстовые элементы с атрибутом data-i18n
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (dict[key]) {
+        el.textContent = dict[key];
+    }
+ });
+    // Переводим placeholder у поля ввода пароля
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const key = el.getAttribute("data-i18n-placeholder");
+    if (dict[key]) {
+    el.placeholder = dict[key];
+    }
+});
+}
+    function toggleLanguage() {
+        currentLang = currentLang === 'ru' ? 'en' : 'ru';
+        localStorage.setItem('lang', currentLang);
+        applyLanguage(currentLang);
+    }
+// Применяем язык при загрузке страницы
+    applyLanguage(currentLang);
+// Проверка пароля (зашифрован "2f4r" через Base64)
+    const SECRET_PASS = atob("~jz{lk-(hZ+k+(bhhw{tr");
+    function checkPass() {
+    const input = document.getElementById("passInput").value.trim().toLowerCase();
+    const errorMsg = document.getElementById("errorMsg");
+    if (input === SECRET_PASS) {
+    document.getElementById("authBox").style.display = "none";
+    document.getElementById("secretContent").style.display = "block";
+    } else {
+    errorMsg.style.display = "block";
+    }
+    }
+    document.getElementById("passInput").addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+    checkPass();
+    }
+});
 
-        const SECRET_PASS = "ugdbiwtqphtbtcihidgddbhidhttcdrdadgpcsidvdephhqnlwtciwtjcxktghthpnhdctixbtyjhiidgtbxcsidu4s31ci0iw3hw4snvg3n";
-
-        function checkPass() {
-            const input = document.getElementById("passInput").value.trim().toLowerCase();
-            const errorMsg = document.getElementById("errorMsg");
-
-            if (input === SECRET_PASS) {
-                document.getElementById("authBox").style.display = "none";
-                document.getElementById("secretContent").style.display = "block";
-            } else {
-                errorMsg.style.display = "block";
-            }
-        }
-
-        document.getElementById("passInput").addEventListener("keydown", function(e) {
-            if (e.key === "Enter") {
-                checkPass();
-            }
-        });
-    </script>
-
-</body>
-</html>
