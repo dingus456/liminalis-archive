@@ -1049,7 +1049,7 @@ function searchArchive() {
     
     if (query === "th3 s3v3n sh4d3s 0f gr3y") {
     // Перенаправляем на секретную страницу
-    window.location.href = "sh4dy-gr3y.html";
+    window.location.href = "shady-grey.html";
     return; // Останавливаем обычный поиск
 }
     // ЕСЛИ ВЫБРАН ФОРУМ:
