@@ -1046,7 +1046,12 @@ function searchArchive() {
 
     const query = searchInput.value.toLowerCase();
     const typeFilter = filterSelect.value;
-
+    
+    if (query === "th3 s3v3n sh4d3s 0f gr3y") {
+    // Перенаправляем на секретную страницу
+    window.location.href = "sh4dy-gr3y.html";
+    return; // Останавливаем обычный поиск
+}
     // ЕСЛИ ВЫБРАН ФОРУМ:
     if (typeFilter === 'forum') {
         displayDatabase([]); // Прячем карточки уровней
