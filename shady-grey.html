@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACCESS RESTRICTED // NZFA</title>
+    <title>ACCESS RESTRICTED // NBFA</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -99,6 +99,28 @@
             border-color: #d4d4d4;
             color: #d4d4d4;
         }
+        .archive-figure {
+            margin: 18px auto;
+            text-align: center;
+            max-width: 100%;
+        }
+
+        .archive-img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #757575;
+            display: block;
+            margin: 0 auto;
+            image-rendering: pixelated; /* Сохраняет чёткие пиксели при масштабировании */
+       }
+
+        /* Подпись под фото в стиле терминала */
+        .archive-caption {
+            font-size: 12px;
+            color: #757575;
+            margin-top: 6px;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -106,6 +128,8 @@
     <!-- Кнопка переключения языка в углу -->
     <div class="top-controls">
         <button id="langToggle">LANG: RU</button>
+        <!--<button id="audioToggle">[AUDIO: OFF]</button>-->
+<audio id="bgMusic" src="audio/sh4d3s0fgr3yth4tg0s0f4r.mp3" loop preload="auto"></audio>
     </div>
 
     <!-- Блок ввода пароля -->
@@ -134,7 +158,12 @@
         <p><strong data-i18n="descLabel">Описание:</strong> <span data-i18n="descIntro">Аномальный переходный кластер, связывающий стабильные лиминальные пространства с фрактальными безднами. По мере продвижения вглубь комплекса реальность утрачивает цвет (Phen_0010) и расслаивается на геометрические узоры:</span></p>
 
         <div class="layer-block">
+            <div class="archive-figure">
+                <img src="images/ZUHZERO.webp" alt="Layer 0" class="archive-img">
+                <div class="archive-caption" data-i18n="cap0">однажды, гуляя, вы встретили дверь. дверь была грязная, старая и битая. открыв её, вы решились войти. вы спускались долго.. долго... д0лго... д0л70... </div>
+            </div>
             <p><strong data-i18n="l0Title">Слой 0 (Zero):</strong> <span data-i18n="l0Text">Поле с деревянной избой под серым небом. Максимально стабилен, однако трава и мелкие детали уже начинают повторять фрактальные паттерны.</span></p>
+            
             <p><strong data-i18n="l1Title">Слой 1–2 (One / Two):</strong> <span data-i18n="l1Text">Искажённые особняки и заснеженные аллеи под поглощающим чёрным небом. Начинается активное вымывание пигмента и плавление углов комнат.</span></p>
             <p><strong data-i18n="l3Title">Слой 3–4 и L0ST H0P3:</strong> <span data-i18n="l3Text">Полный коллапс каркаса. Стены превращаются в текучий серый пепел, материя распадается на крупные полигоны.</span></p>
             <p><strong data-i18n="l4Title">2F4R (Точка Сдвига):</strong> <span data-i18n="l4Text">Абсолютная фрактальная геометрия без верха, низа и гравитации. Единственный выход ведёт напрямую в «Небытие» (Фрактал 998) или «Реквием» (999).</span></p>
@@ -207,7 +236,12 @@
                 exitLink: "< EMERGENCY EXIT TO TERMINAL"
             }
         };
-
+        const bgMusic = document.getElementById("bgMusic");
+        const audioToggle = document.getElementById("audioToggle");
+        if (bgMusic) bgMusic.volume = 0.35;
+        if (bgMusic) {
+            bgMusic.play()
+        }
         let currentLang = localStorage.getItem('lang') || 'ru';
         const langBtn = document.getElementById("langToggle");
         const passInput = document.getElementById("passInput");
