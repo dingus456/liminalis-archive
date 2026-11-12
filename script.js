@@ -767,8 +767,187 @@ en: {
     tips: "Always look at the signs and don't walk straight into the door. Even in the most emergency cases.",
     hazardClass: "Spacial anomaly, unpredictable."
     }
-  },    
-    
+  } 
+},
+   {
+id: "Phen_0002",
+type: "phenomena",
+hazard: "CLASS 0-E",
+image: "images/Doubles.jpg",
+translations: {
+ru: {
+    title: "ДУБЛИРОВАНИЕ",
+    description: "Данный феномен представляет из себя дублирование объектов с Земли, вроде мебели или табличек. Это явление сильно расспространено в Янусе, а также присутствует в Консусе. Дублированные объекты, находящиеся в Фористуре, могут иметь определённые искажения, вроде дополнительных ножек у стула, неправильные габориты (т.е очень мелкие диваны или гигантские подушки), или, если на объекте есть текст, то он может быть сильно искажён и стать нечитаемым. Это явление затрагивает нетолько физические объекты, но и музыку тоже. Из колонок, обычно найденных в Янусе, может играть искажённая музыка, которая может быть похожа на какую-то музыку, сделанную человеком. Обычно, из колонок играет именно дублированная классическая музыка, но были и другие жанры. Иногда это дублирование бывает хорошим, а ещё в более редких случаях - неотличимым от реальных песен. Такие идеальные дубли можно встретить в Лиминалях, в которых играет джазовая музыка, как например, Станция Мелраг или GMENM-C5GPHGP.",
+    tips: "Это явление не является опасным для человека.",
+    hazardClass: "Пространственная аномалия."
+},
+en: {
+    title: "DUBBING",
+    description: "This phenomenon consists of the duplication of objects from Earth, such as pieces of furniture or signs. It is highly prevalent in Janus and also occurs in Consus. Duplicated objects found in Foristur may exhibit certain distortions—for instance, a chair might have extra legs, or items may have incorrect dimensions (such as extremely small sofas or giant pillows). Furthermore, if an object bears text, it may be so heavily distorted that it becomes illegible. This phenomenon affects not only physical objects but also music. Speakers—commonly found throughout Janus—may play distorted music that bears a resemblance to human-composed pieces. While the music emanating from these speakers is typically a duplicated version of classical compositions, other genres have been observed as well. In some instances, these duplications are of high quality, and in rarer cases, they are entirely indistinguishable from the original songs. Such perfect duplicates can be encountered in certain Liminalities, like The Melrah Station or GMENM-C5GPHGP—where jazz music can be heard playing.",
+    tips: "This phenomenon is not dangerous to humans.",
+    hazardClass: "Spacial anomaly."
+    }
+  } 
+},
+     {
+id: "Phen_0003",
+type: "phenomena",
+hazard: "CLASS 5-G",
+image: "images/NoPhotoNormalLiminalis.png",
+translations: {
+ru: {
+    title: "ПРОСТРАНСТВЕННЫЙ ШОВ",
+    description: "Пространственный шов это физический феномен наложения двух и более бесконечных неэвклидовых Лиминалей. Поскольку пространства Фористуры не имеют чётких внешних границ, их пересечение происходит изнутри путём 'истончения' локальной структуры (например, когда бетонные коридоры Этернитаса плавно замещаются обоями Януса). Зоны швов крайне нестабильны и могут быть смертельными для человека, из-за чего проходить через них не рекомендуется.",
+    tips: "Будьте осторожны, если собираетесь проходить через них.",
+    hazardClass: "Пространственная аномалия, геометрическая аномалия."
+},
+en: {
+    title: "SPATIAL SEAM",
+    description: "A spatial seam is a physical phenomenon involving the overlap of two or more infinite, non-Euclidean Liminalities. Since the spaces within the Foristura lack distinct external boundaries, their intersection occurs from within through a thinning of the local structure—for instance, when the concrete corridors of Eternitas gradually give way to the wallpapered surfaces of Janus. Seam zones are extremely unstable and can be lethal to humans; consequently, traversing them is not recommended.",
+    tips: "Be careful if you intend to pass through them.",
+    hazardClass: "Spacial anomaly, geometrical anomaly."
+    }
+  } 
+},
+     {
+id: "Phen_0004",
+type: "phenomena",
+hazard: "CLASS 5-B",
+image: "images/Qualification.jpg",
+translations: {
+ru: {
+    title: "КВАЛИФИКАЦИЯ",
+    description: "Квалификация это явление, эксклюзивное только для Мендациуса. Оно связано с видом Opifex Imitator Deversorium - единственными известными обитателями Мендациуса, которые были обычными странниками, зашедшими в эту иллюзию. Всё начинается так: Странник бродит по Мендациусу и поражается его фальшивой красотой. Потом к страннику подходит Opifex Imitator Deversorium и предлагает страннику выпить или пойти «поболтать» в «Офис Босса». Причём, данный вид хоть и имеет кожу вместо лица, у них всё равно остались хорошие речевые навыки и они могут внятно говорить, что странно. Если странник согласится на предложение Рабочего, то тот отведёт его в этот самый «Офис Босса». Никто точно не знает, что происходит внутри офиса (он, кстати, реален и в виде иллюзии, и в самой бетонной реальности). Снаружи можно услышать предсмертные выкрики странника, которые постепенно утихают. Это длится примерно 5-10 минут, и после них из комнаты выходит уже новый Opifex Imitator Deversorium: потерявший самого себя странник, обречённый ходить по иллюзорным коридорам и искать новых жертв, не нуждаясь в еде и воде.",
+    tips: "Если вы видите, как странник поддаётся Opifex Imitator Deversorium - немедленно начните его уговаривать остаться. Если-же вы стали избранным, то отказывайтесь от любых встреч. Если вас всё-же взяли - ваша жизнь кончена.",
+    hazardClass: "Биологическое явление, безвозвратно."
+},
+en: {
+    title: "QUALIFICATION",
+    description: "Qualification is a phenomenon unique to Mendacius. It is associated with the species Opifex Imitator Deversorium - the only known inhabitants of Mendacius, all of whom were once ordinary wanderers who stumbled into this illusion. It begins like this: a wanderer roams through Mendacius, captivated by its deceptive beauty. An Opifex Imitator Deversorium then approaches the wanderer, offering them a drink or inviting them to «have a chat» in the «Boss’s Office.» Although these entities have skin where a face should be, they retain excellent linguistic abilities and can speak quite clearly—a rather unsettling detail. If the wanderer accepts the invitation, the entity leads them to this «Boss’s Office». No one knows exactly what happens inside (the office, incidentally, exists both as an illusion and within the concrete reality). From the outside, one can hear the wanderer’s dying cries, which gradually fade away. This process lasts about 5–10 minutes, after which a new Opifex Imitator Deversorium emerges from the room: the wanderer, having lost their former self, is now doomed to roam the illusory corridors in search of new victims, no longer requiring food or water.",
+    tips: "If you see a wanderer succumbing to the Opifex Imitator Deversorium, immediately urge them to stay. If, however, you are chosen yourself, decline any and all encounters. Should you be taken nonetheless—your life is at an end.",
+    hazardClass: "Biological anomaly, irreversible."
+    }
+  } 
+},
+       {
+id: "Phen_0005",
+type: "phenomena",
+hazard: "CLASS 5-P",
+image: "images/NoPhotoNormalLiminalis.png",
+translations: {
+ru: {
+    title: "ХРОМАТИЧЕСКИЙ ФИЛЬТР",
+    description: "Хроматический фильтр это ментальный феномен, который искажает восприятие пространства Лиминали страннику, который её видит своими глазами. Для человека, какая-то лиминаль может показаться странной, неестественной, пустой или фальшивой. Чтобы избавиться от такого чувства, он берёт свой гаджет (например, телефон или фотоаппарат) и начинает снимать это место. На камере это место выглядит совсем другим, в отличии от того, что видел человек. Этот феномен является довольно распространённым в пределах Фористуры, из-за чего всегда рекомендуется носить с собой камеру или телефон для съёмки и удостоверения в том, что пространство вокруг вас - реально.",
+    tips: "Проверяйте фальшивость реальности через гаджеты.",
+    hazardClass: "Ментальная аномалия."
+},
+en: {
+    title: "CHROMATIC FILTER",
+    description: "A chromatic filter is a mental phenomenon that distorts a wanderer's perception of a liminal space. To an individual, a given Liminality might appear strange, unnatural, empty, or even fake. To dispel this feeling, the person might use a device—such as a phone or a camera—to capture an image of the location. Through the lens, the space appears entirely different from how it is perceived by the naked eye. This phenomenon is quite common throughout Foristure; consequently, it is always recommended to carry a camera or a phone to take pictures, thereby confirming that the space around you is, in fact, real.",
+    tips: "Check if the reality is fake trough gadgets.",
+    hazardClass: "Mental anomaly."
+    }
+  } 
+},
+       {
+id: "Phen_0006",
+type: "phenomena",
+hazard: "CLASS 5-P",
+image: "images/NoPhotoNormalLiminalis.png",
+translations: {
+ru: {
+    title: "КРИЗИС БЕСКОНЕЧНОСТИ",
+    description: "Кризис Бесконечности представляет из себя явление, от которого у человека ухудшается ментальное состояние. Обычно, таким феноменом можно заболеть в местах, вызывающих у странников тоску, или-же при контакте с Homo Melancholicus. Начинается всё с небольшой усталости и чувства, что все твои действия - бессмыслены. Это первая стадия Кризиса Бесконечности. Эта стадия длится крайне недолго, примерно 5 часов, после чего, если странник не покинул Лиминаль, наводящую страннику тоску, наступает вторая стадия. Вторая стадия приветствует странников тоской, внутренней пустотой, а также беспомощностью и сильной сонливостью. Начиная с этой точки, никакая точка не может быть оказана страннику, который поддался кризису. Вторая стадия длится 3-3,5 дня, и после неё наступает третья стадия. Третья стадия добавляет в этот коктейль сильную депрессию, паранойю, сильную эмоцианальность и ухудшает прошлые симптомы. Эта стадия остаётся со странником до конца его жизни, которая уже у него совсем недолгая, ведь после двух-пяти дней таких страданий, странник делает одно из трёх действий: либо-же он так и продолжает так жить, пока не умирает от болезней, голода или обезвоживания, либо «Отчаивается» и теряет последние капли человечности, становясь Homo Desperans, который бродит по Лиминали, либо-же выбирает свести концы с концами и совершить самоубийство из-за всей нагрузки.",
+    tips: "Почуяв первые симптомы Кризиса Бесконечности, покиньте ту Лиминаль, в которой вы находитесь. Если-же вы останетесь, то вам уже ничего не поможет.",
+    hazardClass: "Ментальная аномалия, крайне опасная для человека."
+},
+en: {
+    title: "INFINITY CRISIS",
+    description: "The Infinity Crisis is a phenomenon that causes a deterioration in a person's mental state. It is typically contracted in locations that evoke a sense of melancholy in wanderers, or through contact with a Homo Melancholicus. It begins with mild fatigue and the feeling that all one’s actions are meaningless—this is the first stage of the Infinity Crisis. This stage is very brief, lasting only about five hours; if the wanderer does not leave the melancholy-inducing Liminality by then, the second stage begins. The second stage brings with it a profound sense of longing, an internal void, a feeling of helplessness, and intense drowsiness. From this point on, no assistance can be offered to a wanderer who has succumbed to the crisis. The second stage lasts for 3 to 3.5 days, followed by the third stage. This final stage compounds the existing symptoms with severe depression, paranoia, and heightened emotional instability. It remains with the wanderer for the rest of their life—which, in any case, will not be long; after two to five days of such suffering, the wanderer typically faces one of three outcomes: they continue to live in this state until they perish from illness, starvation, or dehydration; they «fall into despair», losing the last vestiges of their humanity to become a Homo Desperans and wander around the Liminality; or, overwhelmed by the burden, they choose to end their own life.",
+    tips: "When you sense the first symptoms of the Infinity Crisis, leave the Liminality you are in. If you stay, then nothing will help you.",
+    hazardClass: "Mental anomaly, quite dangerous for humans."
+    }
+  } 
+},
+           {
+id: "Phen_0007",
+type: "phenomena",
+hazard: "CLASS 4-EGP",
+image: "images/Mnemo-Space.jpg",
+translations: {
+ru: {
+    title: "МНЕМО-ПРОСТРАНСТВО",
+    description: "Начнём с того, как появляется этот феномен. Сначала человек ложится спать в неэвклидовых Лиминалях. Затем, в один момент, в его голову приходят несколько разных воспоминаний. И уже из этих воспоминаний воссоздаётся карманное измерение, куда попадает спавший странник. Это место изображает воспоминания странника в возрасте от трёх до семнадцати лет, чаще всего, хорошие воспоминания: прогулки по городу, парки атракционов, первый поцелуй, детский сад. Сначала, это самое «мнемо-пространство» является стабильным и никак не меняет свою геометрию и окружение. Но в один случайный момент, когда странник подумает о чём-то другом, на это самое «мнемо-пространство» наложится эта мысль ввиде объёмного места. И вот тогда, это карманное измерение превращается в кашу из непонятных фигур, дублирующихся мест или ещё чего-то такого. В один момент, когда мыслей будет слишком много, у странника отчистится сознание, и он окажется в белой комнате, посреди которой будет только телевизор. На телевизоре показывают новости. Если смотреть с перспективы телевизора, то вы сможете заметить деревянную дверь. Эта дверь - выход из «мнемо-пространства».",
+    tips: "Этот феномен не опасен для людей.",
+    hazardClass: "Ментальная аномалия, пространственная аномалия, геометрическая аномалия."
+},
+en: {
+    title: "MNEMO-SPACE",
+    description: "Let’s begin with how this phenomenon emerges. It starts when an individual falls asleep within the non-Euclidean Liminalities. At some point, various memories surface in the person’s mind. These memories coalesce to form a «pocket dimension» into which the sleeping wanderer is transported. This space manifests the wanderer’s memories—typically positive ones—from between the ages of three and seventeen, such as strolls through a city, visits to amusement parks, a first kiss, or time spent in kindergarten. Initially, this «mnemo-space» remains stable, with its geometry and environment unchanged. However, at an unpredictable moment—triggered whenever the wanderer’s thoughts shift to something else—that new thought is superimposed onto the mnemo-space as a three-dimensional environment. Consequently, the pocket dimension devolves into a chaotic jumble of abstract shapes, duplicated locations, and other surreal anomalies. Eventually, when the influx of thoughts becomes overwhelming, the wanderer’s consciousness is cleared, and they find themselves in a white room containing nothing but a television. The television displays a news broadcast. If one observes from the perspective of the television, a wooden door becomes visible; this door serves as the exit from the mnemo-space..",
+    tips: "This phenomenon is not dangerous to humans.",
+    hazardClass: "Mental anomaly, spacial anomaly, geometrical anomaly."
+    }
+  } 
+},
+      {
+id: "Phen_0008",
+type: "phenomena",
+hazard: "CLASS 6.",
+image: "images/desperation..webp",
+translations: {
+ru: {
+    title: "отчаянье.",
+    description: "отчаянье. одна из самых худших судеб человека, попавшего в пределы фористуры. когда человеку уже нечего делать, поскольку он живёт в антисанитарии, без еды, воды и нормального сна, начинается отчаянье. сначала у человека уходят остатки рассудка. он становится просто каким-то животным, у которого 3 важные задачи: размножаться, есть и спать. потом у него отходит и физическая оболочка. человеческая кожа начинает отпадать. на теле можно увидеть вены, мышцы, органы. иногда состояние было настолько ужасным, что можно было видеть кости, которые тоже гнили. отпадали зубы, глаза и волосы. гениталии уменьшались в размерах, но при этом повышалось либидо, а также метаболизм, из-за трат энергии. появляется накопительство, иногда каннибализм. человек деградирует. сначала до уровня ребёнка, потом до уровня какого-то простого зверя, падальщика, который не делает вклад в свою экологию. третья стадия это конец. отчаянный может начать бегать на четвереньках, орать громче любого человека, прыгать, ржать без причины. глаза уменьшатся, зубы будут острее. будет видно позвоночник, который ещё хоть как-то держит эту мумию зверька, у которого нет ни эмпатии, ни любви, ни рассудка. за-то есть полное ОТЧАЯНЬЕ.",
+    tips: "береги себя. не будь как они.",
+    hazardClass: "полный распад человека."
+},
+en: {
+    title: "desperation.",
+    description: "despair. one of the worst fates that can befall a person who ends up within the confines of foristure. when an individual is left with no options—living in unsanitary conditions, devoid of food, water, or proper sleep—despair sets in. first, the last vestiges of reason vanish. the person is reduced to little more than an animal, driven by three primary imperatives: to reproduce, to eat, and to sleep. then, the physical shell begins to fail; human skin starts to slough off, revealing veins, muscles, and internal organs. in extreme cases, the decay reaches the bones themselves. teeth, eyes, and hair fall away. the genitals shrink, yet the libido intensifies—fueled by a metabolic surge as the body burns through its remaining energy. hoarding behaviors emerge, sometimes escalating into cannibalism. the individual regresses—first to the level of a child, then to that of a primitive beast, a scavenger that contributes nothing to its ecosystem. the third stage is the end. the desperate soul may begin to run on all fours, shriek with a volume no human could produce, leap about, or bray for no reason. their eyes shrink, and their teeth grow sharper. the spine remains visible, barely holding together this mummified, bestial creature—a being devoid of empathy, love, or reason. all that remains is absolute, total DESPAIR.",
+    tips: "take care of yourself. don't be like them.",
+    hazardClass: "the complete disintegration of a human being."
+    }
+  } 
+},
+      {
+id: "Phen_0009",
+type: "phenomena",
+hazard: "CLASS 5-EGP",
+image: "images/NoPhotoNormalLiminalis.png",
+translations: {
+ru: {
+    title: "ГЕНЕРАЦИЯ МАТРИЦЫ",
+    description: "Этот феномен заключается в том, что находясь в каких-то определённых Лиминалях (вроде MATRIX-C5EGPHAOTA или LEN-C5PGHGP), вы начнёте представлять то, что вы попали «Домой», на Землю. Вы ниачинаете видеть Землю, не из ваших воспоминаний. Вы начинаете чувствовать то, чего нет, слышать, чего нет. И вы взаимодействуете с этой «Реальностью», думая, что вы дома. Хотя на самом-же деле, тут 2 варианта: если же вы в Лиминали подобной LEN-C5PGHGP, то это значит, что вы скоро сойдёте с ума, или вы уже сумасшедший. Если-же вы в MATRIX-C5EGPHAOTA, то ничего плохого не будет, так как там это обычно. Плохо там настанет тогда, когда вы выйдите из Матрицы и сломаете систему, открыв дверь. (см. ███ ██████████████ ███████████ ███ █████/MATRIX-C5EGPHAOTA).",
+    tips: "Сейчас с этим ничего не поделаешь... Если же вы находитесь в зоне действия LEN-C5PGHGP. Если-же вы в MATRIX-C5EGPHAOTA, то просто светите окружение светом.",
+    hazardClass: "Ментальная аномалия, сильное искажение реальности."
+},
+en: {
+    title: "MATRIX GENERATION",
+    description: "This phenomenon manifests when you find yourself in certain Liminalities (such as MATRIX-C5EGPHAOTA or LEN-C5PGHGP) and begin to perceive yourself as having returned я«Home»—to Earth. You start to see an Earth that does not stem from your actual memories; you begin to sense things that are not there and hear sounds that do not exist. You interact with this «reality», fully believing you are back home. In truth, however, there are two possibilities: if you are in a space like LEN-C5PGHGP, it means you are either on the verge of losing your sanity or have already lost it. If you are in MATRIX-C5EGPHAOTA, there is no immediate danger, as such occurrences are typical there. The situation only becomes dire if you exit the Matrix and disrupt the system by opening a door. (see ███ ██████████████ ███████████ ███ █████/MATRIX-C5EGPHAOTA).",
+    tips: "You can't do anything about it now... If you are at LEN-C5PGHGP though. Just flash the enviorment with light in the MATRIX-C5EGPHAOTA.",
+    hazardClass: "Mental anomaly, severe reality distortion."
+    }
+  } 
+},
+          {
+id: "Phen_0010",
+type: "phenomena",
+hazard: "CLASS 0",
+image: "images/ZUHZERO.webp",
+translations: {
+ru: {
+    title: "ДЕХРОМИЗАЦИЯ",
+    description: "Странник перестаёт видеть любые цвета, кроме оттенков серого, чёрного и белого. Этот феномен уникален и принадлежит ███ ██████████████ ███████████ ███ █████",
+    tips: "Это явление не является опасным для человека.",
+    hazardClass: "Зрительная аномалия."
+},
+en: {
+    title: "DECHROMIZATION",
+    description: "The Wanderer ceases to perceive any colors other than shades of gray, black, and white. This phenomenon is unique and belongs to ███ ██████████████ ███████████ ███ █████.",
+    tips: "This phenomenon is not dangerous to humans.",
+    hazardClass: "Visual anomaly."
+    }
+  } 
 }];
 let currentLanguage = 'ru';
 function changeLanguage(lang) {
