@@ -105,7 +105,7 @@
 
     <!-- Кнопка переключения языка в углу -->
     <div class="top-controls">
-        <button id="langToggle" onclick="toggleLanguage()">LANG: RU</button>
+        <button id="langToggle">LANG: RU</button>
     </div>
 
     <!-- Блок ввода пароля -->
@@ -114,7 +114,7 @@
         <p data-i18n="authDesc">ВНИМАНИЕ: Обнаружена попытка доступа к дестабилизированному сектору.</p>
         <input type="password" id="passInput" data-i18n-placeholder="passPlaceholder" placeholder="ВВЕДИТЕ КОД ДОСТУПА...">
         <br>
-        <button onclick="checkPass()" data-i18n="submitBtn">ПОДТВЕРДИТЬ</button>
+        <button id="submitBtn" data-i18n="submitBtn">ПОДТВЕРДИТЬ</button>
         <p class="error-msg" id="errorMsg" data-i18n="errorMsg">[ОШИБКА]: НЕВЕРНЫЙ КЛЮЧ ШИФРОВАНИЯ.</p>
         <br>
         <a href="index.html" class="back-link" data-i18n="backLink">&lt; ВЕРНУТЬСЯ В АРХИВ</a>
