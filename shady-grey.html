@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДОСТУП ОГРАНИЧЕН // НЗФА</title>
+    <link rel="stylesheet" href="style.css"> <!-- Подключаем твои шрифты и стили -->
+    <style>
+        /* Дымчато-серая тема специально для этой страницы */
+        body {
+            background-color: #0a0a0a;
+            color: #9e9e9e;
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .auth-box, .secret-content {
+            border: 1px solid #757575;
+            background-color: #121212;
+            padding: 25px;
+            max-width: 700px;
+            width: 100%;
+            box-shadow: 0 0 15px rgba(158, 158, 158, 0.15);
+        }
+
+        .auth-box {
+            text-align: center;
+        }
+
+        input[type="password"] {
+            background: #000;
+            border: 1px solid #757575;
+            color: #d4d4d4;
+            padding: 10px;
+            font-family: inherit;
+            font-size: 16px;
+            width: 80%;
+            margin: 15px 0;
+            outline: none;
+        }
+
+        button {
+            background: #1e1e1e;
+            border: 1px solid #9e9e9e;
+            color: #d4d4d4;
+            padding: 10px 20px;
+            font-family: inherit;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #9e9e9e;
+            color: #000;
+        }
+
+        .error-msg {
+            color: #ff3b3b;
+            margin-top: 10px;
+            display: none;
+        }
+
+        /* Секретный текст скрыт до ввода правильного пароля */
+        .secret-content {
+            display: none;
+            text-align: left;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #757575;
+            text-decoration: none;
+            border: 1px solid #757575;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="auth-box" id="authBox">
+        <h2>[ТРЕБУЕТСЯ ДОПУСК УРОВНЯ 5-SG]</h2>
+        <p>ВНИМАНИЕ: Обнаружена попытка доступа к дестабилизированному сектору.</p>
+        <input type="password" id="passInput" placeholder="ВВЕДИТЕ КОД ДОСТУПА...">
+        <br>
+        <button onclick="checkPass()">ПОДТВЕРДИТЬ</button>
+        <p class="error-msg" id="errorMsg">[ОШИБКА]: НЕВЕРНЫЙ КЛЮЧ ШИФРОВАНИЯ.</p>
+        <br>
+        <a href="index.html" class="back-link">&lt; ВЕРНУТЬСЯ В АРХИВ</a>
+    </div>
+
+    <div class="secret-content" id="secretContent">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #757575; padding-bottom: 10px;">
+            <span><strong>TH3 53V3N 5H4D35 0F GR3Y</strong></span>
+            <span>CLASS PENDING</span>
+        </div>
+        
+        <h3>ДЫМЧАТО-СЕРЫЙ СЕКТОР</h3>
+        <p><strong>[ХАРАКТЕРИСТИКА]:</strong> Пограничный мост между Лиминалями и Фракталами, дехромизация, распад геометрии.</p>
+        <p><strong>[АРХИВ НЗФА]:</strong> ЗАСЕКРЕЧЕНО</p>
+        
+        <p><strong>Описание:</strong> Сюда ты вставишь наше описание слоёв от 0 (Поле с избой) до 2F4R и выхода в Небытие...</p>
+        
+        <p><strong>Советы:</strong> Потеря цвета — первый признак. Не пытайтесь вернуться назад после Слой 1.</p>
+
+        <a href="index.html" class="back-link">&lt; ЭКСТРЕННЫЙ ВЫХОД В ТЕРМИНАЛ</a>
+    </div>
+
+    <script>
+
+        const SECRET_PASS = "ugdbiwtqphtbtcihidgddbhidhttcdrdadgpcsidvdephhqnlwtciwtjcxktghthpnhdctixbtyjhiidgtbxcsidu4s31ci0iw3hw4snvg3n";
+
+        function checkPass() {
+            const input = document.getElementById("passInput").value.trim().toLowerCase();
+            const errorMsg = document.getElementById("errorMsg");
+
+            if (input === SECRET_PASS) {
+                document.getElementById("authBox").style.display = "none";
+                document.getElementById("secretContent").style.display = "block";
+            } else {
+                errorMsg.style.display = "block";
+            }
+        }
+
+        document.getElementById("passInput").addEventListener("keydown", function(e) {
+            if (e.key === "Enter") {
+                checkPass();
+            }
+        });
+    </script>
+
+</body>
+</html>
