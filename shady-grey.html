@@ -145,8 +145,10 @@
         <a href="index.html" class="back-link" data-i18n="exitLink">&lt; ЭКСТРЕННЫЙ ВЫХОД В ТЕРМИНАЛ</a>
     </div>
 
-    <script>
-        // Словарь переводов RU / EN
+<script>
+    // Оборачиваем всё в DOMContentLoaded, чтобы скрипт ждал полной загрузки кнопок
+    document.addEventListener("DOMContentLoaded", function() {
+        
         const translations = {
             ru: {
                 langBtn: "LANG: RU",
@@ -202,51 +204,74 @@
                 l4Text: "Absolute fractal geometry with no up, down, or gravity. The only exit leads directly into 'Oblivion' (Fractal 998) or 'Requiem' (999).",
                 adviceLabel: "Advisories:",
                 adviceText: "Loss of color in clothing and skin is the first sign of intrusion. Do not attempt to turn back after crossing Layer 1.",
-exitLink: "< EMERGENCY EXIT TO TERMINAL"
-}
-};
-    // Проверяем, не сохранён ли язык с главной страницы, иначе ставим 'ru'
-    let currentLang = localStorage.getItem('lang') || 'ru';
-    function applyLanguage(lang) {
-    const dict = translations[lang] || translations.ru;
-    document.getElementById("langToggle").textContent = dict.langBtn;
-    // Переводим все текстовые элементы с атрибутом data-i18n
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-    const key = el.getAttribute("data-i18n");
-    if (dict[key]) {
-        el.textContent = dict[key];
-    }
- });
-    // Переводим placeholder у поля ввода пароля
-    document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
-    const key = el.getAttribute("data-i18n-placeholder");
-    if (dict[key]) {
-    el.placeholder = dict[key];
-    }
-});
-}
-    function toggleLanguage() {
-        currentLang = currentLang === 'ru' ? 'en' : 'ru';
-        localStorage.setItem('lang', currentLang);
+                exitLink: "< EMERGENCY EXIT TO TERMINAL"
+            }
+        };
+
+        let currentLang = localStorage.getItem('lang') || 'ru';
+        const langBtn = document.getElementById("langToggle");
+        const passInput = document.getElementById("passInput");
+        const authBox = document.getElementById("authBox");
+        const secretContent = document.getElementById("secretContent");
+        const errorMsg = document.getElementById("errorMsg");
+
+        // Ищем кнопку подтверждения внутри authBox
+        const submitBtn = authBox.querySelector("button");
+
+        function applyLanguage(lang) {
+            const dict = translations[lang] || translations.ru;
+            if (langBtn) langBtn.textContent = dict.langBtn;
+
+            document.querySelectorAll("[data-i18n]").forEach(el => {
+                const key = el.getAttribute("data-i18n");
+                if (dict[key]) {
+                    el.textContent = dict[key];
+                }
+            });
+
+            document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+                const key = el.getAttribute("data-i18n-placeholder");
+                if (dict[key]) {
+                    el.placeholder = dict[key];
+                }
+            });
+        }
+
+        function checkPass() {
+            const SECRET_PASS = atob("~jz{lk-(hZ+k+(bhhw{tr"); 
+            const input = passInput.value.trim().toLowerCase();
+
+            if (input === SECRET_PASS) {
+                authBox.style.display = "none";
+                secretContent.style.display = "block";
+            } else {
+                errorMsg.style.display = "block";
+            }
+        }
+
+        if (langBtn) {
+            langBtn.addEventListener("click", function() {
+                currentLang = currentLang === 'ru' ? 'en' : 'ru';
+                localStorage.setItem('lang', currentLang);
+                applyLanguage(currentLang);
+            });
+        }
+
+        if (submitBtn) {
+            submitBtn.addEventListener("click", checkPass);
+        }
+
+        if (passInput) {
+            passInput.addEventListener("keydown", function(e) {
+                if (e.key === "Enter") {
+                    checkPass();
+                }
+            });
+        }
+
         applyLanguage(currentLang);
-    }
-// Применяем язык при загрузке страницы
-    applyLanguage(currentLang);
-// Проверка пароля (зашифрован "2f4r" через Base64)
-    const SECRET_PASS = atob("~jz{lk-(hZ+k+(bhhw{tr");
-    function checkPass() {
-    const input = document.getElementById("passInput").value.trim().toLowerCase();
-    const errorMsg = document.getElementById("errorMsg");
-    if (input === SECRET_PASS) {
-    document.getElementById("authBox").style.display = "none";
-    document.getElementById("secretContent").style.display = "block";
-    } else {
-    errorMsg.style.display = "block";
-    }
-    }
-    document.getElementById("passInput").addEventListener("keydown", function(e) {
-    if (e.key === "Enter") {
-    checkPass();
-    }
-});
+    });
+</script>
+</body>
+</html>
 
