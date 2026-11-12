@@ -431,13 +431,13 @@ en: {
     translations: {
     ru: {
         title: "PHS-C2PHEP: «Диссоциация»",
-        description: "PHS-C2PHEP представляет из себя маленький, уютный домик, выполненный в милом стиле. Стены дома покрашены либо в белый, либо в ярко-розовый цвет, обвешаны игрушками и всякими другими аксессуарами, связанными с японской поп-культурой. В доме есть 2 этажа. На первом находится кухня, туалет и гостиная. Все эти комнаты выполнены в милом стиле, имеют много плакатов и игрушек. Посуда на кухне стеклянная и имеет белый цвет. Она идеально чиста, как и вся эта Лиминаль. Второй этаж имеет две спальни, а также ещё один туалет. Одна спальня большая и вход в неё находится с краю. Другая поменьше и находится по середине этажа. В туалетах работают все системы, идёт вода и можно стирать вещи. В гостинной много сидушек… То, что было описано ранее, это то, что пытается воссоздать мозг, находясь здесь. Каждый попавший сюда странник ловит диссоциализацию, как-будто после сильной психологической травмы. На деле-же дом архитектурно идентичен иллюзии, но он заброшен. Тут нет света, игрушек, плакатов. Вместо этого тут выбиты стёкла, разбросаны бутылки алкоголя, а в большой спальне можно найти кровь неизвестного происхождения. Но, неважно, находишься ли ты в диссоциализации или нет, есть одна иллюзия, которая никогда не уходит. Некоторые странники зовут её «Мистер Кит». Эта иллюзия будет постоянно ходить сзади вас. Не подпускайте близко. Не смотря на то, что это иллюзия, последствия при контакте будут очень даже реальны. Вы уйдёте в ещё более сильную диссоциализацию, получите травму так и физическую, так и ментальную. И так будет снова и снова, пока от тебя ни останется ничего, кроме глубоких ран, синяков и большого объёма крови.",
+        description: "PHS-C2PHEP представляет из себя маленький, уютный домик, выполненный в милом стиле. Стены дома покрашены либо в белый, либо в ярко-розовый цвет, обвешаны игрушками и всякими другими аксессуарами, связанными с японской поп-культурой. В доме есть 2 этажа. На первом находится кухня, туалет и гостиная. Все эти комнаты выполнены в милом стиле, имеют много плакатов и игрушек. Посуда на кухне стеклянная и имеет белый цвет. Она идеально чиста, как и вся эта Лиминаль. Второй этаж имеет две спальни, а также ещё один туалет. Одна спальня большая и вход в неё находится с краю. Другая поменьше и находится по середине этажа. В туалетах работают все системы, идёт вода и можно стирать вещи. В гостинной много сидушек… То, что было описано ранее, это то, что пытается воссоздать мозг, находясь здесь. Каждый попавший сюда странник ловит диссоциацию, как-будто после сильной психологической травмы. На деле-же дом архитектурно идентичен иллюзии, но он заброшен. Тут нет света, игрушек, плакатов. Вместо этого тут выбиты стёкла, разбросаны бутылки алкоголя, а в большой спальне можно найти кровь неизвестного происхождения. Но, неважно, находишься ли ты в диссоциации или нет, есть одна иллюзия, которая никогда не уходит. Некоторые странники зовут её «Мистер Кит»: высокий, тощий гуманоид чёрного цвета, иногда испарающийся в пространстве. Эта иллюзия будет постоянно ходить сзади вас. Не подпускайте близко. Не смотря на то, что это иллюзия, последствия при контакте будут очень даже реальны. Вы уйдёте в ещё более сильную диссоциацию, получите травму так и физическую, так и ментальную. И так будет снова и снова, пока от тебя ни останется ничего, кроме глубоких ран, синяков и большого объёма крови.",
         tips: "Попытайтесь выйти из дома. Может быть, вы куда-нибудь попадёте",
         hazardClass: "Психологические эффекты, безжизненно. Символ двери: «୨୧»"
     },
     en: {
         title: "PHS-C2PHEP: «Dissocialization»",
-        description: "PHS-C2PHEP is a small, cozy house designed in a «cute» aesthetic. Its walls—painted either white or bright pink—are adorned with toys and various accessories linked to Japanese pop culture. The house consists of two floors: the ground floor contains a kitchen, a restroom, and a living room, all decorated in that same cute style and filled with posters and toys. The kitchenware, made of white glass, is spotlessly clean—much like everything else in this Liminality. The second floor houses two bedrooms and another restroom; one bedroom is large and located at the edge of the floor, while the smaller one is situated in the center. The plumbing in the restrooms is fully functional—water runs, and it is even possible to do laundry. The living room is furnished with plenty of seating... However, what has been described so far is merely a construct of the mind—an attempt by the brain to make sense of its surroundings. Every wanderer who arrives here experiences a profound sense of dissociation, akin to the state following severe psychological trauma. In reality, the house is architecturally identical to the illusion, but it is abandoned. There are no lights, toys, or posters; instead, the windows are shattered, empty alcohol bottles lie scattered about, and in the larger bedroom, one can find traces of blood of unknown origin. Yet, regardless of whether or not you are experiencing dissociation, one particular illusion remains constant. Some wanderers call it «Mr. Kit.» This entity will constantly follow right behind you—do not let it get too close. Even though it is an illusion, the consequences of physical contact are all too real: you will fall into an even deeper state of dissociation and suffer both physical and mental trauma. And this will happen again and again, until nothing is left of you but deep wounds, bruises, and a large amount of blood.",
+        description: "PHS-C2PHEP is a small, cozy house designed in a «cute» aesthetic. Its walls—painted either white or bright pink—are adorned with toys and various accessories linked to Japanese pop culture. The house consists of two floors: the ground floor contains a kitchen, a restroom, and a living room, all decorated in that same cute style and filled with posters and toys. The kitchenware, made of white glass, is spotlessly clean—much like everything else in this Liminality. The second floor houses two bedrooms and another restroom; one bedroom is large and located at the edge of the floor, while the smaller one is situated in the center. The plumbing in the restrooms is fully functional—water runs, and it is even possible to do laundry. The living room is furnished with plenty of seating... However, what has been described so far is merely a construct of the mind—an attempt by the brain to make sense of its surroundings. Every wanderer who arrives here experiences a profound sense of dissociation, akin to the state following severe psychological trauma. In reality, the house is architecturally identical to the illusion, but it is abandoned. There are no lights, toys, or posters; instead, the windows are shattered, empty alcohol bottles lie scattered about, and in the larger bedroom, one can find traces of blood of unknown origin. Yet, regardless of whether or not you are experiencing dissociation, one particular illusion remains constant. Some wanderers call it «Mr. Kit.»: A tall, black, skinny humanoid figure that sometimes disappears in space. This entity will constantly follow right behind you—do not let it get too close. Even though it is an illusion, the consequences of physical contact are all too real: you will fall into an even deeper state of dissociation and suffer both physical and mental trauma. And this will happen again and again, until nothing is left of you but deep wounds, bruises, and a large amount of blood.",
         tips: "Try exiting the house. Maybe, you will get somewhere.",
         hazardClass: "Psychological effects, lifeless. Door symbol: «୨୧»"
         }
@@ -610,36 +610,56 @@ en: {
     image: "images/NoPhotoNormalLiminalis.png",
     translations: {
     ru: {
-        title: "PLACEHOLDER",
-        description: "",
-        tips: "",
-        hazardClass: "плэйсхолдер. Символ двери: «symbol»"
+        title: "ROEn-C0HN: «Колонны»",
+        description: "ROEn-C0HN представляет из себя бесконечное пространство, у которого не видно стен. Здесь есть плиточный потолок и пол, которые выглядят чисто. каждые 5 метров вы сможете увидеть бело-синиие, тонкие колонны. Здесь есть только шум от люминесцентных ламп, который никогда не прекращается.",
+        tips: "Чтобы выйти отсюда, сделайте ноуклип. Сделав его, вы попадёте в Этернитас",
+        hazardClass: "Безжизненный. Символ двери: «✱»"
     },
     en: {
-        title: "PLACEHOLDER",
-        description: "",
-        tips: "",
-        hazardClass: "placeholder. Door symbol: «symbol»"
+        title: "ROEn-C0HN: «The Pillars»",
+        description: "ROEn-C0HN is an infinite space with no visible walls. Both the ceiling and the floor consist of tiles and appear clean. Every 5 meters, you can see slender white-and-blue columns. The only sound present is the incessant, never-ending hum of fluorescent lights.",
+        tips: "If you want to leave this place, you can try noclipping. By doing it, you will enter Eternitas",
+        hazardClass: "Lifeless. Door symbol: «✱»"
         }
     }
 },
     {
     id: "LIM_0021",
     type: "liminalityO",
-    hazard: "CLASS 3-P",
+    hazard: "CLASS 3-EP",
     image: "images/Motion.jpg",
     translations: {
     ru: {
-        title: "HSTEn-C2HEP: «Ложь»",
-        description: "",
-        tips: "",
-        hazardClass: "Психологическое влияние. Символ двери: «🏠︎»"
+        title: "HSTEn-C3HEP: «Ложь»",
+        description: "HSTEn-C2HEP, известный как «Ложь» - очень большое пространство площадью в 400 миллионов миль². Всё это пространство занято абсолютно одинаковыми домами, построенными в линейки с расстоянием в 30 метров. Здесь также есть холмы и деревья, а сам пол похож на траву, хоть ею и не является. Вместо неба здесь потолок, на котором есть огромная люстра, которая действует как солнце на этой Лиминали. В дома можно войти, и внутри вы увидете 3 этажа, из которых заполнены, обычно, только второй и первые этажи. На первом этаже есть гараж, в котором есть кучи полок, в которых нет никаких вещей. На первом этаже есть гостиная, на которой есть диван, стул, стол и телевизор с помехами. Иногда на месте этих телевозоров поселяются Паразиты, именуемые Cancer televisificus, которые используют телевизоры как и панцыри для своего хрупкого тела, так и как приманку, чтобы привлекать новых жертв. Эта Лиминаль уникальна тем, что на ней есть подобие дневного цикла: цикл этот здесь длится всего 6 часов: день и ночь длятся 3 часа. Днём всё спокойно, иногда можно услышать искажённую музыку, играющую где-то на фоне. Ночью-же, музыка затихает, а «Солнце» угасает. Странник, оставшийся наулице в это время, начинает испытывать сильную паранойю и слышать голоса в голове, а также были случаи галлюцинаций в виде мультяшных персонажей, агрессивно идущих и пытающихся поколечить странника.",
+        tips: "На данный момент идёт расследование в целях найти выход отсюда.",
+        hazardClass: "Психологическое влияние, агрессивная окружающая среда. Символ двери: «🏠︎»"
     },
     en: {
-        title: "HSTEn-C2HEP: «Falsehood»",
-        description: "",
-        tips: "",
-        hazardClass: "Psychological impact. Door symbol: «🏠︎»"
+        title: "HSTEn-C3HEP: «The Falsehood»",
+        description: "HSTEn-C2HEP, known as «The Falsehood», is an expansive space covering 400 million square miles. The entire area is filled with identical houses, arranged in rows spaced 30 meters apart. The landscape features hills and trees, and the ground resembles grass—though it is not actually grass. Overhead, instead of a sky, there is a ceiling dominated by a massive chandelier that functions as the «Sun» for this Liminality. The houses can be entered; each has three floors, though typically only the first and second are occupied. The ground floor contains a garage lined with empty shelving units, as well as a living room furnished with a sofa, a chair, a table, and a television displaying static. Occasionally, these televisions are inhabited by parasites known as *Cancer televisificus*, which use the sets both as protective shells for their fragile bodies and as lures to attract new victims. This Liminality is unique in that it features a pseudo-day/night cycle: a full cycle lasts only 6 hours, with 3 hours of «day» and 3 hours of «night». During the day, everything is calm, though distorted music can sometimes be heard playing in the background. At night, the music fades, and the «Sun» dims. Wanderers caught outside during this time begin to experience intense paranoia and hear voices in their heads; there have also been reports of hallucinations involving cartoon characters that approach aggressively, attempting to maim the wanderer.",
+        tips: "An investigation is currently underway to find a way out of here.",
+        hazardClass: "Psychological impact, hostile enviorment. Door symbol: «🏠︎»"
+        }
+    }
+},
+     {
+    id: "LIM_0022",
+    type: "liminalityO",
+    hazard: "CLASS 0",
+    image: "images/MM-C0HN.jpg",
+    translations: {
+    ru: {
+        title: "MM-C0HN: «Полис»",
+        description: "MM-C0HN является попыткой воссоздать торговый центр архитектурно. Всего здесь 4 этажа, и каждый из них является полностью пустым. Первый этаж является парковкой, в которой отсутствуют какие-либо рисунки, а колонны иногда проходят сквозь потолок или стены. Здесь есть и выход, ведущий во тьму. В центре парковки находится эскалатор, ведущий на второй этаж. Второй этаж имеет блестящие, тёмные коридоры, по бокам которых закрытые магазины и зоны, сдающиеся в аренду. В центре этажа находится лавка с мороженым, которая полностью пуста. Рядом с ней есть эскалаторы, ведущие на третий и четвёртые этажи. На потолке четвёртого этажа видно отверстие, из которого исходит свет. За окном видно голубое небо. На третьем этаже все ларьки также закрыты и там отсутствует свет. На четвёртом есть 5 открытых ларьков, в которых ничего нет.",
+        tips: "На данный момент идёт расследование в целях найти выход отсюда.",
+        hazardClass: "Безжизненный. Символ двери: «𖦹»"
+    },
+    en: {
+        title: "MM-C0HN: «Polis»",
+        description: "MM-C0HN is an architectural recreation of a shopping mall. It consists of four floors, all of which are completely empty. The first floor is a parking garage; it features no markings, and some of the support columns pass directly through the ceiling or walls. There is also an exit that leads into darkness. In the center of the parking area, an escalator leads up to the second floor. The second floor contains sleek, dark corridors lined with closed storefronts and spaces available for lease. In the middle of this floor sits an ice cream kiosk—completely empty. Nearby, escalators lead to the third and fourth floors. On the fourth floor, there is an opening in the ceiling from which light streams in; beyond the windows, a blue sky is visible. On the third floor, all the stalls are closed and the area is unlit. On the fourth floor, there are five open stalls, all of which are entirely vacant.",
+        tips: "An investigation is currently underway to find a way out of here.",
+        hazardClass: "Lifeless. Door symbol: «𖦹»"
         }
     }
 },
