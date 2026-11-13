@@ -234,6 +234,7 @@ footer {
 .card-despair .item-id,
 .card-despair .item-tips,
 .card-despair .hazard-badge,
+.card-despair .item-desc,
 .card-despair strong{
     color: #ff2a2a !important;
 }
