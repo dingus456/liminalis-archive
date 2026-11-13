@@ -225,7 +225,8 @@ footer {
 .card-despair .item-title,
 .card-despair .inner-stats-box,
 .card-despair .item-image,
-.card-despair .hazard-badge
+.card-despair .hazard-badge,
+.card-despair .inner-stats-box
 {
     border-color: #ff2a2a !important;
 }
@@ -235,6 +236,7 @@ footer {
 .card-despair .item-tips,
 .card-despair .hazard-badge,
 .card-despair .item-desc,
+.card-despair .inner-stats-box,
 .card-despair strong{
     color: #ff2a2a !important;
 }
