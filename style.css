@@ -221,19 +221,16 @@ footer {
     box-shadow: 0 0 12px rgba(255, 42, 42, 0.15);
 }
 
-.card-despair h2,
-.card-despair h3,
-.card-despair .card-title {
-    color: #ff2a2a !important;
-    border-bottom-color: #8b0000 !important;
+.card-despair .card-header,
+.card-despair .item-title,
+.card-despair .inner-stats-box,
+.card-despair .item-image {
+    border-color: #ff2a2a !important;
 }
 
-.card-despair .status-label,
+.card-despair .item-title,
+.card-despair .item-id,
+.card-despair .item-tips,
 .card-despair strong {
-    color: #ff4d4d;
-}
-
-
-.card-despair img {
-    border: 1px solid #ff2a2a !important;
+    color: #ff2a2a !important;
 }
