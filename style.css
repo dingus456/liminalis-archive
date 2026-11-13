@@ -218,20 +218,15 @@ footer {
 /* карточке для отчаявшихсяяяяяяя*/
 .card-despair {
     border: 1px solid #ff2a2a !important;
-    box-shadow: 0 0 12px rgba(255, 42, 42, 0.15);
-    border-color: #ff2a2a;
-    border-top: 1px solid #ff2a2a;
+    box-shadow: 0 0 12px rgba(255, 42, 42, 0.15) !important;
 }
 
 .card-despair .card-header,
-.card-despair .item-title,
 .card-despair .inner-stats-box,
 .card-despair .item-image,
 .card-despair .hazard-badge,
-.card-despair .inner-stats-box
-{
+.card-despair .item-tips {
     border-color: #ff2a2a !important;
-    border-top: 1px solid #ff2a2a;
 }
 
 .card-despair .item-title,
@@ -240,22 +235,6 @@ footer {
 .card-despair .hazard-badge,
 .card-despair .item-desc,
 .card-despair .inner-stats-box,
-.card-despair strong{
+.card-despair strong {
     color: #ff2a2a !important;
-}
-.card-despair + .archive-card::before {
-    border-color: #ff2a2a !important;
-    background-color: #ff2a2a !important;
-}
-.card-despair::before,
-.card-despair::after {
-    border-color: #ff2a2a !important;
-    background-color: #ff2a2a !important;
-    border-top: 1px solid #ff2a2a;
-}
-.card-despair + hr,
-.card-despair + div:not(.archive-card) {
-    border-color: #ff2a2a !important;
-    background-color: #ff2a2a !important;
-    border-top: 1px solid #ff2a2a;
 }
