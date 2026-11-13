@@ -224,13 +224,16 @@ footer {
 .card-despair .card-header,
 .card-despair .item-title,
 .card-despair .inner-stats-box,
-.card-despair .item-image {
+.card-despair .item-image,
+.card-despair .hazard-badge
+{
     border-color: #ff2a2a !important;
 }
 
 .card-despair .item-title,
 .card-despair .item-id,
 .card-despair .item-tips,
-.card-despair strong {
+.card-despair .hazard-badge,
+.card-despair strong{
     color: #ff2a2a !important;
 }
