@@ -683,8 +683,118 @@ en: {
         }
     }
 },
+      {
+    id: "ORG_KIN4_SPECB-01",
+    type: "entity",
+    hazard: "CLASS 0",
+    image: "images/Stalker.jpg",
+    translations: {
+    ru: {
+    title: "OBSERVATOR OBSCURUS (Преследователи)",
+    description: "«Преследователи» представляют из себя темнокожих гуманоидов, рост которых порой достигает четырёх метров. У данных существ отсутствует рот, уши и нос, однако присутствуют огромные, светящиеся в темноте глаза. Эти существа собираются стайками и наблюдают за всеми живыми организмами из тёмных проёмов, вроде проходов в тёмные комнаты или тёмных уголков «лесов» (подобных лесу VBFEn-C1PHP). Они перемещаются довольно быстро из-за мелкого веса, который, согласно исследованиям, оценивается примерно в 40-60 кг. Они перемещаются скольжением, но не как Слепцы, которые передвигаются по стенам (см. ORG_KIN4_SPECB-06), а просто скользят по полу. Хотя точных доказательств нет, но были рапорты от странников о том, что они издавали странное, тихое чириканье. При прямом зрительном контакте, Преследователи попытаются уйти в самое тёмное место в комнате, и уже там, с помощью каких-нибудь проходов, «Смываются» в темноте. Следование за ними бессмысленно. Вероятно, Преследователям также не нужна еда или вода.",
+    tips: "Постарайтесь не вступать с ними в физический контакт.",
+    hazardClass: "Пассивны."
+
+    },
+    en: {
+    title: "OBSERVATOR OBSCURUS (The Pursuers)",
+    description: "«The Pursuers» are dark-skinned humanoids that can reach heights of up to four meters. These creatures lack mouths, ears, and noses, but possess enormous eyes that glow in the dark. They gather in small groups and observe living organisms from dark recesses—such as the entryways to unlit rooms or the shadowy corners of «forests» (like the one designated VBFEn-C1PHP). Despite their size, they move quite rapidly, owing to their low body mass, which research estimates to be approximately 40–60 kg. They move by gliding—not along the walls, as the Blindmen do (see ORG_KIN4_SPECB-06), but rather by sliding across the floor. Although there is no definitive proof, wanderers have reported hearing them emit strange, quiet chirping sounds. If direct eye contact is made, a Pursuer will attempt to retreat to the darkest part of the room and then vanish into the shadows, likely by slipping through some sort of passage. Following them is futile. It is also probable that Pursuers have no need for food or water.",
+    tips: "Try to avoid physical contact with them.",
+    hazardClass: "Passive."
+
+    }
+  }
+},
+     {
+    id: "ORG_KIN4_SPECB-02",
+    type: "entity",
+    hazard: "CLASS 2",
+    image: "images/Electrophagues.jpg",
+    translations: {
+    ru: {
+    title: "ELECTROFAGUS MIMICUS (Электрофаги)",
+    description: "Электрофаги представляют из себя мелких, красных существ, тело которых состоит из туловища, головы, «Панцыря» и множества щупалец. На брюхе расположено примерно 100-200 таких длинных тентаклей, которые держатся за трещины в стенах. Они встают животом на эти трещины, держась щупальцами, а также фиксируют позицию панцыря. Панцырем, обычно, является старая розетка, найденная где-то в пределах Фористуры среди какой-нибудь кучи мусора. Через этот панцырь существо получает все вещества, которые ему нужны для жизни, а именно ультрафиолет и тепло. Они заставляют панцырь работать через специальные клетки в спине, и после чего панцырь начинает поглащать ультрафиолет и насыщать Электрофага. Если кто-то потревожит его и попытается выдернуть, то Электрофаг это почувствует через панцырь и сделает удар током, обычно, не привышающий 50-90 вольт. Это отпугивающий удар. Если-же существо не отстанет и всё равно продолжит делать то, что делало до этого, то Электрофаг ударит уже ударом в 160-220 вольт, что может быть смертельно опасно, но не для всех. Слепцы (см. ORG_KIN4_SPECB-06) имеют иммунитет к току, из-за чего Электрофаги становятся абсолютно беспомощными и их быстро сжирают Слепцы, после долгих и жестоких попыток вытащить Электрофагов из стены. На вкус Электрофаги ощущаются как «смесь недожаренной баранины и креветок». Пьют Электрофаги жидкость из стен, которая иногда стекает по щелям. Электрофаги стараются пить аккуратно, чтобы ни одна капля жидкости незатронула панцырь, ведь тогда бы сущность погибла бы от короткого замыкания и возгорания. Вокруг Электрофагов находится много помёта белого или бежевого цвета. Им они также отмечают территорию. Он сильно пахнет.",
+    tips: "Если вы встретили Элеткрофага, то вам советуется идти дальше так, как будто вы ничего не видели. Если-же вы решились подойти и потрогать Электрофага, то лучше вам отказаться из-за риска получения удара током.",
+    hazardClass: "Не нападают первыми. Атакуют при угрозе."
+
+    },
+    en: {
+    title: "ELECTROFAGUS MIMICUS (Electrophagues)",
+    description: "Electrophages are small, red creatures consisting of a torso, a head, a «shell», and numerous tentacles. On their underside, they possess roughly 100–200 long tentacles used to grip cracks in walls. By anchoring themselves to these fissures with their tentacles, they also secure the position of their shell. The shell is typically an old electrical outlet cover, scavenged from a pile of debris somewhere within Foristura. Through this shell, the creature absorbs the essential elements it needs to survive—specifically, ultraviolet radiation and heat. Specialized cells located on the creature's back interface with the shell, enabling it to absorb UV light and nourish the Electrophage. If disturbed—for instance, if someone attempts to pull it from the wall—the Electrophage senses this through its shell and delivers an electric shock, usually between 50 and 90 volts, intended as a deterrent. Should the intruder persist, the Electrophage will deliver a stronger shock of 160–220 volts; while potentially lethal, this is not fatal to everyone. Blindmen (see ORG_KIN4_SPECB-06) are immune to electricity, rendering Electrophages completely defenseless against them. After a prolonged and brutal struggle to pry them from the wall, the Blind Ones invariably devour them. In terms of taste, Electrophages are described as a «blend of undercooked lamb and shrimp.» They sustain themselves by consuming fluids that occasionally seep through the cracks in the walls. Electrophages take care when drinking, ensuring that not a single drop of liquid touches their carapace—for if it did, the creature would perish from a short circuit and subsequent combustion. The areas around Electrophages are often littered with white or beige-colored droppings, which they also use to mark their territory. These droppings have a strong odor.",
+    tips: "If you encounter an Electrophage, it is best to keep moving as if you hadn’t seen anything at all. Should you decide to approach and touch it, you ought to reconsider—there is a risk of receiving an electric shock.",
+    hazardClass: "Doesn't strikes first. Attacks when threatened."
+
+    }
+  }
+},
+     {
+    id: "ORG_KIN4_SPECB-03",
+    type: "entity",
+    hazard: "CLASS 2",
+    image: "images/Hermit.jpg",
+    translations: {
+    ru: {
+    title: "ELECTROFAGUS ERMITA (Электрофаг-Отшельник)",
+    description: "Электрофаг-Отшельник мало чем отличается от обычного Электрофага, если его оставить без панцыря. Размер у него тот-же, щупалец чуть больше, примерно 115-340, и крепится он за потолок. На панцыре у него кусок металла, который нагревается и даёт Электрофагу-Отшельнику тепло, которое нужно для его выживания. Если под ним пройдёт какая-то сущность, то Электрофаг-Отшельник просто упадёт на неё и раздавит весом своего пластыря, а позже вернётся наверх, оставив гнилой труп под собой как предупреждающий знак для всех хищников, вроде Слепцов или Отчаявшихся.",
+    tips: "Если вы увидели неестественный кусок трубы с будто-бы «лужей крови», то вам советуется обойти эту трубу сторой, чтобы не быть раздавленным под давлением панцыря Электрофага-Отшельника. Не пытайтесь его сорвать с той поверхности, где он находится.",
+    hazardClass: "Не нападают первыми. Атакуют при возможной угрозе."
+
+    },
+    en: {
+    title: "ELECTROFAGUS ERMITA (Hermit Electrofagues)",
+    description: "The Hermit Electrophage differs little from a standard Electrophage when stripped of its carapace. It is roughly the same size, though it possesses a greater number of tentacles—approximately 115 to 340—and anchors itself to the ceiling. Its carapace features a piece of metal that heats up, providing the Hermit Electrophage with the warmth essential for its survival. Should any entity pass beneath it, the Hermit Electrophage will simply drop onto its target, crushing it under the weight of its own mass. Afterward, it returns to its position above, leaving a rotting corpse behind as a warning to other predators, such as the Blindmen or the Desperate.",
+    tips: "If you come across an odd-looking piece of pipe with what appears to be a «pool of blood» right below it, it is best to give it a wide berth—otherwise, you risk being crushed by the shell of an Electrophage Hermit Crab. Do not attempt to pry it off the surface it is attached to.",
+    hazardClass: "Doesn't strikes first. Attacks when a possible treat is nearby."
+
+    }
+  }
+},
+     {
+    id: "ORG_KIN4_SPECB-04",
+    type: "entity",
+    hazard: "CLASS 5",
+    image: "images/NoPhotoNormalLiminalis.png",
+    translations: {
+    ru: {
+    title: "OPIFEX IMITATOR DEVERSORIUM (Рабочие Мендациуса)",
+    description: "Opifex Imitator Deversorium, также известные как «Рабочие Мендациуса», когда-то, были обычными людьми, но из-за феномена 4 (см. Phen_0004), они стали безликими, одетыми в отельную форму тварями, которые предлагают случайным вошедшим странникам войти в «Офис Босса». В иллюзии Мендациуса их можно описать как красивых, белокожих женщин и мужчин, одетых в красную униформу и не имеющих лица. На деже-же, они не носят никакой одежды. имеют любой цвет кожи и также не имеют лица. Не смотря на отсутствие лица, они могут прекрасно видеть, слышать и говорить. Дышать, есть и пить им не нужно. Почти все экземпляры этого вида обладают острым умом, который есть далеко не у каждого вида организмов в пределах Фористуры. Это всё потому что, как уже было сказано раннее, это были странники, которые поддались воздействию «Квалификации» и теперь обречены на веки вечные блуждать по бетонным коридорам Мендациуса, преукрашенным фальшивыми стенами, ковром и потолочными канделяврами",
+    tips: "Отказывайтесь на любые их предложения. Не будьте как они.",
+    hazardClass: "Хитрые, опасные."
+
+    },
+    en: {
+    title: "OPIFEX IMITATOR DEVERSORIUM (Mendacius Employees)",
+    description: "*Opifex Imitator Deversorium*—also known as «Mendacius’s Workers» were once ordinary humans. Due to «Phenomenon 4» (see Phen_0004), they have been transformed into faceless entities clad in hotel uniforms, who invite unsuspecting wanderers to enter the «Boss’s Office». Within the illusion of Mendacius, they appear as attractive, fair-skinned men and women dressed in red uniforms, yet they lack any facial features. In their true, underlying state, they wear no clothing, possess a variety of skin tones, and are likewise faceless. Despite this lack of a face, they are fully capable of seeing, hearing, and speaking. They have no need to breathe, eat, or drink. Almost all specimens of this type possess a sharp intellect—a trait not found in every species within Foristura. This is because, as previously mentioned, they were once wanderers who succumbed to the effects of «Qualification». Now, they are doomed to wander forever through the concrete corridors of Mendacius—corridors adorned with false walls, carpeting, and ceiling-mounted candelabra.",
+    tips: "Decline all of their offers. Don't be like them.",
+    hazardClass: "Cunning, dangerous."
+
+    }
+  }
+},
+      {
+    id: "ORG_KIN4_SPECB-05",
+    type: "entity",
+    hazard: "CLASS 0",
+    image: "images/NoPhotoNormalLiminalis.png",
+    translations: {
+    ru: {
+    title: "OPIFEX IMITATOR CONDUCTOR (Кондуит)",
+    description: "«Кондуит», «Джентельмен» или-же просто «Смотритель» является видом сущностей которые являются высокой (примерно 2 метра) гуманоидной фигурой с искажёнными чертами лица, включающей в себя сильный, зловещий оскал, пустые глаза. Они все одеты в одежду охраников, машинистов, и даже швейцаров. Они просто наблюдают за странниками и иногда следуют за ними, пугая из-за спины. И, в отличии от Преследователей, Кондуит не уходит от вас после зрительного контакта",
+    tips: "Делайте что хотите. Он всё это игнорирует.",
+    hazardClass: "Пассивен."
+
+    },
+    en: {
+    title: "OPIFEX IMITATOR CONDUCTOR (Кондуит)",
+    description: "«The Conduit», also known as the «Gentleman» or simply the «Watcher» is a type of entity that appears as a tall (approximately 2-meter) humanoid figure with distorted facial features, including a pronounced, sinister grin and empty, hollow eyes. They are typically dressed in uniforms resembling those of security guards, train conductors, or even doormen. They simply observe wanderers, occasionally following them and startling them from behind. Unlike «Pursuers», a Conduit will not retreat or leave after making eye contact.",
+    tips: "Do what you want. He ignores all of it.",
+    hazardClass: "Passive."
+
+    }
+  }
+},
     {
-    id: "ORG_KIN4_SPECB-6",
+    id: "ORG_KIN4_SPECB-06",
     type: "entity",
     hazard: "CLASS 5",
     image: "images/Duller.jpg",
@@ -723,6 +833,28 @@ en: {
     description: "the desperate. creatures composed of filthy, rotting flesh—are the manifestations of despair (see Phen_0008). typically standing between 140 and 165 cm tall, these beings—devoid of skin, hair, and occasionally even teeth—are condemned to wander the expanse of Foristura. Once, they were just ordinary people who simply had the misfortune of being in the wrong place at the wrong time. first, they lost their sanity; their intellect regressed to that of the most primitive scavengers, driven by only three objectives: to eat, to sleep, and to reproduce. they consume anything they come across—a cruel trick played upon them by despair itself. their diet includes meat, vegetation, and even substances that cause them physical harm, such as concrete or wood. Consequently, they possess sharp teeth adapted for this consumption. This is compounded by a high metabolic rate, necessitated by the significant energy expenditure required even for basic movement on all fours. Despite this, their periods of sleep are extremely brief, ranging from ten minutes to three hours. these wretched, fate-tormented creatures exist in a state of profound, unrelenting exhaustion. Reproduction is rare, as they struggle to find partners. when a male encounters a female, a truly repulsive sequence begins: he charges toward her at breakneck speed, followed by copulation. copulation is chaotic and impulsive in nature, driven by hormonal imbalance and a complete breakdown of social instincts. At times, it is accompanied by loud cries and moans. most of the desperate suffer from serious illnesses brought on by unsanitary conditions, the decomposition of their own bodies, and various types of bacteria. Along with their sanity, they have lost their physical form. once, they may have looked like ordinary human beings, but now their jaws protrude, and they are largely devoid of skin, hair, and sometimes even teeth. their eyes are extremely small, with a radius of roughly 4–6 mm. through their flesh, one can occasionally glimpse skeletal remains, decaying organs, and veins—often ruptured, leaking blood. furthermore, the desperate ones are plagued by hypersexuality, insatiable hunger, and a compulsive urge to hoard. driven by starvation—when all other means of survival have vanished—they erupt into frenzied screams, lashing out at one another, consuming themselves and their own kind. they gather into what is known as a «Wretched Pyramid», from which only the strongest emerge. thus they have lived, thus they live, and thus they shall continue to live.",
     tips: "if you encounter one of them, shine a light in their eyes, then hide. don’t be like them.",
     hazardClass: "Unstable"
+
+    }
+  }
+},
+    {
+    id: "ORG_KIN4_SPECB-16",
+    type: "entity",
+    hazard: "CLASS 4-P",
+    image: "images/wretch.webp",
+    translations: {
+    ru: {
+    title: "HOMO MELANCHOLICUS (Синие Люди)",
+    description: "«Синие люди» представляют из себя гуманоидных существ, имеющих синеватый оттенок кожи и грустную гримасу, а также носящих одежду 30-ых или 40-ых годов. У них отсутствуют глаза и зубы, а на их месте находятся чёрные дыры. Данные существа являются пассивными к странникам и никогда не нападают на них напрямую. Однако, если на них долго смотреть, то человек может в лучшем случае просто расплакаться, а в худшем - привести к «Кризису Бесконечности», который излечим только на первой стадии. (см. Phen_0006). Большинство странников также отмечало в своих рапортах, что эти самые «Синие люди» похожи на их знакомых или на друзей детства, которые выросли. Что тоже примечательно, так это то, как этот организм появляется. Если человек будет долго смотреть в одну точку, ностальгировать и при этом во время ностальгии будет злокачественное воспоминание (развод, расстование, насилие), и при этом это всё будет в Лиминали, где присутствует дублированная джазовая музыка (см. Phen_0002), то начнёт формироваться силлуэт человека, который постепенно начнёт становиться Homo Melancholicus. Когда он полностью сформируется (а это занимает не меньше минуты), тогда он начнёт бесцельно бродить по пространству Лиминали, и при недолгом контакте может вызвать раннее-упомянутый «Кризис Бесконечности».",
+    tips: "Не смотрите на них напрямую. Вместо этого, отворачивайтесь или смотрите с помощью бокового зрения.",
+    hazardClass: "Пассивны, но, не зная этого, могут вызвать психологическое влияние"
+
+    },
+    en: {
+    title: "HOMO MELANCHOLICUS (The Blue People)",
+    description: "«The Blue People» are humanoid entities with a bluish skin tone and a sorrowful expression, dressed in clothing typical of the 1930s or 1940s. They lack eyes and teeth; in their place are black voids. These entities are passive toward wanderers and never initiate direct attacks. However, staring at them for an extended period can, at best, cause a person to burst into tears, and at worst, trigger an «Infinity Crisis» - a condition that is treatable only in its initial stage (see Phen_0006). Many wanderers have also noted in their reports that these «Blue People» resemble people they know or friends from their childhood who have since grown up. Also noteworthy is the manner in which these organisms manifest: if an individual stares fixedly at a single point while lost in nostalgia—specifically nostalgia tainted by a painful memory (such as a divorce, a breakup, or an act of violence) and this occurs within a Liminality accompanied by a dubbed jazz melody (see Phen_0002), a human silhouette will begin to take shape, gradually transforming into a Homo Melancholicus. Once fully formed (a process taking at least a minute), the entity begins to wander aimlessly through the space of the Liminality; even brief contact with it can trigger the aforementioned «Infinity Crisis».",
+    tips: "Do not look directly at them. Instead, turn away or look using your peripheral vision.",
+    hazardClass: "Passive, yet, unknowingly, can exert a psychological impact."
 
     }
   }
