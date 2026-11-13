@@ -1003,10 +1003,10 @@ function displayDatabase(items) {
     }
 
     items.forEach(item => {
-        const isDespair = item.id === "Phen_0008" || item.id === "Homo_Desperans";
+        const isDespair = item.id === "Phen_0008" || item.id === "ORG_KIN4_SPECB-15";
         const themeClass = isDespair ? "card-despair" : "";
         const card = document.createElement('div');
-        card.className = `archive-card ${item.type}`;
+        card.className = `archive-card ${item.type} ${themeClass}`;
         
         const data = item.translations[currentLanguage];
         const ui = uiTranslations[currentLanguage];
