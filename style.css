@@ -240,3 +240,8 @@ footer {
 .card-despair strong{
     color: #ff2a2a !important;
 }
+.card-despair::before,
+.card-despair::after {
+    border-color: #ff2a2a !important;
+    background-color: #ff2a2a !important;
+}
