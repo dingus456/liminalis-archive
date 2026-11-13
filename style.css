@@ -219,6 +219,7 @@ footer {
 .card-despair {
     border: 1px solid #ff2a2a !important;
     box-shadow: 0 0 12px rgba(255, 42, 42, 0.15);
+    border-color: #ff2a2a;
 }
 
 .card-despair .card-header,
@@ -246,6 +247,11 @@ footer {
 }
 .card-despair::before,
 .card-despair::after {
+    border-color: #ff2a2a !important;
+    background-color: #ff2a2a !important;
+}
+.card-despair + hr,
+.card-despair + div:not(.archive-card) {
     border-color: #ff2a2a !important;
     background-color: #ff2a2a !important;
 }
