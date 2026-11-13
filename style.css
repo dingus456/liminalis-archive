@@ -183,7 +183,7 @@ footer {
     color: #000;
 }
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     .header-controls, 
     .nav-container,
     header {
@@ -213,4 +213,27 @@ footer {
         padding: 6px 8px;
         white-space: nowrap; 
     }
+}*/
+
+/* карточке для отчаявшихсяяяяяяя*/
+.card-despair {
+    border: 1px solid #ff2a2a !important;
+    box-shadow: 0 0 12px rgba(255, 42, 42, 0.15);
+}
+
+.card-despair h2,
+.card-despair h3,
+.card-despair .card-title {
+    color: #ff2a2a !important;
+    border-bottom-color: #8b0000 !important;
+}
+
+.card-despair .status-label,
+.card-despair strong {
+    color: #ff4d4d;
+}
+
+
+.card-despair img {
+    border: 1px solid #ff2a2a !important;
 }
