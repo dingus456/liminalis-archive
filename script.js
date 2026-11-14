@@ -1181,7 +1181,7 @@ function displayDatabase(items) {
     items.forEach(item => {
         const isDespair = item.id === "Phen_0008" || item.id === "ORG_KIN4_SPECB-9";
         const themeClass = isDespair ? "card-despair" : "";
-        const isFunky = item.id === "ORG_KIN4_SPECB-5" || item.id === "ORG_KIN4_SPECB-10";
+        const isFunky = item.id === "ORG_KIN4_SPECB-05" || item.id === "ORG_KIN4_SPECB-10";
         const themeClassJazz = isFunky ? "card-jazz" : "";
         const card = document.createElement('div');
         card.className = `archive-card ${item.type} ${themeClass} ${themeClassJazz}`;
