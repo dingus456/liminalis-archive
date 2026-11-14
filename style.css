@@ -238,3 +238,40 @@ footer {
 .card-despair strong {
     color: #ff2a2a !important;
 }
+
+/* карточке для джаZа*/
+.card-jazz {
+    border: 1px solid #face2d !important;
+    box-shadow: 0 0 12px rgba(250, 206, 45, 0.15) !important;
+}
+
+.card-jazz .card-header,
+.card-jazz .inner-stats-box,
+.card-jazz .item-image,
+.card-jazz .hazard-badge,
+.card-jazz .item-tips {
+    border-color: #face2d !important;
+}
+
+.card-jazz .item-title,
+.card-jazz .item-id,
+.card-jazz .item-tips,
+.card-jazz .hazard-badge,
+.card-jazz .item-desc,
+.card-jazz .inner-stats-box,
+.card-jazz strong {
+    color: #face2d !important;
+}
+@font-face {
+    font-family: 'RhythmAndJazz';
+    src: url('fonts/RhythmAndJazz.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.card-jazz .item-title {
+    font-family: 'RhythmAndJazz', 'Courier New', monospace;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
