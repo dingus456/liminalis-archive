@@ -1179,7 +1179,7 @@ function displayDatabase(items) {
     }
 
     items.forEach(item => {
-        const isDespair = item.id === "Phen_0008" || item.id === "ORG_KIN4_SPECB-15";
+        const isDespair = item.id === "Phen_0008" || item.id === "ORG_KIN4_SPECB-10";
         const themeClass = isDespair ? "card-despair" : "";
         const card = document.createElement('div');
         card.className = `archive-card ${item.type} ${themeClass}`;
