@@ -775,7 +775,7 @@ en: {
     id: "ORG_KIN4_SPECB-05",
     type: "entity",
     hazard: "CLASS 0",
-    image: "images/NoPhotoNormalLiminalis.png",
+    image: "images/NoImageFoundJazzTheme.gif",
     translations: {
     ru: {
     title: "OPIFEX IMITATOR CONDUCTOR (Кондуиты)",
@@ -841,11 +841,11 @@ en: {
     id: "ORG_KIN4_SPECB-08",
     type: "entity",
     hazard: "CLASS 0",
-    image: "images/Duller.jpg",
+    image: "images/NoPhotoNormalLiminalis.png",
     translations: {
     ru: {
     title: "NATURA MORTUA (Натюрморты)",
-    description: "Natura Mortua, также известные как «Натюрморты», являются последствиями «дублирования» (см. Phen_0002), когда Фористура пытается дублировать живые организмы с Земли. Снаружи, эти существа выглядят как обычные люди или животные, которые поддались сильным искажениям (например, у одного может быть тройное лицо,или у другого может быть 5 ног). Внутри-же, они полностью состоят из материала, похожего текстурой на бетон и не имеют органов дыхания, пищеварения или кровообращения, из-за чего их можно считать неживыми. Все экземпляры Natura Mortua являются безопасными и не смогут вам навредить, поскольку являются неживыми. И также из-за этого они являются простой добычей для разных хищников, подобных Слепцам. По словам дегустаторов, которые решились попробовать плоть Натюрморта, вкус был похож на «мокрую губку», что говорит о наличии плесени или бактерий.",
+    description: "Natura Mortua, также известные как «Натюрморты», являются последствием «дублирования» (см. Phen_0002), когда Фористура пытается дублировать живые организмы с Земли. Снаружи, эти существа выглядят как обычные люди или животные, которые поддались сильным искажениям (например, у одного может быть тройное лицо,или у другого может быть 5 ног). Внутри-же, они полностью состоят из материала, похожего текстурой на бетон и не имеют органов дыхания, пищеварения или кровообращения, из-за чего их можно считать неживыми. Все экземпляры Natura Mortua являются безопасными и не смогут вам навредить, поскольку являются неживыми. И также из-за этого они являются простой добычей для разных хищников, подобных Слепцам. По словам дегустаторов, которые решились попробовать плоть Натюрморта, вкус был похож на «мокрую губку», что говорит о наличии плесени или бактерий.",
     tips: "Отсутствуют",
     hazardClass: "Неживые."
 
@@ -885,7 +885,7 @@ en: {
     id: "ORG_KIN4_SPECB-10",
     type: "entity",
     hazard: "CLASS 4-P",
-    image: "images/NoPhotoNormalLiminalis.png",
+    image: "images/NoImageFoundJazzTheme.gif",
     translations: {
     ru: {
     title: "HOMO MELANCHOLICUS (Синие Люди)",
@@ -1179,8 +1179,10 @@ function displayDatabase(items) {
     }
 
     items.forEach(item => {
-        const isDespair = item.id === "Phen_0008" || item.id === "ORG_KIN4_SPECB-10";
+        const isDespair = item.id === "Phen_0008" || item.id === "ORG_KIN4_SPECB-9";
         const themeClass = isDespair ? "card-despair" : "";
+        const isFunky = item.id === "ORG_KIN4_SPECB-5" || item.id === "ORG_KIN4_SPECB-10";
+        const themeClass = isDespair ? "card-jazz" : "";
         const card = document.createElement('div');
         card.className = `archive-card ${item.type} ${themeClass}`;
         
