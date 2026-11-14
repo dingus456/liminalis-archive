@@ -1182,7 +1182,7 @@ function displayDatabase(items) {
         const isDespair = item.id === "Phen_0008" || item.id === "ORG_KIN4_SPECB-9";
         const themeClass = isDespair ? "card-despair" : "";
         const isFunky = item.id === "ORG_KIN4_SPECB-5" || item.id === "ORG_KIN4_SPECB-10";
-        const themeClass = isDespair ? "card-jazz" : "";
+        const themeClassJazz = isDespair ? "card-jazz" : "";
         const card = document.createElement('div');
         card.className = `archive-card ${item.type} ${themeClass}`;
         
