@@ -1184,7 +1184,7 @@ function displayDatabase(items) {
         const isFunky = item.id === "ORG_KIN4_SPECB-5" || item.id === "ORG_KIN4_SPECB-10";
         const themeClassJazz = isFunky ? "card-jazz" : "";
         const card = document.createElement('div');
-        card.className = `archive-card ${item.type} ${themeClass}`;
+        card.className = `archive-card ${item.type} ${themeClass} ${themeClassJazz}`;
         
         const data = item.translations[currentLanguage];
         const ui = uiTranslations[currentLanguage];
