@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>НЗФА // СЕКРЕТНЫЙ СЕКТОР [REDACTED]</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #00ff41;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+            z-index: 999;
+            background-size: 100% 4px;
+            pointer-events: none;
+        }
+
+        #login-box {
+            border: 1px solid #00ff41;
+            background: #111;
+            padding: 30px;
+            max-width: 420px;
+            width: 100%;
+            margin-top: 15vh;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+        }
+
+        input[type="password"] {
+            background: #000;
+            border: 1px solid #00ff41;
+            color: #00ff41;
+            font-family: 'Courier New', monospace;
+            padding: 10px;
+            width: 85%;
+            margin: 15px 0;
+            outline: none;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        button {
+            background: #00ff41;
+            color: #000;
+            border: none;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background: #00cc33;
+        }
+
+        #error-msg {
+            color: #ff3333;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            display: none;
+        }
+
+        #secret-content {
+            display: none;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #00ff41;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .back-link {
+            color: #00ff41;
+            text-decoration: none;
+            border: 1px solid #00ff41;
+            padding: 5px 10px;
+        }
+
+        .back-link:hover {
+            background: #00ff41;
+            color: #000;
+        }
+
+        .archive-card {
+            border: 1px solid #00ff41;
+            background: #111;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 255, 65, 0.1);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #00ff41;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+
+        .item-title {
+            font-size: 1.3rem;
+            margin: 10px 0;
+        }
+
+        .item-tips {
+            border-top: 1px dashed #00ff41;
+            margin-top: 12px;
+            padding-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        .audio-anomaly {
+            border: 1px dashed #ffcc00;
+            color: #ffcc00;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            background: rgba(255, 204, 0, 0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <audio id="secret-bgm" src="audio/microchip_secret.mp3" loop preload="auto"></audio>
+
+
+    <div id="login-box">
+        <div>[ДОСТУП ОГРАНИЧЕН // УРОВЕНЬ ДОПУСКА: LIGMA]</div>
+        <p>ВВЕДИТЕ КОДОВУЮ ФРАЗУ ДЛЯ ДЕШИФРОВКИ:</p>
+        <input type="password" id="pass-input" placeholder="********">
+        <br>
+        <button onclick="checkPassword()">ПОДТВЕРДИТЬ</button>
+        <div id="error-msg">[ОШИБКА]: НЕВЕРНЫЙ ПАРОЛЬ. ПОПРОБУЙТЕ СНОВА.</div>
+    </div>
+
+    <div id="secret-content">
+        <div class="top-bar">
+            <span>АРХИВ НЗФА // СЕКТОР СПИСАННЫХ АНОМАЛИЙ (J-ТИР)</span>
+            <a href="index.html" class="back-link">&lt; ВЕРНУТЬСЯ В БАЗУ</a>
+        </div>
+
+        <div class="archive-card">
+            <div class="card-header">
+                <span>ID: LIM_0420-J</span>
+                <span>CLASS: КЕК</span>
+            </div>
+            <div class="item-title">КОМНАТА С ЁЖИКАМИ (ПРИМЕР)</div>
+            <p>Бесконечное помещение, заполненное колючими млекопитающими, которые громко фыркают и требуют яблоки. Замените этот текст на оригинальную статью из дампа ЗКД или Infinite Backrooms.</p>
+            <div class="item-tips">
+                <strong>[СОВЕТЫ]:</strong> Не наступайте на пол босиком.
+            </div>
+        </div>
+
+        <div class="archive-card">
+            <div class="card-header">
+                <span>ID: ORG_J-001</span>
+                <span>BEHAVIOR: АЛКОГОЛЬНЫЙ</span>
+            </div>
+            <div class="item-title">ПЬЯНЫЙ АЗГОР (ПРИМЕР)</div>
+            <p>Сюда можно скопировать текст про Пьяного Азгора или Хлеб, он же чат, прямо из твоего XML-архива.</p>
+            <div class="item-tips">
+                <strong>[СОВЕТЫ]:</strong> Не предлагайте ему чай.
+            </div>
+        </div>
+
+        <div class="audio-anomaly">
+            <strong>[АУДИО-АНОМАЛИЯ СЕКТОРА]:</strong> При воспроизведении фоновой записи на максимальной громкости и в наушниках в спектрограмме фиксируются посторонние помехи — неразборчивые крики неизвестного субъекта (<code>HEY EVERY !</code>), требующего немедленно стать <code>[БОЛЬШОЙ ШИШКОЙ]</code>.
+        </div>
+    </div>
+
+    <script>
+        const passInput = document.getElementById("pass-input");
+        const errorMsg = document.getElementById("error-msg");
+
+        passInput.addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                checkPassword();
+            }
+        });
+
+        function checkPassword() {
+            if (passInput.value === "yo mama is fat") {
+                document.getElementById("login-box").style.display = "none";
+                document.getElementById("secret-content").style.display = "block";
+                
+                const bgm = document.getElementById("secret-bgm");
+                bgm.volume = 0.65;
+                bgm.play().catch(e => console.log("Автовоспроизведение заблокировано:", e));
+            } else {
+                errorMsg.style.display = "block";
+                passInput.value = "";
+            }
+        }
+    </script>
+</body>
+</html>
