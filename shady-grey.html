@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACCESS RESTRICTED // NBFA</title>
+    <title>ACCESS RESTRICTED // NESBFA</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -121,12 +121,29 @@
             margin-top: 6px;
             font-style: italic;
         }
+
+    /* Стих с вертикальным градиентом прозрачности (верх чёткий, низ тает) */
+    #fading-poem {
+        opacity: 1;
+        border-left: 3px solid #555;
+        padding: 20px;
+        margin-bottom: 40px;
+        line-height: 1.6;
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 45%, rgba(0,0,0,0.2) 100%);
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 45%, rgba(0,0,0,0.2) 100%);
+    }
+
+    /* Основной текст статьи ниже, который станет слишком контрастным */
+    #article-content {
+        filter: contrast(100%) brightness(100%);
+    }
     </style>
 </head>
 <body>
 
     <!-- Кнопка переключения языка в углу -->
     <div class="top-controls">
+        <a href="index.html" class="back-link" data-i18n="exitLink">&lt; ЭКСТРЕННЫЙ ВЫХОД В ТЕРМИНАЛ</a>
         <button id="langToggle">LANG: RU</button>
         <!--<button id="audioToggle">[AUDIO: OFF]</button>-->
 <audio id="bgMusic" src="audio/sh4d3s0fgr3yth4tg0s0f4r.mp3" loop preload="auto"></audio>
@@ -148,30 +165,44 @@
     <div class="secret-content" id="secretContent">
         <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #757575; padding-bottom: 10px; flex-wrap: wrap; gap: 10px;">
             <span><strong>SG_0000 // TH3 SH4DY GR3Y</strong></span>
-            <span data-i18n="classBadge">CLASS 5-FG (ФРАКТАЛЬНЫЙ СДВИГ)</span>
+            <span data-i18n="classBadge">CLASS 6.</span>
         </div>
         
-        <h3 data-i18n="docTitle">ДЫМЧАТО-СЕРЫЙ СЕКТОР</h3>
-        <p><strong data-i18n="charLabel">[ХАРАКТЕРИСТИКА]:</strong> <span data-i18n="charText">Пограничный мост между Лиминалями и Фракталами, дехромизация, распад геометрии.</span></p>
-        <p><strong data-i18n="statusLabel">[АРХИВ НЗФА]:</strong> <span data-i18n="statusText">ЗАСЕКРЕЧЕНО</span></p>
+        <h3 data-i18n="docTitle">СЕКТОР #848884: Дымчато-Серый</h3>
+        <p><strong data-i18n="charLabel">[ХАРАКТЕРИСТИКА]:</strong> <span data-i18n="charText">Б3ЗН4ДЁЖ3Н</span></p>
+        <p><strong data-i18n="statusLabel">[АРХИВ НЗФА]:</strong> <span data-i18n="statusText">ЗАСЕКРЕЧЕНО; ПОВРЕЖДЕНО</span></p>
         
-        <p><strong data-i18n="descLabel">Описание:</strong> <span data-i18n="descIntro">Аномальный переходный кластер, связывающий стабильные лиминальные пространства с фрактальными безднами. По мере продвижения вглубь комплекса реальность утрачивает цвет (Phen_0010) и расслаивается на геометрические узоры:</span></p>
+        <p><strong data-i18n="descLabel">Описание:</strong> <span data-i18n="descIntro">Сектор #848884 - система нестабильных, крайне опасных пространств, в которых отсутствует понятие нормальной геометрии и безопасности. Система состоит из семи задокументированных зон, и по-мере продвижения по ним пространство станет менее стабильным и более смертоносным.</span></p>
 
         <div class="layer-block">
             <div class="archive-figure">
                 <img src="images/ZUHZERO.webp" alt="Layer 0" class="archive-img">
                 <div class="archive-caption" data-i18n="cap0">однажды, гуляя, вы встретили дверь. дверь была грязная, старая и битая. открыв её, вы решились войти. вы спускались долго.. долго... д0лго... д0л70... </div>
             </div>
-            <p><strong data-i18n="l0Title">Слой 0 (Zero):</strong> <span data-i18n="l0Text">Поле с деревянной избой под серым небом. Максимально стабилен, однако трава и мелкие детали уже начинают повторять фрактальные паттерны.</span></p>
+            <p><strong data-i18n="l0Title">ПЕРВЫЙ СЛОЙ: «Лимбо»</strong> <span data-i18n="l0Text">Лимбо представляет собой крайне мелкое Пространство, которое является коробкой. Здесь появляется основная черта Сектора #848884, а именно Дехромизация (см. Phen_0010 в основной базе данных), при которой человек перестаёт видеть какие-либо цвета, кроме оттенков серого, чёрного и белого. В пределах коробки Лимбо можно найти пару избушек, которые выглядят разрушенными. Внутри них ничего нет, кроме часов, которые постоянно тикают и похожи на кота. В центре коробки Первого Слоя можно найти дыру, которая, как вам покажется, вечно идёт вниз. На деле-же это бассейн с грязной водой, из которого нельзя выбраться. Коробка Первого Слоя имеет площадь в 600 миль², и по краям и на потолке можно найти стены, идущие вверх на высоту примерно 260 метров. На потолке находятся лампы, которые изредка моргают, и могут отключиться. Пол состоит из искусственной травы, на которой также рассположены «деревья» и «кусты», которые являются дублированными из-за материала, похожего на бетон внутри (см. Phen_0002 на основном списке). Чтобы выйти отсюда, вам следует найти дверь на востоке коробки, которая будет сливаться со стеной. Войдя в неё, вы упадёте ещё ниже... и ниж3... 5 н5ж3...</span></p>
             
-            <p><strong data-i18n="l1Title">Слой 1–2 (One / Two):</strong> <span data-i18n="l1Text">Искажённые особняки и заснеженные аллеи под поглощающим чёрным небом. Начинается активное вымывание пигмента и плавление углов комнат.</span></p>
-            <p><strong data-i18n="l3Title">Слой 3–4 и L0ST H0P3:</strong> <span data-i18n="l3Text">Полный коллапс каркаса. Стены превращаются в текучий серый пепел, материя распадается на крупные полигоны.</span></p>
-            <p><strong data-i18n="l4Title">2F4R (Точка Сдвига):</strong> <span data-i18n="l4Text">Абсолютная фрактальная геометрия без верха, низа и гравитации. Единственный выход ведёт напрямую в «Небытие» (Фрактал 998) или «Реквием» (999).</span></p>
+            <p><strong data-i18n="l1Title">ВТОР0Й СЛОЙ: «Соликтудо»</strong> <span data-i18n="l1Text">Данный слой представляет собой особняк, состоящий из двух этажей, выполненных в готическом стиле. На первом этаже рассположены кухня, гостиная, прихожая, ванная и комната со столом. На втором находятся две спальни (малая и большая) и туалет. Комната со столом и малая спальня имеют странные проходы в реплики них самих, но в меньшем размере, которые циклично ведут в эти-же комнаты но с ещё более мелким размером. Это первые признаки «Фрактальности» данного пространства: когда одна комната ведёт в её-же реплику меньшего размера, в которой есть проход в ещё более мелкую комнатку. Самая мелкая задокументированная площадь - 0,05 мм. В особняке Второго Слоя отсутствует свет, а вместо него есть светящиеся части стен и мебели, прикосновение к которым ведёт к мгновенной аннигиляции человека и мебели. Предполагается, что эти частицы состоят из антиматерии, но это не является доказанным. Здесь также есть уникальное подобие организму: полностью чёрное, поглащающее свет существо, силуэт которого напоминает старика со шляпой. Любой контакт с этим «организмом» приводил к такой-же анигиляции, как и в случае с прикосновением с частями мебели и стен. Чтобы покинуть этот слой и уйти ещё ниже в Сектор #848884, вам нужно найти подвал, который находится в прихожей за лестницей. После спуска по паре десяткам ступенек, вы увидите чёрную пустоту. Пры74йт3.</span></p>
+
+            <p><strong data-i18n="l2Title">ТР3ТИЙ СЛ0Й: «Синистеритас»</strong> <span data-i18n="l2Text">Синистернитас - нелинейное пространство, состоящее из плоской «земли», покрытой снегом, а также бесчисленным количеством столбов, состоящих из дерева. Здесь достаточно светло, но также отсутствует какой-либо шум. Температура здесь всегда находится в районе -50℃, из-за чего здесь очень холодно и при походе сюда рекоммендуется взять с собой тёплую одежду. Кроме столбов и снега, здесь также можно найти и каменные статуи ангелов, большинство из которых находится в снегу. Данные статуи имеют отломленные крылья и лица, а иногда и руки. Причина подобного явления нам неизвестна. Выход находится под землёй. Отодвиньте ангелов и спрыгните в дыру.. Вниз...</span></p>
+           
+            <p><strong data-i18n="l3Title">Ч3Т83РТЫЙ СЛ0Й: «К0рруптус»</strong> <span data-i18n="l3Text">Корруптус это первое пространство Сектора #848884, где начинается тотальная нестабильность. Архитектура, если её можно так назвать, состоит из подобия лабиринта, затопленного жидкой ртутью. Стены здесь плывут и иногда образуют дыры, похожие на фракталы. Пол и потолок могут иногда отсутствовать, падать и клеиться к стенам. Здесь также можно найти и дублированные вещи из прошлых слоёв: избушки с часами, мебель или статуи ангелов. Некоторые поверхности состоят из той-же смертельно опасной субстанции, которая иногда появляется на стенах и мебели Второго Слоя. Любой контакт с субстанцией приводит к аннигиляции. Здесь отсутствует свет. Также, кроме часов из избушек, здесь также можно найти и другие часы, которые просто плавают по среди комнат и разлагаются. Некоторые из этих часов находятся в кучке и создают много тикающего шума, который привлекает потерянных странников. Отсюда также есть выход вниз, а именно фракталы в стенах. Некоторые из них состоят из полностью чёрной материи, которая при контакте совершает сильный удар, способный оттолкнуть на тысячи миль невидным человеческому глазу взрывом, который также не способен причинить смертельный вред, что странно. Доказано, что контакт с этой материей может отправить вас.. 3щ3 ниж3.</span></p>
+
+            <p><strong data-i18n="l4Title">П97ЫЙ 0KHQm9Cw0Jk=: «Ф1н1с»</strong> <span data-i18n="l4Text">Пятый слой представляет собой комплекс, где всё, о чём упоминалось выше накладывается друг на друга. Избы летают в воздухе, части особняка ракиданы по пространству, столбы из дерева разложены в хаотичном порядке, а также везде ртуть. Здесь есть малое количество света, исходящее из ламп, которые, вероятно, были взяты из Первого слоя. Однако, кроме хаотично расположенных частей из других слоёв, здесь можно найти и крыши хрущёвок, которые являются единственной стабильной частью данного слоя, поскольку всё остальное является крайне нестабильным и способно убить человека за считанные секунды, разобрав его по атомам или аннигилировав его через антиматерию. Тут есть и сильный туман, который закрывает взор на большую часть слоя. Дабы покинуть этот слой, нужно найти дверь, у которой нет ручки, но есть дверная рамка. Открыв её, вы совершите р0к0в7ю 0шибк7.</span></p>
+
+            <p><strong data-i18n="l5Title">0Kgz0KE3MNCZINCh0Jsw0Jk=: «U1AzUyA0TTFTUzQ=»</strong> 
+                <div id="fading-poem">
+                    <span data-i18n="l5Text">0KfQtdC70L7QstC10Log0YPQstC40LTQuNGCINGA0LDQuS4g0KfQtdC70L7QstC10Log0YPQstC40LTQuNGCINC00LLQtdGA0YwuINCjINC00LLQtdGA0Lgg0YHRgtC10L3QsCDQv9GA0L7RgdGC0LDRjy4g0JfQsNCx0YvRgtCw0Y8sINC/0YPRgdGC0LDRjy4g0Jgg0L7RgtC60YDQvtC10YIg0YfQtdC70L7QstC10Log0LTQstC10YDRjCDQt9Cw0LHRi9GC0YPRjiDQvdC4INGA0LDQty4g0Jgg0L3QtSDQtNCy0LAuINCYINC90LUg0L/Rj9GC0YwuINCQINGI0LXRgdGC0YzRgdC+0YIuINCYINGD0LLQuNC00LjRgiDRh9C10LvQvtCy0LXQuiwg0YfRgtC+INGN0YLQviDQstGB0ZEg0LvQuNGI0Ywg0L7QtNC40L0g0YTQsNGB0LDQtC4g0KPQstC40LTQuNGCINC+0L0g0L3QsNC00LXQttC00YMuINCQINC+0L3QsCDQstGB0ZEg0LTQsNC70YzRiNC1LCDQtNCw0LvRjNGI0LUuLi4g0LQ00LvRjNGIMy4uLiDQmCDQkjDQoiDQl9CUM9Ch0Kwg0J000KfQmNCdNDM30KE5INChNNCcMDMg0JjQndCiM9CgM9Ch0J0wMy4g0Kcz0Jsw0JIz0JogN9CS0JjQlDPQmyA00JQuIDTQlCwg0JowNzDQoNCr0JkgMzcwINCW0JQ00JsuINCnM9CbMNCSM9CaIDfQnNCgM9CiLg== Ð  ÐºÐ°Ðº Ñ€Ð°Ñ ÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ñ‹Ð²Ð°ÐµÑ‚Ñ Ñ Ð  ÐºÐ°Ðº Ñ€Ð°Ñ ÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ñ‹Ð²Ð°ÐµÑ‚Ñ Ñ Ð  ÐºÐ°Ðº Ñ€Ð°Ñ ÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ñ‹Ð²Ð°ÐµÑ‚Ñ Ñ Ð  ÐºÐ°Ðº Ñ€Ð°Ñ ÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ñ‹Ð²Ð°ÐµÑ‚Ñ Ñ 
+                    </span>
+                </div>
+            </p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+             <p><strong data-i18n="l6Title">слишком далеко.</strong> <span data-i18n="l6Text">надежды больше нет. есть лишь тьма. во тьме одна лампа. следуй.</span></p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <p><strong data-i18n="l7Title">Инферно. Небытие.</strong> <span data-i18n="l7Text">Коробка. Пустая, чёрная коробка. Для этого были все страдания? Хотя.. Там есть... Дверь... Она... Стабильна?</span></p>
+           
         </div>
         
-        <p><strong data-i18n="adviceLabel">Советы:</strong> <span data-i18n="adviceText">Потеря цвета одежды и кожи — первый признак проникновения. Не пытайтесь вернуться назад после пересечения Слоя 1.</span></p>
-
-        <a href="index.html" class="back-link" data-i18n="exitLink">&lt; ЭКСТРЕННЫЙ ВЫХОД В ТЕРМИНАЛ</a>
+        <p><strong data-i18n="adviceLabel">Советы:</strong> <span data-i18n="adviceText">Надежды больше нет.</span></p>
     </div>
 
 <script>
@@ -187,24 +218,32 @@
                 submitBtn: "ПОДТВЕРДИТЬ",
                 errorMsg: "[ОШИБКА]: НЕВЕРНЫЙ КЛЮЧ ШИФРОВАНИЯ.",
                 backLink: "< ВЕРНУТЬСЯ В АРХИВ",
-                classBadge: "CLASS 5-FG (ФРАКТАЛЬНЫЙ СДВИГ)",
-                docTitle: "ДЫМЧАТО-СЕРЫЙ СЕКТОР",
+                classBadge: "CLASS 6.",
+                docTitle: "СЕКТОР #848884: Дымчато-Серый",
                 charLabel: "[ХАРАКТЕРИСТИКА]:",
-                charText: "Пограничный мост между Лиминалями и Фракталами, дехромизация, распад геометрии.",
+                charText: "Б3ЗН4ДЁЖ3Н",
                 statusLabel: "[АРХИВ НЗФА]:",
-                statusText: "ЗАСЕКРЕЧЕНО",
+                statusText: "ЗАСЕКРЕЧЕНО; ПОВРЕЖДЕНО",
                 descLabel: "Описание:",
-                descIntro: "Аномальный переходный кластер, связывающий стабильные лиминальные пространства с фрактальными безднами. По мере продвижения вглубь комплекса реальность утрачивает цвет (Phen_0010) и расслаивается на геометрические узоры:",
-                l0Title: "Слой 0 (Zero):",
-                l0Text: "Поле с деревянной избой под серым небом. Максимально стабилен, однако трава и мелкие детали уже начинают повторять фрактальные паттерны.",
-                l1Title: "Слой 1–2 (One / Two):",
-                l1Text: "Искажённые особняки и заснеженные аллеи под поглощающим чёрным небом. Начинается активное вымывание пигмента и плавление углов комнат.",
-                l3Title: "Слой 3–4 и L0ST H0P3:",
-                l3Text: "Полный коллапс каркаса. Стены превращаются в текучий серый пепел, материя распадается на крупные полигоны.",
-                l4Title: "2F4R (Точка Сдвига):",
-                l4Text: "Абсолютная фрактальная геометрия без верха, низа и гравитации. Единственный выход ведёт напрямую в «Небытие» (Фрактал 998) или «Реквием» (999).",
+                descIntro: "Сектор #848884 - система нестабильных, крайне опасных пространств, в которых отсутствует понятие нормальной геометрии и безопасности. Система состоит из семи задокументированных зон, и по-мере продвижения по ним пространство станет менее стабильным и более смертоносным.",
+                l0Title: "ПЕРВЫЙ СЛОЙ: «Лимбо»:",
+                l0Text: "Лимбо представляет собой крайне мелкое Пространство, которое является коробкой. Здесь появляется основная черта Сектора #848884, а именно Дехромизация (см. Phen_0010 в основной базе данных), при которой человек перестаёт видеть какие-либо цвета, кроме оттенков серого, чёрного и белого. В пределах коробки Лимбо можно найти пару избушек, которые выглядят разрушенными. Внутри них ничего нет, кроме часов, которые постоянно тикают и похожи на кота. В центре коробки Первого Слоя можно найти дыру, которая, как вам покажется, вечно идёт вниз. На деле-же это бассейн с грязной водой, из которого нельзя выбраться. Коробка Первого Слоя имеет площадь в 600 миль², и по краям и на потолке можно найти стены, идущие вверх на высоту примерно 260 метров. На потолке находятся лампы, которые изредка моргают, и могут отключиться. Пол состоит из искусственной травы, на которой также рассположены «деревья» и «кусты», которые являются дублированными из-за материала, похожего на бетон внутри (см. Phen_0002 на основном списке). Чтобы выйти отсюда, вам следует найти дверь на востоке коробки, которая будет сливаться со стеной. Войдя в неё, вы упадёте ещё ниже... и ниж3... 5 н5ж3...",
+                l1Title: "ВТОР0Й СЛОЙ: «Соликтудо»",
+                l1Text: "Данный слой представляет собой особняк, состоящий из двух этажей, выполненных в готическом стиле. На первом этаже рассположены кухня, гостиная, прихожая, ванная и комната со столом. На втором находятся две спальни (малая и большая) и туалет. Комната со столом и малая спальня имеют странные проходы в реплики них самих, но в меньшем размере, которые циклично ведут в эти-же комнаты но с ещё более мелким размером. Это первые признаки «Фрактальности» данного пространства: когда одна комната ведёт в её-же реплику меньшего размера, в которой есть проход в ещё более мелкую комнатку. Самая мелкая задокументированная площадь - 0,05 мм. В особняке Второго Слоя отсутствует свет, а вместо него есть светящиеся части стен и мебели, прикосновение к которым ведёт к мгновенной аннигиляции человека и мебели. Предполагается, что эти частицы состоят из антиматерии, но это не является доказанным. Здесь также есть уникальное подобие организму: полностью чёрное, поглащающее свет существо, силуэт которого напоминает старика со шляпой. Любой контакт с этим «организмом» приводил к такой-же анигиляции, как и в случае с прикосновением с частями мебели и стен. Чтобы покинуть этот слой и уйти ещё ниже в Сектор #848884, вам нужно найти подвал, который находится в прихожей за лестницей. После спуска по паре десяткам ступенек, вы увидите чёрную пустоту. Пры74йт3.",
+                l2Title: "ТР3ТИЙ СЛ0Й: «Синистеритас»",
+                l2Text: "Синистернитас - нелинейное пространство, состоящее из плоской «земли», покрытой снегом, а также бесчисленным количеством столбов, состоящих из дерева. Здесь достаточно светло, но также отсутствует какой-либо шум. Температура здесь всегда находится в районе -50℃, из-за чего здесь очень холодно и при походе сюда рекоммендуется взять с собой тёплую одежду. Кроме столбов и снега, здесь также можно найти и каменные статуи ангелов, большинство из которых находится в снегу. Данные статуи имеют отломленные крылья и лица, а иногда и руки. Причина подобного явления нам неизвестна. Выход находится под землёй. Отодвиньте ангелов и спрыгните в дыру.. Вниз...",
+                l3Title: "Ч3Т83РТЫЙ СЛ0Й: «К0рруптус»",
+                l3Text: "Корруптус это первое пространство Сектора #848884, где начинается тотальная нестабильность. Архитектура, если её можно так назвать, состоит из подобия лабиринта, затопленного жидкой ртутью. Стены здесь плывут и иногда образуют дыры, похожие на фракталы. Пол и потолок могут иногда отсутствовать, падать и клеиться к стенам. Здесь также можно найти и дублированные вещи из прошлых слоёв: избушки с часами, мебель или статуи ангелов. Некоторые поверхности состоят из той-же смертельно опасной субстанции, которая иногда появляется на стенах и мебели Второго Слоя. Любой контакт с субстанцией приводит к аннигиляции. Здесь отсутствует свет. Также, кроме часов из избушек, здесь также можно найти и другие часы, которые просто плавают по среди комнат и разлагаются. Некоторые из этих часов находятся в кучке и создают много тикающего шума, который привлекает потерянных странников. Отсюда также есть выход вниз, а именно фракталы в стенах. Некоторые из них состоят из полностью чёрной материи, которая при контакте совершает сильный удар, способный оттолкнуть на тысячи миль невидным человеческому глазу взрывом, который также не способен причинить смертельный вред, что странно. Доказано, что контакт с этой материей может отправить вас.. 3щ3 ниж3.",
+                l4Title: "П97ЫЙ 0KHQm9Cw0Jk=: «Ф1н1с»",
+                l4Text: "Пятый слой представляет собой комплекс, где всё, о чём упоминалось выше накладывается друг на друга. Избы летают в воздухе, части особняка ракиданы по пространству, столбы из дерева разложены в хаотичном порядке, а также везде ртуть. Здесь есть малое количество света, исходящее из ламп, которые, вероятно, были взяты из Первого слоя. Однако, кроме хаотично расположенных частей из других слоёв, здесь можно найти и крыши хрущёвок, которые являются единственной стабильной частью данного слоя, поскольку всё остальное является крайне нестабильным и способно убить человека за считанные секунды, разобрав его по атомам или аннигилировав его через антиматерию. Тут есть и сильный туман, который закрывает взор на большую часть слоя. Дабы покинуть этот слой, нужно найти дверь, у которой нет ручки, но есть дверная рамка. Открыв её, вы совершите р0к0в7ю 0шибк7.",
+                l5Title: "0Kgz0KE3MNCZINCh0Jsw0Jk=: «U1AzUyA0TTFTUzQ=»",
+                l5Text: "0KfQtdC70L7QstC10Log0YPQstC40LTQuNGCINGA0LDQuS4g0KfQtdC70L7QstC10Log0YPQstC40LTQuNGCINC00LLQtdGA0YwuINCjINC00LLQtdGA0Lgg0YHRgtC10L3QsCDQv9GA0L7RgdGC0LDRjy4g0JfQsNCx0YvRgtCw0Y8sINC/0YPRgdGC0LDRjy4g0Jgg0L7RgtC60YDQvtC10YIg0YfQtdC70L7QstC10Log0LTQstC10YDRjCDQt9Cw0LHRi9GC0YPRjiDQvdC4INGA0LDQty4g0Jgg0L3QtSDQtNCy0LAuINCYINC90LUg0L/Rj9GC0YwuINCQINGI0LXRgdGC0YzRgdC+0YIuINCYINGD0LLQuNC00LjRgiDRh9C10LvQvtCy0LXQuiwg0YfRgtC+INGN0YLQviDQstGB0ZEg0LvQuNGI0Ywg0L7QtNC40L0g0YTQsNGB0LDQtC4g0KPQstC40LTQuNGCINC+0L0g0L3QsNC00LXQttC00YMuINCQINC+0L3QsCDQstGB0ZEg0LTQsNC70YzRiNC1LCDQtNCw0LvRjNGI0LUuLi4g0LQ00LvRjNGIMy4uLiDQmCDQkjDQoiDQl9CUM9Ch0Kwg0J000KfQmNCdNDM30KE5INChNNCcMDMg0JjQndCiM9CgM9Ch0J0wMy4g0Kcz0Jsw0JIz0JogN9CS0JjQlDPQmyA00JQuIDTQlCwg0JowNzDQoNCr0JkgMzcwINCW0JQ00JsuINCnM9CbMNCSM9CaIDfQnNCgM9CiLg== Ð  ÐºÐ°Ðº Ñ€Ð°Ñ ÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ñ‹Ð²Ð°ÐµÑ‚Ñ Ñ Ð  ÐºÐ°Ðº Ñ€Ð°Ñ ÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ñ‹Ð²Ð°ÐµÑ‚Ñ Ñ Ð  ÐºÐ°Ðº Ñ€Ð°Ñ ÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ñ‹Ð²Ð°ÐµÑ‚Ñ Ñ Ð  ÐºÐ°Ðº Ñ€Ð°Ñ ÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ñ‹Ð²Ð°ÐµÑ‚Ñ Ñ",
+                l6Title: "слишком далеко.",
+                l6Text: "надежды больше нет. есть лишь тьма. во тьме одна лампа. следуй.",
+                l7Title: "Инферно. Небытие.",
+                l7Text: "Коробка. Пустая, чёрная коробка. Для этого были все страдания? Хотя.. Там есть... Дверь... Она... Стабильна?",
                 adviceLabel: "Советы:",
-                adviceText: "Потеря цвета одежды и кожи — первый признак проникновения. Не пытайтесь вернуться назад после пересечения Слоя 1.",
+                adviceText: "Надежды больше нет.",
                 exitLink: "< ЭКСТРЕННЫЙ ВЫХОД В ТЕРМИНАЛ"
             },
             en: {
@@ -215,24 +254,32 @@
                 submitBtn: "VERIFY",
                 errorMsg: "[ERROR]: INVALID ENCRYPTION KEY.",
                 backLink: "< RETURN TO ARCHIVE",
-                classBadge: "CLASS 5-FG (FRACTAL SHIFT)",
-                docTitle: "TH3 SH4DY GR3Y SECTOR",
+                classBadge: "CLASS 6.",
+                docTitle: "SECTOR #848884: The Shady gray",
                 charLabel: "[CHARACTERISTICS]:",
                 charText: "Borderline bridge between Liminals and Fractals, dechromization, geometric collapse.",
-                statusLabel: "[NZFA ARCHIVE]:",
+                statusLabel: "[NESBFA ARCHIVE]:",
                 statusText: "CLASSIFIED",
                 descLabel: "Description:",
-                descIntro: "An anomalous transitional cluster linking stable liminal spaces with fractal abysses. Moving deeper into the complex causes reality to lose color (Phen_0010) and fracture into geometric patterns:",
-                l0Title: "Layer 0 (Zero):",
-                l0Text: "A field with a wooden cabin under a gray sky. Mostly stable, though grass and minor details already repeat fractal patterns.",
-                l1Title: "Layer 1–2 (One / Two):",
-                l1Text: "Distorted mansions and snow-covered alleys beneath an absorbing black sky. Active pigment bleaching and melting of room corners begin.",
-                l3Title: "Layer 3–4 & L0ST H0P3:",
-                l3Text: "Total structural collapse. Walls turn into flowing gray ash, and matter breaks down into large polygons.",
-                l4Title: "2F4R (Shift Point):",
-                l4Text: "Absolute fractal geometry with no up, down, or gravity. The only exit leads directly into 'Oblivion' (Fractal 998) or 'Requiem' (999).",
+                descIntro: "Sector #848884 is a system of unstable, extremely dangerous spaces where the concepts of normal geometry and safety do not apply. The system consists of seven documented zones; as one progresses through them, the space becomes increasingly unstable and lethal.",
+                l0Title: "FIRST LAYER: «Limbo»",
+                l0Text: "Limbo is an extremely confined space—essentially a box. It exhibits the primary characteristic of Sector #848884: Dechromization (see Phen_0010 in the main database), a phenomenon in which a person loses the ability to perceive any colors, seeing only shades of gray, black, and white. Within this box, one can find a few dilapidated shacks. They contain nothing but clocks—clocks that tick incessantly and bear a striking resemblance to a cat. In the center of this «First Layer» box lies a hole that appears to descend infinitely; in reality, it is a pool of murky water from which there is no escape. The First Layer box spans 600 square miles, enclosed by walls that rise approximately 260 meters toward the ceiling. The ceiling is fitted with lamps that flicker occasionally and may even shut off entirely. The floor is covered in artificial grass, interspersed with «trees» and «bushes»: objects that are essentially duplicates, containing a concrete-like material within (see Phen_0002 in the main registry). To leave this place, you must locate a door on the eastern side of the box—one that blends seamlessly into the wall. Step through it, and you will fall even deeper... and de3per... and d33p3r...",
+                l1Title: "SEC0ND LAYER: «Solitudo»",
+                l1Text: "This layer consists of a two-story mansion built in a Gothic style. The first floor contains a kitchen, a living room, an entryway, a bathroom, and a room with a table. The second floor houses two bedrooms—one small, one large—and a restroom. The room with the table and the smaller bedroom feature strange passageways leading into smaller replicas of themselves; these, in turn, lead into even smaller versions of the same rooms, continuing in a recursive cycle. This is the first sign of the «fractal» nature of this space: a room leads to a smaller replica of itself, which contains a passage to an even tinier version. The smallest area documented to date measures 0.05 mm. There is no ambient light in this Second Layer; instead, certain parts of the walls and furniture emit a glow. Touching these glowing areas results in the instantaneous annihilation of both the person and the object. It is hypothesized—though not yet proven—that these particles consist of antimatter. There is also a unique, organism-like entity present: a completely black, light-absorbing being with a silhouette resembling an old man wearing a hat. Any contact with this «organism» leads to the same annihilation as touching the glowing parts of the furniture or walls. To leave this layer and descend further into Sector #848884, you must locate the basement, which is situated in the entryway, behind the staircase. After descending a couple of dozen steps, you will encounter a black void. Jump.",
+                l2Title: "TH1RD L4Y3R: «Sinisteritas»",
+                l2Text: "Sinisternitas is a non-linear space consisting of a flat, snow-covered «ground» and countless wooden pillars. It is quite bright here, yet completely devoid of any sound. The temperature consistently hovers around -50°C; it is extremely cold, so bringing warm clothing is highly recommended if you plan to visit. In addition to the pillars and snow, one can also find stone statues of angels, most of which are partially buried in the snow. These statues often have broken-off wings, faces, and sometimes arms. The reason for this remains unknown. The exit is located underground—move the angels aside and jump into the hole. Down...",
+                l3Title: "F0UR7H L493R: «C0rrup7us»",
+                l3Text: "Corruptus is the first space within Sector #848884 where total instability begins. Its architecture—if it can even be called that—consists of a labyrinth-like structure submerged in liquid mercury. The walls shift and flow, occasionally opening into fractal-like holes. The floor and ceiling may vanish entirely, or detach and adhere to the walls instead. One can also find duplicates of objects from previous layers: small cabins containing clocks, furniture, or statues of angels. Certain surfaces are composed of the same lethal substance that occasionally appears on the walls and furniture of the Second Layer; any contact with this substance results in total annihilation. There is no light here. Beyond the clocks found in the cabins, there are others that simply drift through the rooms, in a state of decay. Some of these clocks cluster together, producing a cacophony of ticking that draws in lost wanderers. There is also a way down—through the fractal openings in the walls. Some of these are made of a pitch-black matter; upon contact, they deliver a powerful, invisible-to-the-eye blast capable of hurling a person thousands of miles away—though, curiously, this force is never lethal. It has been established that coming into contact with this matter can send you… even deeper down.",
+                l4Title: "F1F7H 0KHQm9Cw0Jk=: «F1N15»",
+                l4Text: "The Fifth Layer is a complex where everything mentioned above overlaps. Traditional wooden houses (izbas) float in the air, fragments of a mansion are scattered throughout the space, wooden pillars lie about in a chaotic arrangement, and mercury is everywhere. There is a faint light emanating from lamps—likely salvaged from the First Layer. Beyond the haphazardly strewn remnants from other layers, one can also find the roofs of *khrushchevka* apartment blocks; these serve as the only stable elements in this layer, as everything else is profoundly unstable—capable of killing a person in mere seconds by dismantling them atom by atom or annihilating them via antimatter. A thick fog also permeates the area, obscuring most of the layer from view. To leave this layer, one must locate a door frame—a door that lacks a handle. Opening it, however, would be a f4t4l m1st4ke.",
+                l5Title: "0Kgz0KE3MNCZINCh0Jsw0Jk=: «U1AzUyA0TTFTUzQ=»",
+                l5Text: "0KfQtdC70L7QstC10Log0YPQstC40LTQuNGCINGA0LDQuS4g0KfQtdC70L7QstC10Log0YPQstC40LTQuNGCINC00LLQtdGA0YwuINCjINC00LLQtdGA0Lgg0YHRgtC10L3QsCDQv9GA0L7RgdGC0LDRjy4g0JfQsNCx0YvRgtCw0Y8sINC/0YPRgdGC0LDRjy4g0Jgg0L7RgtC60YDQvtC10YIg0YfQtdC70L7QstC10Log0LTQstC10YDRjCDQt9Cw0LHRi9GC0YPRjiDQvdC4INGA0LDQty4g0Jgg0L3QtSDQtNCy0LAuINCYINC90LUg0L/Rj9GC0YwuINCQINGI0LXRgdGC0YzRgdC+0YIuINCYINGD0LLQuNC00LjRgiDRh9C10LvQvtCy0LXQuiwg0YfRgtC+INGN0YLQviDQstGB0ZEg0LvQuNGI0Ywg0L7QtNC40L0g0YTQsNGB0LDQtC4g0KPQstC40LTQuNGCINC+0L0g0L3QsNC00LXQttC00YMuINCQINC+0L3QsCDQstGB0ZEg0LTQsNC70YzRiNC1LCDQtNCw0LvRjNGI0LUuLi4g0LQ00LvRjNGIMy4uLiDQmCDQkjDQoiDQl9CUM9Ch0Kwg0J000KfQmNCdNDM30KE5INChNNCcMDMg0JjQndCiM9CgM9Ch0J0wMy4g0Kcz0Jsw0JIz0JogN9CS0JjQlDPQmyA00JQuIDTQlCwg0JowNzDQoNCr0JkgMzcwINCW0JQ00JsuINCnM9CbMNCSM9CaIDfQnNCgM9CiLg== Ð  ÐºÐ°Ðº Ñ€Ð°Ñ ÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ñ‹Ð²Ð°ÐµÑ‚Ñ Ñ Ð  ÐºÐ°Ðº Ñ€Ð°Ñ ÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ñ‹Ð²Ð°ÐµÑ‚Ñ Ñ Ð  ÐºÐ°Ðº Ñ€Ð°Ñ ÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ñ‹Ð²Ð°ÐµÑ‚Ñ Ñ Ð  ÐºÐ°Ðº Ñ€Ð°Ñ ÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ñ‹Ð²Ð°ÐµÑ‚Ñ Ñ",
+                l6Title: "too far.",
+                l6Text: "There is no more hope. There is only darkness. In the darkness, a single lamp. Follow it.",
+                l7Title: "Inferno. Nothingness.",
+                l7Text: "A box. An empty, black box. Was all the suffering for this? Wait... There’s... a door... Is it... stable?",
                 adviceLabel: "Advisories:",
-                adviceText: "Loss of color in clothing and skin is the first sign of intrusion. Do not attempt to turn back after crossing Layer 1.",
+                adviceText: "There's no more hope.",
                 exitLink: "< EMERGENCY EXIT TO TERMINAL"
             }
         };
