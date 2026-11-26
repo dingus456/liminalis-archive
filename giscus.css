@@ -1,0 +1,14 @@
+
+main {
+  --color-canvas-default: #050a05;
+  --color-canvas-subtle: #081208;
+  --color-border-default: #00ff41;
+  --color-border-muted: #008f24;
+  --color-fg-default: #00ff41;
+  --color-fg-muted: #00b32d;
+  --color-accent-fg: #00ff41;
+  --color-btn-bg: #081208;
+  --color-btn-border: #00ff41;
+  --color-btn-primary-bg: #004d14;
+  --color-btn-primary-border: #00ff41;
+}
