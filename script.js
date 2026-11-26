@@ -1368,3 +1368,21 @@ function toggleGlossary() {
     }
 
 }
+// Логика полноэкранного дисклеймера
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('disclaimerModal');
+    const acceptBtn = document.getElementById('acceptDisclaimerBtn');
+
+    // Если пользователь уже принял дисклеймер в этой вкладке — сразу прячем
+    if (sessionStorage.getItem('nesbfa_disclaimer_accepted') === 'true') {
+        if (modal) modal.style.display = 'none';
+    }
+
+    if (acceptBtn) {
+        acceptBtn.addEventListener('click', () => {
+            sessionStorage.setItem('nesbfa_disclaimer_accepted', 'true');
+            if (modal) modal.style.display = 'none';
+        });
+    }
+});
+
