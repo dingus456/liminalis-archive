@@ -1281,7 +1281,7 @@ function displayDatabase(items) {
 function searchArchive() {
     const searchInput = document.getElementById('ui-search-input');
     const filterSelect = document.getElementById('typeFilter');
-    const giscusBox = document.getElementById('giscusContainer');
+    const giscusBox = document.getElementById('giscusBox');
     if (!searchInput || !filterSelect || !giscusBox) return;
 
     const query = searchInput.value.toLowerCase();
@@ -1292,19 +1292,19 @@ function searchArchive() {
     window.location.href = "shady-grey.html";
     return; // Останавливаем обычный поиск
 }
-    // ЕСЛИ ВЫБРАН ФОРУМ:
+
     if (typeFilter === 'forum') {
-        displayDatabase([]); // Прячем карточки уровней
-        giscusBox.style.display = 'block'; // Показываем блок форума
         document.getElementById('archiveContainer').innerHTML = '';
-        // Если Giscus еще не загружен — загружаем его внутрь giscusContainer
-        if (giscusBox.innerHTML === '') {
-            giscusBox.innerHTML = `
-            
-            `;
+        if (giscusBox) {
+            giscusBox.style.display = 'block';
         }
         return;
+    } else {
+        if (giscusBox) {
+            giscusBox.style.display = 'none';
+        }
     }
+
 
     // ЕСЛИ ВЫБРАНО ЧТО-ТО ДРУГОЕ: прячем форум и ищем уровни
     giscusBox.style.display = 'none';
