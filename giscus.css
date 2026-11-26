@@ -1,14 +1,38 @@
+@import url("https://giscus.app");
 
 main {
   --color-canvas-default: #050a05;
-  --color-canvas-subtle: #081208;
+  --color-canvas-overlay: #050a05;
+  --color-canvas-inset: #020502;
+  --color-canvas-subtle: #081408;
+
   --color-border-default: #00ff41;
   --color-border-muted: #008f24;
+  --color-neutral-muted: rgba(0, 255, 65, 0.15);
+
   --color-fg-default: #00ff41;
   --color-fg-muted: #00b32d;
+  --color-fg-subtle: #008f24;
   --color-accent-fg: #00ff41;
-  --color-btn-bg: #081208;
+  --color-accent-emphasis: #00ff41;
+
+  --color-btn-text: #00ff41;
+  --color-btn-bg: #050a05;
   --color-btn-border: #00ff41;
-  --color-btn-primary-bg: #004d14;
+  --color-btn-hover-bg: #0a240a;
+  --color-btn-hover-border: #00ff41;
+
+  --color-btn-primary-text: #000000;
+  --color-btn-primary-bg: #00ff41;
   --color-btn-primary-border: #00ff41;
+  --color-btn-primary-hover-bg: #33ff66;
+
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.gsc-comment-box,
+.gsc-timeline,
+.gsc-header,
+.gsc-comment {
+  border-radius: 0 !important;
 }
